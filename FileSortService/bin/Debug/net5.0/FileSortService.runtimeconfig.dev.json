@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\mpanylyk\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\mpanylyk\\.nuget\\packages"
+    ]
+  }
+}
