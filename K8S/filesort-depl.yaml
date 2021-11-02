@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: filesort-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: filesortservice
+  template:
+    metadata:
+      labels:
+        app: filesortservice
+    spec:
+      containers:
+        - name: filesortservice
+          image: 2257922579/filesortservice:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: filesort-clusterip-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: filesortservice
+  ports:
+  - name: filesortservice
+    port: 80
+    targetPort: 80
+
