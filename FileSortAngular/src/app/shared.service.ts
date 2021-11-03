@@ -18,8 +18,12 @@ readonly FileUrl = "https://localhost:5001/Test";
   {
     return this.http.post(this.APIUrl + '/FileSort/SaveFile',val)
   }
-  /*addFile(val:any)
+  addFile(val:any)
   {
-    return this.http.post(this.APIUrl + "/FileSort",val)
-  }*/
+    return this.http.post(this.APIUrl + '/FileSort',val)
+  }
+  deleteFile(val:any)
+  {
+    return this.http.delete(this.APIUrl + '/FileSort',val)
+  }
 }

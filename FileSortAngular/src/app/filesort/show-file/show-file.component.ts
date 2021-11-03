@@ -40,6 +40,16 @@ export class ShowFileComponent implements OnInit {
     this.ActivateAddEditFileComp = false;
     this.refreshFileSortList();
   }
+
+  deleteClick(item:any){
+    if(confirm('Are you sure??'))
+    {
+      this.service.deleteFile(item).subscribe(data=>{
+        alert(data.toString());
+        this.refreshFileSortList();
+      })
+    }
+  }
   refreshFileSortList()
   {
     this.service.getFileList().subscribe(data=>

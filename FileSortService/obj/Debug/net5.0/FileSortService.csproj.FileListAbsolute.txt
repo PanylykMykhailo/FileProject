@@ -91,3 +91,4 @@ C:\Users\mpanylyk\source\repos\FileProject\FileSortService\obj\Debug\net5.0\scop
 C:\Users\mpanylyk\source\repos\FileProject\FileSortService\obj\Debug\net5.0\FileSortService.RazorTargetAssemblyInfo.cache
 C:\Users\mpanylyk\source\repos\FileProject\FileSortService\obj\Debug\net5.0\FileSortService.genruntimeconfig.cache
 C:\Users\mpanylyk\source\repos\FileProject\FileSortService\bin\Debug\net5.0\appsettings.Production.json
+C:\Users\mpanylyk\source\repos\FileProject\FileSortService\obj\Debug\net5.0\FileSortService.csproj.CopyComplete

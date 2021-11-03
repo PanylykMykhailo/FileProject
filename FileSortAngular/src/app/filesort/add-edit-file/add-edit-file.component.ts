@@ -1,5 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
-
+import { SharedService } from 'src/app/shared.service';
 @Component({
   selector: 'app-add-edit-file',
   templateUrl: './add-edit-file.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class AddEditFileComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service:SharedService) { }
   @Input() file:any;
   nameFile?:string;
   typeFile?:string;
@@ -20,10 +20,26 @@ export class AddEditFileComponent implements OnInit {
     this.sizeFile = this.file.sizeFile;
     this.dateCreatedFile = this.file.dateCreatedFile;
   }
-  /*addFile(){
-
+  addFile(){
+    var val = {
+      nameFile:this.nameFile,
+      typeFile:this.typeFile,
+      sizeFile:this.sizeFile,
+      dateCreatedFile:this.dateCreatedFile
+    };
+    this.service.addFile(val).subscribe(res=>{
+      alert(res.toString())
+    })
   }
   updateFile(){
-
-  }*/
+    var val = {
+      nameFile:this.nameFile,
+      typeFile:this.typeFile,
+      sizeFile:this.sizeFile,
+      dateCreatedFile:this.dateCreatedFile
+    };
+    this.service.UploadFile(val).subscribe(res=>{
+      alert(res.toString())
+    })
+  }
 }
