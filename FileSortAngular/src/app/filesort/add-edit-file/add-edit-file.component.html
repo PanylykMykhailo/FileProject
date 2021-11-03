@@ -5,8 +5,8 @@
         placeholder="Enter File Name">
         <input type="text" class="form-control" [(ngModel)]="typeFile"
         placeholder="Enter Type Name">
-        <input type="text" class="form-control" *ngIf="file.nameFile!=null" [(ngModel)]="sizeFile"
-        placeholder="Enter SizeFile Name">
+        <input type="text" class="form-control" *ngIf="file.nameFile!=null" [(ngModel)]="newNameFile"
+        placeholder="Enter new Name">
     </div>
 </div>
 <button (click)="addFile()" *ngIf="file.nameFile==null" class="btn btn-primary">

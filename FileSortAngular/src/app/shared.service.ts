@@ -16,7 +16,7 @@ readonly FileUrl = "https://localhost:5001/Test";
 
   UploadFile(val:any)
   {
-    return this.http.post(this.APIUrl + '/FileSort/SaveFile',val)
+    return this.http.post(this.APIUrl + '/FileSort/RenameFile',val)
   }
   addFile(val:any)
   {

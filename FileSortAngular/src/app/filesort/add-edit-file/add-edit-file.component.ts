@@ -12,12 +12,14 @@ export class AddEditFileComponent implements OnInit {
   nameFile?:string;
   typeFile?:string;
   sizeFile?:string;
+  newNameFile?:string;
   dateCreatedFile?:string;
 
   ngOnInit(): void {
     this.nameFile = this.file.nameFile;
     this.typeFile = this.file.typeFile;
     this.sizeFile = this.file.sizeFile;
+    this.newNameFile = this.file.newNameFile;
     this.dateCreatedFile = this.file.dateCreatedFile;
   }
   addFile(){
@@ -35,8 +37,7 @@ export class AddEditFileComponent implements OnInit {
     var val = {
       nameFile:this.nameFile,
       typeFile:this.typeFile,
-      sizeFile:this.sizeFile,
-      dateCreatedFile:this.dateCreatedFile
+      newNameFile:this.newNameFile
     };
     this.service.UploadFile(val).subscribe(res=>{
       alert(res.toString())
