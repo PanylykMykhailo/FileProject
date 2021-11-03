@@ -37,11 +37,28 @@ $RECYCLE.BIN/
 ## Directories
 #################
 
-*/.vs/
 FileSortAngular/node_modules
 node_modules/
 
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-FileSortService/
-*.csproj
-*.assets
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db

@@ -23,7 +23,7 @@ namespace FileSortService.Repository
                 {
                     NameFile = Path.GetFileNameWithoutExtension(item),
                     TypeFile = infoFile.Extension,
-                    SizeFile = infoFile.Length.ToString() + "bytes",
+                    SizeFile = infoFile.Length.ToString() + " bytes",
                     DateCreatedFile = infoFile.CreationTime.ToShortDateString() +" " + infoFile.CreationTime.ToShortTimeString()
                 });
             }
@@ -36,7 +36,7 @@ namespace FileSortService.Repository
             {
                 var searchFile = Directory.GetFiles(rootPath,$"*{nameFile}{typeName}*",SearchOption.AllDirectories);
                 InfoAboutFile infoAboutFile = new InfoAboutFile();
-                infoAboutFile.NameFile = Path.GetFileName(searchFile[0]);
+                infoAboutFile.NameFile = Path.GetFileNameWithoutExtension(searchFile[0]);
                 infoAboutFile.TypeFile = new System.IO.FileInfo(searchFile[0]).Extension;
                 infoAboutFile.SizeFile = new System.IO.FileInfo(searchFile[0]).Length.ToString() + " bytes";
                 infoAboutFile.DateCreatedFile = new System.IO.FileInfo(searchFile[0]).CreationTime.ToShortDateString() + " " + new System.IO.FileInfo(searchFile[0]).CreationTime.ToShortTimeString();
@@ -47,25 +47,25 @@ namespace FileSortService.Repository
                 return null;
             }
         }
-        public bool DeleteFile(string nameFile,string typeName)
+        public string DeleteFile(string nameFile,string typeName)
         {
             var filePath = rootPath + @"\" + nameFile + typeName;
             if (System.IO.File.Exists(filePath)) 
             { 
                 System.IO.File.Delete(filePath);
-                 return true;
+                 return nameFile + typeName;
             }
-           return false;
+           return null;
         }
-        public bool RenameFile(string nameFile,string typeName,string newNameFile)
+        public string RenameFile(string nameFile,string typeName,string newNameFile)
         {
             FileInfo fi = new FileInfo(rootPath + @"\" + nameFile + typeName);
             if (fi.Exists)
             {
                 System.IO.File.Move(rootPath + @"\" + nameFile + typeName, rootPath + @"\" + newNameFile + typeName);
-                return true;
+                return nameFile + typeName;
             }
-            return false;
+            return null;
         }
         public bool OpenAndEdit(string nameFile,string typeName,string infoAdd)
         {

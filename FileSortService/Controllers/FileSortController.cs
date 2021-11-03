@@ -36,11 +36,11 @@ namespace FileSortService
             return Ok(_mapper.Map<List<InfoAboutFileDto>>(fileItem));
         }
         [HttpGet("{namefile}/{typeName}",Name = "InfoAboutFile")]
-        public ActionResult<InfoAboutFile> InfoAboutFile(string nameFile,string typeName)
+        public ActionResult<InfoAboutFile> InfoAboutFile(string nameFile,string typeFile)
         {
             Console.WriteLine($"--> Getting about {nameFile}....");
             
-            var fileItem = _iFileSortRepository.InfoAboutFile(nameFile,typeName);
+            var fileItem = _iFileSortRepository.InfoAboutFile(nameFile,typeFile);
             if(fileItem!=null)
             {
                 return Ok(_mapper.Map<InfoAboutFileDto>(fileItem));
@@ -87,5 +87,51 @@ namespace FileSortService
                 return new JsonResult("anon.png");
             }
         }
+
+        [Route("DeleteFile")]
+        [HttpDelete]
+        public JsonResult DeleteFile(ParameterRequest parameter)
+        {
+            try
+            {
+                var tryDeleteFile = _iFileSortRepository.DeleteFile(parameter.nameFile,parameter.typeFile);
+                if(tryDeleteFile!=null)
+                {
+                    return new JsonResult(tryDeleteFile);
+                }
+                else
+                {
+                    return new JsonResult(NotFound() + parameter.nameFile + parameter.typeFile);
+                }
+            }
+            catch(Exception)
+            {
+                return new JsonResult(NotFound());
+            }
+            
+        }
+        [Route("RenameFile")]
+        [HttpPost]
+        public JsonResult RenameFile(ParameterRequest parameter)
+        {
+            try
+            {
+                var tryRename = _iFileSortRepository.RenameFile(parameter.nameFile,parameter.typeFile,parameter.newNameFile);
+                if(tryRename!=null)
+                {
+                    return new JsonResult("Old name :" + parameter.nameFile + "\n"
+                    +"New name" + parameter.newNameFile);
+                }
+                else
+                {
+                    return new JsonResult(NotFound() + parameter.nameFile + parameter.typeFile);
+                }
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+        } 
     }
 }
