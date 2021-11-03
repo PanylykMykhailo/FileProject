@@ -24,6 +24,12 @@ readonly FileUrl = "https://localhost:5001/Test";
   }
   deleteFile(val:any)
   {
-    return this.http.delete(this.APIUrl + '/FileSort',val)
+    const options = {
+      headers: new HttpHeaders({
+         'Content-Type': 'application/json',
+      }),
+      body:val
+   }
+    return this.http.delete(this.APIUrl + '/FileSort/DeleteFile',options)
   }
 }

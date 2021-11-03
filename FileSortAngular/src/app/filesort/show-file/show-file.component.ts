@@ -32,6 +32,7 @@ export class ShowFileComponent implements OnInit {
 
   }
   editClick(item: any){
+    console.log(item.nameFile);
     this.file = item;
     this.ModalTitle = "Edit File";
     this.ActivateAddEditFileComp = true;
@@ -44,8 +45,14 @@ export class ShowFileComponent implements OnInit {
   deleteClick(item:any){
     if(confirm('Are you sure??'))
     {
-      this.service.deleteFile(item).subscribe(data=>{
-        alert(data.toString());
+      let upItem = {
+        nameFile:item.nameFile,
+        typeFile:item.typeFile,
+        newNameFile:""
+      }
+      //console.log(upItem);
+      this.service.deleteFile(upItem).subscribe(data=>{
+        //alert(data);
         this.refreshFileSortList();
       })
     }
