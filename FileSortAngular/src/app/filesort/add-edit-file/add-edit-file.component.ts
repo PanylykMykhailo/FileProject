@@ -24,8 +24,8 @@ export class AddEditFileComponent implements OnInit {
     var val = {
       nameFile:this.nameFile,
       typeFile:this.typeFile,
-      sizeFile:this.sizeFile,
-      dateCreatedFile:this.dateCreatedFile
+      sizeFile:"0bytes",
+      dateCreatedFile:"nothing"
     };
     this.service.addFile(val).subscribe(res=>{
       alert(res.toString())

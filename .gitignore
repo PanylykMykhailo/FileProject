@@ -37,6 +37,6 @@ $RECYCLE.BIN/
 ## Directories
 #################
 
-dev/
+*/.vs/
 FileSortAngular/node_modules
 node_modules/
