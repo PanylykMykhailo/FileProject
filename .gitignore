@@ -40,6 +40,9 @@ $RECYCLE.BIN/
 FileSortAngular/node_modules
 node_modules/
 
+.vs/*
+
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
