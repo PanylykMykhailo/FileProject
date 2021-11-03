@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FileService"
   ],
+  "SelectedNode": "\\FileService\\Startup.cs",
   "PreviewInSolutionExplorer": false
 }
