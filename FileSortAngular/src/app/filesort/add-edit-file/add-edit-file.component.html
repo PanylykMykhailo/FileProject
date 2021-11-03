@@ -1,0 +1,15 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">File Info</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="nameFile"
+        placeholder="Enter File Name">
+        <input type="text" class="form-control" [(ngModel)]="typeFile"
+        placeholder="Enter Type Name">
+    </div>
+</div>
+<button (click)="addFile()" *ngIf="file.nameFile==null" class="btn btn-primary">
+    Add
+</button>
+<button (click)="updateFile()" *ngIf="file.nameFile!=null" class="btn btn-primary">
+    Update
+</button>

@@ -89,6 +89,6 @@ C:\Users\mpanylyk\source\repos\FileProject\FileSortService\obj\Debug\net5.0\stat
 C:\Users\mpanylyk\source\repos\FileProject\FileSortService\obj\Debug\net5.0\staticwebassets\FileSortService.StaticWebAssets.xml
 C:\Users\mpanylyk\source\repos\FileProject\FileSortService\obj\Debug\net5.0\scopedcss\bundle\FileSortService.styles.css
 C:\Users\mpanylyk\source\repos\FileProject\FileSortService\obj\Debug\net5.0\FileSortService.RazorTargetAssemblyInfo.cache
-C:\Users\mpanylyk\source\repos\FileProject\FileSortService\obj\Debug\net5.0\FileSortService.csproj.CopyComplete
 C:\Users\mpanylyk\source\repos\FileProject\FileSortService\obj\Debug\net5.0\FileSortService.genruntimeconfig.cache
 C:\Users\mpanylyk\source\repos\FileProject\FileSortService\bin\Debug\net5.0\appsettings.Production.json
+C:\Users\mpanylyk\source\repos\FileProject\FileSortService\obj\Debug\net5.0\FileSortService.csproj.CopyComplete
