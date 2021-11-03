@@ -21,7 +21,7 @@ namespace FileSortService.Repository
                 var infoFile = new System.IO.FileInfo(item);
                 infoaboutFile.Add(new InfoAboutFile()
                 {
-                    NameFile = Path.GetFileName(item),
+                    NameFile = Path.GetFileNameWithoutExtension(item),
                     TypeFile = infoFile.Extension,
                     SizeFile = infoFile.Length.ToString() + "bytes",
                     DateCreatedFile = infoFile.CreationTime.ToShortDateString() +" " + infoFile.CreationTime.ToShortTimeString()

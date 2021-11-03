@@ -40,3 +40,8 @@ $RECYCLE.BIN/
 */.vs/
 FileSortAngular/node_modules
 node_modules/
+
+
+FileSortService/
+*.csproj
+*.assets
