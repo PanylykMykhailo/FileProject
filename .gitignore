@@ -40,7 +40,20 @@ $RECYCLE.BIN/
 FileSortAngular/node_modules
 node_modules/
 
+
+FileService/obj
+obj/
+FileService/bin
+bin/
+
+
+FileSortService/obj
+obj/
+FileSortService/bin
+bin/
+
 .vs/*
+
 
 
 .vscode/*

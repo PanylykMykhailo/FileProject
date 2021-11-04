@@ -20,13 +20,14 @@ namespace FileSortService.SyncDataServices.Http
         public async Task SendFileSortToFileS(InfoAboutFileDto infoAboutFileDto)
         {
             var httpContent = new StringContent(
-                JsonSerializer.Serialize(infoAboutFileDto),
+                JsonSerializer.Serialize<InfoAboutFileDto>(infoAboutFileDto),
                 Encoding.UTF8,
                 "application/json");
             
             var response = await _httpClient.PostAsync($"{_configuration["FileService"]}",httpContent);
             if(response.IsSuccessStatusCode)
             {
+                Console.WriteLine(response.Content.ToString());
                 Console.WriteLine("--> Sync POST to FileService was OK!");
             }
             else
