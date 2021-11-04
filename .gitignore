@@ -4,6 +4,8 @@
 
 *.suo
 *.user
+*.jpg
+*.jfif
 _ReSharper.*
 FileService/bin
 FileSortService/bin
@@ -12,12 +14,11 @@ FileSortService/obj
 packages
 
 
-/FileSortAngular/*
-/FileSortAngular/src/app/
+FileSortAngular/
+src
+app
 
 
 
 
 
-
-FileSortAngular/src/app/app.component.html
