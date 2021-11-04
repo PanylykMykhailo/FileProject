@@ -14,7 +14,7 @@ export class SharedService {
   }
   getOnlyFile():Observable<any[]>
   {
-    return this.http.get<any>(environment.APIFileUrl + '/FileSort/GetOnlyFile');
+    return this.http.get<any>(environment.APIFileUrl + '/File/GetOnlyFile');
   }
   renameFile(val:any)
   {

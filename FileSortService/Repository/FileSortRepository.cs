@@ -14,7 +14,7 @@ namespace FileSortService.Repository
         public List<InfoAboutFile> GetAllFile(string typeFile)
         {
             var files = Directory.GetFiles(rootPath, $"*.{typeFile}*", SearchOption.TopDirectoryOnly);
-            var checkFolder = CheckFolder(rootPath);
+            var checkFolder = CheckFolder(rootPath,typeFile);
             List<InfoAboutFile> infoaboutFile = new();
             if (checkFolder != null)
             {
@@ -95,7 +95,7 @@ namespace FileSortService.Repository
             }
             return true;
         }
-        public List<InfoAboutFile> CheckFolder(string rootPath) 
+        public List<InfoAboutFile> CheckFolder(string rootPath,string typeFile) 
         {
             var checking = Directory.GetDirectories(rootPath).Select(r => r.Replace(rootPath + @"\", "")).ToList();
             if (checking.Count != 0)
@@ -111,7 +111,7 @@ namespace FileSortService.Repository
                         SizeFile = aboutFolder.GetFiles().Length + " bytes",
                         DateCreatedFile = aboutFolder.CreationTime.ToShortDateString() + " " + aboutFolder.CreationTime.ToShortTimeString(),
                         isFolder = true,
-                        fileInFolder = Directory.GetFiles(rootPath + @"\" + item, $"*.*", SearchOption.AllDirectories).Length
+                        fileInFolder = Directory.GetFiles(rootPath + @"\" + item, $"*.{typeFile}*", SearchOption.AllDirectories).Length
                     });
                 }
                 return infoaboutFileinFolder;
