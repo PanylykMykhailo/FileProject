@@ -2,24 +2,18 @@
 /.vscode/
 *.sqlite
 
-**/bin/Debug/
-**/bin/Release/
-**/obj/Debug/
+*.suo
+*.user
+_ReSharper.*
+FileService/bin
+FileSortService/bin
+FileService/obj
+FileSortService/obj
+packages
+FileSortAngular
 
-**/FileSortAngular/
-
-.vs/FileProject/*
-.suo
 
 
 
-/FileService/obj
-obj/*
-
-/FileService/bin
-bin/*
-
-/bin/
-/obj/
 
 
