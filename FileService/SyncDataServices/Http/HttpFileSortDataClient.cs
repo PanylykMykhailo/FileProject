@@ -20,23 +20,13 @@ namespace FileService.SyncDataServices.Http
         }
         public async Task<List<InfoAboutFile>> GetOnlyFile(string extension)
         {
-            var httpContent = new StringContent(
-                JsonSerializer.Serialize(extension),
-                Encoding.UTF8,
-                "application/json");
-            var response = await _httpClient.PostAsync($"{_configuration["FileService"]}",httpContent);
+            var stringReq = $"{_configuration["FileSortService"]}File?typeFile={extension}";
+            var response = await _httpClient.GetAsync(stringReq);
             if(response.IsSuccessStatusCode)
             {
-                //Console.WriteLine(response);
-                return new List<InfoAboutFile>(){
-                    new InfoAboutFile
-                    {
-                        nameFile = "hello",
-                        typeFile = ".txt",
-                        sizeFile = "",
-                        dateCreatedFile = ""
-                    }
-                };
+                var getFile = await response.Content.ReadAsStringAsync();
+                var body = JsonSerializer.Deserialize<List<InfoAboutFile>>(getFile);
+                return body; 
             }
             else
             {
@@ -44,23 +34,5 @@ namespace FileService.SyncDataServices.Http
             }
             
         }
-       /* public async Task SendFileSortToFileS(InfoAboutFileDto infoAboutFileDto)
-        {
-            var httpContent = new StringContent(
-                JsonSerializer.Serialize<InfoAboutFileDto>(infoAboutFileDto),
-                Encoding.UTF8,
-                "application/json");
-            
-            var response = await _httpClient.PostAsync($"{_configuration["FileService"]}",httpContent);
-            if(response.IsSuccessStatusCode)
-            {
-                Console.WriteLine(response.Content.ToString());
-                Console.WriteLine("--> Sync POST to FileService was OK!");
-            }
-            else
-            {
-                Console.WriteLine("--> Sync POST to FileService was NOT OK!");
-            }
-        }*/
     }
 }

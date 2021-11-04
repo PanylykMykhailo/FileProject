@@ -133,9 +133,10 @@ namespace FileSortService
             }
         } 
         [HttpGet("{typeFile}")]
-        public IEnumerable<InfoAboutFileDto> GetOnlyFile(string typeFile)
+        public IEnumerable<InfoAboutFile> GetOnlyFile(string typeFile)
         {
-            return null;
+            var getOnlyFile = _iFileSortRepository.GetAllFile(typeFile);
+            return getOnlyFile;
         }
     }
 }
