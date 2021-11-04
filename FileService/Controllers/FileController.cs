@@ -11,23 +11,19 @@ using FileService.SyncDataServices.Http;
 
 namespace FileService.Controllers
 {
-    [Route("api/c/[controller]")]
+    [Route("api/fileservice/[controller]")]
     [ApiController]
-    public class FileSortController:ControllerBase
+    public class FileController:ControllerBase
     {
         private readonly IFileSortDataClient _iFileSortDataClient;
-        public FileSortController(IFileSortDataClient iFileSortDataClient)
+        public FileController(IFileSortDataClient iFileSortDataClient)
         {
                 _iFileSortDataClient = iFileSortDataClient;
         }
             
-        [HttpPost]
-            
+        [HttpPost] 
         public ActionResult<InfoAboutFile> TestInboundConnection(InfoAboutFile infoAboutFile)
         {
-                //var response = Request.CreateResponse<InfoAboutFile>(HttpStatusCode.OK, db.Books);
-                //Console.WriteLine("--> Inbound POST # File Service");
-                //return new HtmlContentResult(infoAboutFile);
             var infoAboutFileCop = new InfoAboutFile()
             { 
                 nameFile = infoAboutFile.nameFile,
@@ -36,10 +32,6 @@ namespace FileService.Controllers
                 dateCreatedFile = infoAboutFile.dateCreatedFile
                 
             };
-                /*var httpContent = new StringContent(
-                System.Text.Json.JsonSerializer.Serialize<InfoAboutFile>(infoAboutFileCop),
-                Encoding.UTF8,
-                "application/json");*/
             return infoAboutFileCop;
         }
             
@@ -49,15 +41,6 @@ namespace FileService.Controllers
         {
             var getOnlyFile = await _iFileSortDataClient.GetOnlyFile("txt");
             return getOnlyFile;
-            /*List<InfoAboutFile> fileList = new();
-            fileList.Add(new InfoAboutFile
-            {
-                nameFile = "AngularTest",
-                typeFile = ".txt",
-                sizeFile = "0 bytes",
-                dateCreatedFile = "11/4/2021 9:56"
-            });*/
-            //return fileList;
         }
     }
 }

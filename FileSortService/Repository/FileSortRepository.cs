@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using FileSortService.Model;
 
@@ -12,10 +13,13 @@ namespace FileSortService.Repository
         private string rootPath = Environment.CurrentDirectory + @"\Test";
         public List<InfoAboutFile> GetAllFile(string typeFile)
         {
-            var files = Directory.GetFiles(rootPath, "*.*", SearchOption.AllDirectories);
-            //InfoAboutFiles infoAboutFile = new InfoAboutFiles();
-            //infoAboutFile.CountFile = files.Length;
+            var files = Directory.GetFiles(rootPath, $"*.{typeFile}*", SearchOption.TopDirectoryOnly);
+            var checkFolder = CheckFolder(rootPath,typeFile);
             List<InfoAboutFile> infoaboutFile = new();
+            if (checkFolder != null)
+            {
+                infoaboutFile.AddRange(checkFolder);
+            }
             foreach (var item in files)
             {
                 var infoFile = new System.IO.FileInfo(item);
@@ -90,6 +94,29 @@ namespace FileSortService.Repository
                 fi.Create().Dispose();
             }
             return true;
+        }
+        public List<InfoAboutFile> CheckFolder(string rootPath,string typeFile) 
+        {
+            var checking = Directory.GetDirectories(rootPath).Select(r => r.Replace(rootPath + @"\", "")).ToList();
+            if (checking.Count != 0)
+            {
+                List<InfoAboutFile> infoaboutFileinFolder = new List<InfoAboutFile>();
+                foreach (var item in checking)
+                {
+                    var aboutFolder = new System.IO.DirectoryInfo(rootPath + @"\" + item); 
+                    infoaboutFileinFolder.Add(new InfoAboutFile()
+                    {
+                        NameFile = item,
+                        TypeFile = aboutFolder.Extension,
+                        SizeFile = aboutFolder.GetFiles().Length + " bytes",
+                        DateCreatedFile = aboutFolder.CreationTime.ToShortDateString() + " " + aboutFolder.CreationTime.ToShortTimeString(),
+                        isFolder = true,
+                        fileInFolder = Directory.GetFiles(rootPath + @"\" + item, $"*.{typeFile}*", SearchOption.AllDirectories).Length
+                    });
+                }
+                return infoaboutFileinFolder;
+            }
+            return null;
         }
     }
 }
