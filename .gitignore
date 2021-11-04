@@ -1,81 +1,16 @@
-#################
-## Sublime Text
-#################
+/.vs/
+*.sqlite
 
-*.sublime-project
-*.sublime-workspace
-
-#################
-## Images
-#################
-
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.psd
-*.ai
-
-#################
-## Windows detritus
-#################
-*.dll
-*.pdb
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Mac crap
-.DS_Store
-
-#################
-## Directories
-#################
-
-FileSortAngular/node_modules
-node_modules/
-
+.vs/FileProject/*
+.suo
+/FileSortAngular/
 
 FileService/obj
 obj/*
+
 FileService/bin
 bin/*
 
 
-FileSortService/obj
-obj/*
-FileSortService/bin
-bin/*
-
-.vs/*
-
-
 
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-testem.log
-/typings
-
-# e2e
-/e2e/*.js
-/e2e/*.map
-
-# System Files
-.DS_Store
-Thumbs.db
