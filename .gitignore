@@ -10,10 +10,14 @@ FileSortService/bin
 FileService/obj
 FileSortService/obj
 packages
-FileSortAngular
+
+
+/FileSortAngular/*
+/FileSortAngular/src/app/
 
 
 
 
 
 
+FileSortAngular/src/app/app.component.html
