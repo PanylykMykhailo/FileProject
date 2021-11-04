@@ -1,18 +1,25 @@
 /.vs/
+/.vscode/
 *.sqlite
+
+**/bin/Debug/
+**/bin/Release/
+**/obj/Debug/
+
+**/FileSortAngular/
 
 .vs/FileProject/*
 .suo
 
-/FileSortAngular/*
 
-FileService/obj
+
+/FileService/obj
 obj/*
 
-FileService/bin
+/FileService/bin
 bin/*
 
 /bin/
 /obj/
 
-/.vscode/*
+
