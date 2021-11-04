@@ -25,9 +25,11 @@ namespace FileSortService.SyncDataServices.Http
                 "application/json");
             
             var response = await _httpClient.PostAsync($"{_configuration["FileService"]}",httpContent);
+
             if(response.IsSuccessStatusCode)
             {
-                Console.WriteLine(response.Content.ToString());
+                var responses = await response.Content.ReadAsStringAsync(); 
+                Console.WriteLine(response);
                 Console.WriteLine("--> Sync POST to FileService was OK!");
             }
             else

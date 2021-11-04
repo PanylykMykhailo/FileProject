@@ -5,7 +5,7 @@ namespace FileSortService.Repository
 {
     public interface IFileSortRepository
     {
-        List<InfoAboutFile> GetAllFile();
+        List<InfoAboutFile> GetAllFile(string typeFile);
         InfoAboutFile InfoAboutFile(string nameFile,string typeName);
         string DeleteFile(string nameFile,string typeName);
         string RenameFile(string nameFile,string typeName,string newNameFile);

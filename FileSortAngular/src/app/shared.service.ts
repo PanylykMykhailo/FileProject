@@ -10,7 +10,7 @@ export class SharedService {
 
   getFileList():Observable<any[]>
   { 
-    return this.http.get<any>(environment.APIUrl+ '/FileSort');
+    return this.http.get<any>(environment.APIUrl+ '/File');
   }
   getOnlyFile():Observable<any[]>
   {
@@ -18,11 +18,11 @@ export class SharedService {
   }
   renameFile(val:any)
   {
-    return this.http.post(environment.APIUrl + '/FileSort/RenameFile',val)
+    return this.http.put(environment.APIUrl + '/File/RenameFile',val)
   }
   addFile(val:any)
   {
-    return this.http.post(environment.APIUrl + '/FileSort',val)
+    return this.http.post(environment.APIUrl + '/File',val)
   }
   deleteFile(val:any)
   {
@@ -32,6 +32,6 @@ export class SharedService {
       }),
       body:val
    }
-    return this.http.delete(environment.APIUrl + '/FileSort/DeleteFile',options)
+    return this.http.delete(environment.APIUrl + '/File',options)
   }
 }

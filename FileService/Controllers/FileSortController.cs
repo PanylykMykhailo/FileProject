@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Text;
 
 namespace FileService.Controllers
 {
@@ -20,17 +21,24 @@ namespace FileService.Controllers
             
             [HttpPost]
             
-            public ActionResult TestInboundConnection(InfoAboutFile infoAboutFile)
+            public ActionResult<InfoAboutFile> TestInboundConnection(InfoAboutFile infoAboutFile)
             {
                 //var response = Request.CreateResponse<InfoAboutFile>(HttpStatusCode.OK, db.Books);
                 //Console.WriteLine("--> Inbound POST # File Service");
                 //return new HtmlContentResult(infoAboutFile);
-                return CreatedAtRoute(nameof(InfoAboutFile), new { 
+                var infoAboutFileCop = new InfoAboutFile()
+                { 
                     nameFile = infoAboutFile.nameFile,
                     typeFile = infoAboutFile.typeFile,
                     sizeFile = infoAboutFile.sizeFile,
                     dateCreatedFile = infoAboutFile.dateCreatedFile
-                }, infoAboutFile);
+                
+                };
+                /*var httpContent = new StringContent(
+                System.Text.Json.JsonSerializer.Serialize<InfoAboutFile>(infoAboutFileCop),
+                Encoding.UTF8,
+                "application/json");*/
+                return infoAboutFileCop;
             }
             
             [Route("GetOnlyFile")]

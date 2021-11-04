@@ -3,7 +3,8 @@
 
 .vs/FileProject/*
 .suo
-/FileSortAngular/
+
+/FileSortAngular/*
 
 FileService/obj
 obj/*
@@ -11,6 +12,7 @@ obj/*
 FileService/bin
 bin/*
 
+/bin/
+/obj/
 
-
-.vscode/*
+/.vscode/*

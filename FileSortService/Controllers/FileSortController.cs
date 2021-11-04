@@ -31,7 +31,7 @@ namespace FileSortService
         public ActionResult<InfoAboutFiles> GetAllFiles()
         {
             Console.WriteLine("--> Getting all File....");
-            var fileItem = _iFileSortRepository.GetAllFile();
+            var fileItem = _iFileSortRepository.GetAllFile(null);
             //return Ok(fileItem);
             return Ok(_mapper.Map<List<InfoAboutFileDto>>(fileItem));
         }
@@ -88,7 +88,6 @@ namespace FileSortService
             }
         }
 
-        [Route("DeleteFile")]
         [HttpDelete]
         public JsonResult DeleteFile(ParameterRequest parameter)
         {
@@ -111,7 +110,7 @@ namespace FileSortService
             
         }
         [Route("RenameFile")]
-        [HttpPost]
+        [HttpPut]
         public JsonResult RenameFile(ParameterRequest parameter)
         {
             try
@@ -133,5 +132,10 @@ namespace FileSortService
                 throw;
             }
         } 
+        [HttpGet("{typeFile}")]
+        public IEnumerable<InfoAboutFileDto> GetOnlyFile(string typeFile)
+        {
+            return null;
+        }
     }
 }

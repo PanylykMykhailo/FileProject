@@ -10,7 +10,7 @@ namespace FileSortService.Repository
     {
         //private string rootPath = "Test";
         private string rootPath = Environment.CurrentDirectory + @"\Test";
-        public List<InfoAboutFile> GetAllFile()
+        public List<InfoAboutFile> GetAllFile(string typeFile)
         {
             var files = Directory.GetFiles(rootPath, "*.*", SearchOption.AllDirectories);
             //InfoAboutFiles infoAboutFile = new InfoAboutFiles();
