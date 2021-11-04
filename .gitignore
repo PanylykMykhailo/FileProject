@@ -19,7 +19,8 @@
 #################
 ## Windows detritus
 #################
-
+*.dll
+*.pdb
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -42,15 +43,15 @@ node_modules/
 
 
 FileService/obj
-obj/
+obj/*
 FileService/bin
-bin/
+bin/*
 
 
 FileSortService/obj
-obj/
+obj/*
 FileSortService/bin
-bin/
+bin/*
 
 .vs/*
 
