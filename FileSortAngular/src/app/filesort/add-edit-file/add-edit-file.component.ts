@@ -1,5 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { SharedService } from 'src/app/shared.service';
+import { ShowFileComponent } from '../show-file/show-file.component';
 @Component({
   selector: 'app-add-edit-file',
   templateUrl: './add-edit-file.component.html',
@@ -7,20 +8,21 @@ import { SharedService } from 'src/app/shared.service';
 })
 export class AddEditFileComponent implements OnInit {
 
-  constructor(private service:SharedService) { }
+  constructor(private service:SharedService,public getproperty:ShowFileComponent) { }
   @Input() file:any;
   nameFile?:string;
   typeFile?:string;
   sizeFile?:string;
   newNameFile?:string;
   dateCreatedFile?:string;
-
+  modalTitle?:string;
   ngOnInit(): void {
     this.nameFile = this.file.nameFile;
     this.typeFile = this.file.typeFile;
     this.sizeFile = this.file.sizeFile;
     this.newNameFile = this.file.newNameFile;
     this.dateCreatedFile = this.file.dateCreatedFile;
+    this.modalTitle = this.getproperty.ModalTitle;
   }
   addFile(){
     var val = {
@@ -34,13 +36,15 @@ export class AddEditFileComponent implements OnInit {
     })
   }
   updateFile(){
-    var val = {
+
+  }
+  renameFile(){
+     var val = {
       nameFile:this.nameFile,
       typeFile:this.typeFile,
       newNameFile:this.newNameFile
     };
-    this.service.UploadFile(val).subscribe(res=>{
-      alert(res.toString())
-    })
-  }
+    this.service.renameFile(val).subscribe(res=>{
+      alert(res.toString());
+  })}
 }

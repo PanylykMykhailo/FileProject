@@ -26,13 +26,11 @@ export class ShowFileComponent implements OnInit {
       NameFile:null,
       DateCreatedFile:""
     }
-    //checking status
     this.ModalTitle = "Add File";
     this.ActivateAddEditFileComp = true;
 
   }
   editClick(item: any){
-    console.log(item.nameFile);
     this.file = item;
     this.ModalTitle = "Edit File";
     this.ActivateAddEditFileComp = true;
@@ -41,7 +39,12 @@ export class ShowFileComponent implements OnInit {
     this.ActivateAddEditFileComp = false;
     this.refreshFileSortList();
   }
-
+  renameClick(item:any)
+  {
+    this.file = item;
+    this.ModalTitle = "Rename File";
+    this.ActivateAddEditFileComp = true;
+  }
   deleteClick(item:any){
     if(confirm('Are you sure??'))
     {
@@ -50,19 +53,21 @@ export class ShowFileComponent implements OnInit {
         typeFile:item.typeFile,
         newNameFile:""
       }
-      //console.log(upItem);
       this.service.deleteFile(upItem).subscribe(data=>{
-        //alert(data);
         this.refreshFileSortList();
       })
     }
   }
   refreshFileSortList()
   {
-    this.service.getFileList().subscribe(data=>
+    this.service.getOnlyFile().subscribe(data=>
+      {
+        this.FilesortList = data;
+      });
+    /*this.service.getFileList().subscribe(data=>
       {
           this.FilesortList = data;
       }
-      )
+      )*/
   }
 }

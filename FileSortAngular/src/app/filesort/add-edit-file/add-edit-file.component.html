@@ -9,9 +9,12 @@
         placeholder="Enter new Name">
     </div>
 </div>
-<button (click)="addFile()" *ngIf="file.nameFile==null" class="btn btn-primary">
+<button (click)="addFile()" *ngIf="modalTitle == 'Add File'" class="btn btn-primary">
     Add
 </button>
-<button (click)="updateFile()" *ngIf="file.nameFile!=null" class="btn btn-primary">
+<button (click)="updateFile()" *ngIf="modalTitle == 'Edit File'" class="btn btn-primary">
     Update
+</button>
+<button (click)="renameFile()" *ngIf="modalTitle == 'Rename File'" class="btn btn-primary">
+    Rename
 </button>

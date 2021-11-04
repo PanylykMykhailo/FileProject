@@ -1,4 +1,5 @@
 using System;
+using FileService.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FileService.Controllers
@@ -12,10 +13,20 @@ namespace FileService.Controllers
                 
             }
             [HttpPost]
-            public ActionResult TestInboundConnection()
+            public ActionResult<InfoAboutFile> TestInboundConnection(InfoAboutFile infoAboutFile)
             {
                 Console.WriteLine("--> Inbound POST # File Service");
-                return Ok("Inbound test of from FileSort Controller");
+                return infoAboutFile;
+            }
+            [HttpGet]
+            public ActionResult<InfoAboutFile> GetOnlyFile()
+            {
+                return new InfoAboutFile{
+                    nameFile = "AngularTest",
+                    typeFile = ".txt",
+                    sizeFile = "0 bytes",
+                    dateCreatedFile = "11/4/2021 9:56"
+                };
             }
     }
 }
