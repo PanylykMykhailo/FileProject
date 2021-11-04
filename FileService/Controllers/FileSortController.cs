@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using FileService.Model;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,15 +19,19 @@ namespace FileService.Controllers
                 Console.WriteLine("--> Inbound POST # File Service");
                 return infoAboutFile;
             }
+            [Route("GetOnlyFile")]
             [HttpGet]
-            public ActionResult<InfoAboutFile> GetOnlyFile()
+            public ActionResult<List<InfoAboutFile>> GetOnlyFile()
             {
-                return new InfoAboutFile{
+                List<InfoAboutFile> fileList = new();
+                fileList.Add(new InfoAboutFile
+                {
                     nameFile = "AngularTest",
                     typeFile = ".txt",
                     sizeFile = "0 bytes",
                     dateCreatedFile = "11/4/2021 9:56"
-                };
+                });
+                return fileList;
             }
     }
 }
