@@ -14,13 +14,13 @@ namespace FileSortService
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FileSortController : ControllerBase
+    public class FileController : ControllerBase
     {
         private readonly IFileSortRepository _iFileSortRepository;
         private readonly IMapper _mapper;
         private readonly IFileDataClient _fileDataClient;
         private readonly IWebHostEnvironment _env;
-        public FileSortController(IFileSortRepository iFileSortRepository , IMapper mapper,IFileDataClient  fileDataClient, IWebHostEnvironment env)
+        public FileController(IFileSortRepository iFileSortRepository , IMapper mapper,IFileDataClient  fileDataClient, IWebHostEnvironment env)
         {
             _iFileSortRepository = iFileSortRepository;
             _mapper = mapper;

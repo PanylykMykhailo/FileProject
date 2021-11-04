@@ -1,30 +1,28 @@
 import { Injectable } from '@angular/core';
 import{HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
 export class SharedService {
-readonly APIUrl = "https://localhost:5001/api";
-//readonly FileUrl = "https://localhost:5001/Test";
-readonly APIFileUrl = "https://localhost:6001/api/c";
   constructor(private http:HttpClient) { }
 
   getFileList():Observable<any[]>
   { 
-    return this.http.get<any>(this.APIUrl + '/FileSort');
+    return this.http.get<any>(environment.APIUrl+ '/FileSort');
   }
   getOnlyFile():Observable<any[]>
   {
-    return this.http.get<any>(this.APIFileUrl+'/FileSort/GetOnlyFile');
+    return this.http.get<any>(environment.APIFileUrl + '/FileSort/GetOnlyFile');
   }
   renameFile(val:any)
   {
-    return this.http.post(this.APIUrl + '/FileSort/RenameFile',val)
+    return this.http.post(environment.APIUrl + '/FileSort/RenameFile',val)
   }
   addFile(val:any)
   {
-    return this.http.post(this.APIUrl + '/FileSort',val)
+    return this.http.post(environment.APIUrl + '/FileSort',val)
   }
   deleteFile(val:any)
   {
@@ -34,6 +32,6 @@ readonly APIFileUrl = "https://localhost:6001/api/c";
       }),
       body:val
    }
-    return this.http.delete(this.APIUrl + '/FileSort/DeleteFile',options)
+    return this.http.delete(environment.APIUrl + '/FileSort/DeleteFile',options)
   }
 }
