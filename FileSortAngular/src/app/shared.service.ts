@@ -6,14 +6,18 @@ import { Observable } from 'rxjs';
 })
 export class SharedService {
 readonly APIUrl = "https://localhost:5001/api";
-readonly FileUrl = "https://localhost:5001/Test";
+//readonly FileUrl = "https://localhost:5001/Test";
+readonly APIFileUrl = "https://localhost:6001/api/c/";
   constructor(private http:HttpClient) { }
 
   getFileList():Observable<any[]>
   { 
     return this.http.get<any>(this.APIUrl + '/FileSort');
   }
-
+  getOnlyFile():Observable<any[]>
+  {
+    return this.http.get<any>(this.APIFileUrl+'/FileSort');
+  }
   renameFile(val:any)
   {
     return this.http.post(this.APIUrl + '/FileSort/RenameFile',val)

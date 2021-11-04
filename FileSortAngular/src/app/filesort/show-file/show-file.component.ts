@@ -60,10 +60,14 @@ export class ShowFileComponent implements OnInit {
   }
   refreshFileSortList()
   {
-    this.service.getFileList().subscribe(data=>
+    this.service.getOnlyFile().subscribe(data=>
+      {
+        this.FilesortList = data;
+      });
+    /*this.service.getFileList().subscribe(data=>
       {
           this.FilesortList = data;
       }
-      )
+      )*/
   }
 }
