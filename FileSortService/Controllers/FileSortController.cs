@@ -27,11 +27,12 @@ namespace FileSortService
             _fileDataClient = fileDataClient;
             _env = env;
         }
-        [HttpGet]
-        public ActionResult<InfoAboutFiles> GetAllFiles()
+        [HttpGet("{pathfolder}/{typeFile}")]
+        public ActionResult<FileReadDto> GetAllFiles(string pathfolder,string typeFile)
         {
             Console.WriteLine("--> Getting all File....");
-            var fileItem = _iFileSortRepository.GetAllFile("Test",null);
+            typeFile = typeFile == "*" ? null : typeFile;  
+            var fileItem = _iFileSortRepository.GetAllFile(pathfolder,typeFile);
             //return Ok(fileItem);
             return Ok(_mapper.Map<FileReadDto>(fileItem));
         }
@@ -132,11 +133,6 @@ namespace FileSortService
                 throw;
             }
         } 
-        [HttpGet("{pathfolder}/{typeFile}")]
-        public InfoAboutFiles GetOnlyFile(string pathFolder,string typeFile)
-        {
-            var getOnlyFile = _iFileSortRepository.GetAllFile(pathFolder,typeFile);
-            return getOnlyFile;
-        }
+        
     }
 }
