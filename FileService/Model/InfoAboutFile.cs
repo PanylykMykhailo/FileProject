@@ -1,5 +1,14 @@
+using System.Collections.Generic;
+
 namespace FileService.Model
 {
+    public class InfoAboutFiles
+    {
+        public int CountFile{get;set;}
+        public List<string> folderPath{get;set;}
+        public List<InfoAboutFile> infoaboutFile{get;set;}
+        
+    }
     public class InfoAboutFile
     {
         public string nameFile{get;set;}

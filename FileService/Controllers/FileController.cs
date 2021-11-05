@@ -37,9 +37,9 @@ namespace FileService.Controllers
             
         [Route("GetOnlyFile")]
         [HttpGet]
-        public async Task<IEnumerable<InfoAboutFile>> GetOnlyFile()
+        public async Task<InfoAboutFiles> GetOnlyFile()
         {
-            var getOnlyFile = await _iFileSortDataClient.GetOnlyFile("txt");
+            var getOnlyFile = await _iFileSortDataClient.GetOnlyFile("Test","txt");
             return getOnlyFile;
         }
     }

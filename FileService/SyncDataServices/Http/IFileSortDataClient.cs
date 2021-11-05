@@ -6,6 +6,6 @@ namespace FileService.SyncDataServices.Http
 {
     public interface IFileSortDataClient
     {
-        Task<List<InfoAboutFile>> GetOnlyFile(string extension);
+        Task<InfoAboutFiles> GetOnlyFile(string pathFolder,string extension);
     }
 }

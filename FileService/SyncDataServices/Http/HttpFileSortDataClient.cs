@@ -18,14 +18,14 @@ namespace FileService.SyncDataServices.Http
             _httpClient = httpClient;
             _configuration = configuration;  
         }
-        public async Task<List<InfoAboutFile>> GetOnlyFile(string extension)
+        public async Task<InfoAboutFiles> GetOnlyFile(string pathFolder,string extension)
         {
-            var stringReq = $"{_configuration["FileSortService"]}File/{extension}";
+            var stringReq = $"{_configuration["FileSortService"]}File/{pathFolder}/{extension}";
             var response = await _httpClient.GetAsync(stringReq);
             if(response.IsSuccessStatusCode)
             {
                 var getFile = await response.Content.ReadAsStringAsync();
-                var body = JsonSerializer.Deserialize<List<InfoAboutFile>>(getFile);
+                var body = JsonSerializer.Deserialize<InfoAboutFiles>(getFile);
                 return body; 
             }
             else
