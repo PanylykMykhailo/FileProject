@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N/5T3SHEa7JjXA3rXGLrgvMlahTSArN3YBX1vTbzre6EotvqvZFHOjOSrYaIlCzMf8v/+p3xZru0m68s1lDqNg==",
+  "dgSpecHash": "2MQ6++FvvOAVhZH7Hvy7A12lqUZiqNH09t+NTk/shUza/RvmhpLUFAF1EWmJNJ20qdAt5z9wlEo1VEWspc/CnA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileSortService\\FileSortService.csproj",
+  "projectFilePath": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileSortService\\FileSortService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mpanylyk\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\mpanylyk\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

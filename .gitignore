@@ -10,14 +10,5 @@ FileSortService/[Oo]bj
 FileSortService/[Bb]in
 FileSortService/[Tt]est
 
-FileSortAngular/[Ss]rc
-FileSortAngular/.vs
-FileSortAngular/*.gitignore
-FileSortAngular/*.js
-FileSortAngular/*.json
-FileSortAngular/*.md
-FileSortAngular/*.config
-FileSortAngular/*.browserslistrc
-
 
 

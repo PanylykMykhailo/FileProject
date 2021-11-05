@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9PO56nY8nZsDnq4ify8VDQNkyWyeSkKxAnvmQvnpREnS9ImABrI6z/lFzn+b69n8NoUwyueGCvtw20JFSAtv/Q==",
+  "dgSpecHash": "XEt8VXoQmmlpf2+CY1hiDaw9SPtuYTBassG5NEV7lnZRY7YDVlLxuVJD2ZUPLoVrNtXMeOL1Fj0eCeFUQINqDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileService\\FileService.csproj",
+  "projectFilePath": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileService\\FileService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mpanylyk\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\mpanylyk\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
