@@ -31,7 +31,7 @@ namespace FileSortService
         public ActionResult<InfoAboutFiles> GetAllFiles()
         {
             Console.WriteLine("--> Getting all File....");
-            var fileItem = _iFileSortRepository.GetAllFile(null);
+            var fileItem = _iFileSortRepository.GetAllFile("Test",null);
             //return Ok(fileItem);
             return Ok(_mapper.Map<List<InfoAboutFileDto>>(fileItem));
         }
@@ -132,10 +132,10 @@ namespace FileSortService
                 throw;
             }
         } 
-        [HttpGet("{typeFile}")]
-        public IEnumerable<InfoAboutFile> GetOnlyFile(string typeFile)
+        [HttpGet("{pathfolder}/{typeFile}")]
+        public InfoAboutFiles GetOnlyFile(string pathFolder,string typeFile)
         {
-            var getOnlyFile = _iFileSortRepository.GetAllFile(typeFile);
+            var getOnlyFile = _iFileSortRepository.GetAllFile(pathFolder,typeFile);
             return getOnlyFile;
         }
     }

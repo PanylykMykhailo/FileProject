@@ -1,14 +1,14 @@
-.[Vv]s
-.[Vv]scode
+.vs
+.vscode
 
-FileService/.vs
-FileService/[Oo]bj
-FileService/[Bb]in
+/FileService/.vs
+/FileService/[Oo]bj
+/FileService/[Bb]in
 
-FileSortService/.vs
-FileSortService/[Oo]bj
-FileSortService/[Bb]in
-FileSortService/[Tt]est
+/FileSortService/.vs
+/FileSortService/[Oo]bj*
+/FileSortService/[Bb]in
+/FileSortService/[Tt]est
 
 
 

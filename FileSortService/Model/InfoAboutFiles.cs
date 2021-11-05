@@ -7,6 +7,7 @@ namespace FileSortService.Model
     public class InfoAboutFiles
     {
         public int CountFile{get;set;}
+        public List<string> folderPath{get;set;}
         public List<InfoAboutFile> infoaboutFile{get;set;}
         
     }

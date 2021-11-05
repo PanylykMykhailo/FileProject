@@ -10,11 +10,14 @@ namespace FileSortService.Repository
     public class FileSortRepository : IFileSortRepository
     {
         //private string rootPath = "Test";
-        private string rootPath = Environment.CurrentDirectory + @"\Test";
-        public List<InfoAboutFile> GetAllFile(string typeFile)
+        private string rootPath = Environment.CurrentDirectory;
+        public InfoAboutFiles GetAllFile(string pathFolder,string typeFile)
         {
-            var files = Directory.GetFiles(rootPath, $"*.{typeFile}*", SearchOption.TopDirectoryOnly);
+            var updatepath = pathFolder.Split('*').ToList().Count!=0 ? pathFolder.Replace("*",@"\").ToString() : pathFolder;
+            var files = Directory.GetFiles(rootPath + @"\" + pathFolder, $"*.{typeFile}*", SearchOption.TopDirectoryOnly);
             var checkFolder = CheckFolder(rootPath,typeFile);
+            InfoAboutFiles infoAboutFiles = new();
+            infoAboutFiles.folderPath = pathFolder.Split('/').ToList(); 
             List<InfoAboutFile> infoaboutFile = new();
             if (checkFolder != null)
             {
@@ -31,7 +34,7 @@ namespace FileSortService.Repository
                     DateCreatedFile = infoFile.CreationTime.ToShortDateString() +" " + infoFile.CreationTime.ToShortTimeString()
                 });
             }
-            return infoaboutFile;
+            return infoAboutFiles;
 
         }
         public InfoAboutFile InfoAboutFile(string nameFile,string typeName)
