@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AppComponent } from 'src/app/app.component';
 import { SharedService } from 'src/app/shared.service'; 
+import { environment } from 'src/environments/environment';
 //import { runInThisContext } from 'vm';
 @Component({
   selector: 'app-show-file',
@@ -16,7 +19,8 @@ export class ShowFileComponent implements OnInit {
   ActivateAddEditFileComp:boolean=false;
   file:any;
   ngOnInit(): void {
-    this.refreshFileSortList();
+    
+    this.refreshFileSortList(location.href.split('/').slice(-1)[0]);
   }
 
   addClick()
@@ -37,7 +41,7 @@ export class ShowFileComponent implements OnInit {
   }
   closeClick(){
     this.ActivateAddEditFileComp = false;
-    this.refreshFileSortList();
+    this.refreshFileSortList("true");
   }
   renameClick(item:any)
   {
@@ -54,20 +58,41 @@ export class ShowFileComponent implements OnInit {
         newNameFile:""
       }
       this.service.deleteFile(upItem).subscribe(data=>{
-        this.refreshFileSortList();
+        this.refreshFileSortList("true");
       })
     }
   }
-  refreshFileSortList()
+  refreshFileSortList(val:string)
   {
-    this.service.getOnlyFile().subscribe(data=>
-      {
-        this.FilesortList = data;
-      });
-    /*this.service.getFileList().subscribe(data=>
-      {
-          this.FilesortList = data;
-      }
-      )*/
+    switch(val)
+    {
+      case "file":
+        this.service.getOnlyFile().subscribe(data=>
+          {
+            this.FilesortList = data;
+          });
+        break;
+      case "video":
+        this.service.getOnlyVideo().subscribe(data=>
+          {
+            this.FilesortList = data;
+          });
+        break;
+      case "photo":
+        this.service.getOnlyPhoto().subscribe(data=>
+          {
+            this.FilesortList = data;
+          });
+          break;
+      case "filesort":
+        this.service.getFileList().subscribe(data=>
+          {
+            this.FilesortList = data;
+          });
+          break;
+      default:
+        console.log("Not Found");
+        break;
+    }
   }
 }

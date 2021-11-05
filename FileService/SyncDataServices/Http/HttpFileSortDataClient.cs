@@ -20,7 +20,7 @@ namespace FileService.SyncDataServices.Http
         }
         public async Task<List<InfoAboutFile>> GetOnlyFile(string extension)
         {
-            var stringReq = $"{_configuration["FileSortService"]}File?typeFile={extension}";
+            var stringReq = $"{_configuration["FileSortService"]}File/{extension}";
             var response = await _httpClient.GetAsync(stringReq);
             if(response.IsSuccessStatusCode)
             {
