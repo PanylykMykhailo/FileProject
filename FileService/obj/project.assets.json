@@ -470,11 +470,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileService\\FileService.csproj",
+      "projectUniqueName": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileService\\FileService.csproj",
       "projectName": "FileService",
-      "projectPath": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileService\\FileService.csproj",
+      "projectPath": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileService\\FileService.csproj",
       "packagesPath": "C:\\Users\\mpanylyk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileService\\obj\\",
+      "outputPath": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mpanylyk\\AppData\\Roaming\\NuGet\\NuGet.Config",
