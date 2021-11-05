@@ -470,11 +470,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileSortService\\FileSortService.csproj",
+      "projectUniqueName": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileSortService\\FileSortService.csproj",
       "projectName": "FileSortService",
-      "projectPath": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileSortService\\FileSortService.csproj",
+      "projectPath": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileSortService\\FileSortService.csproj",
       "packagesPath": "C:\\Users\\mpanylyk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileSortService\\obj\\",
+      "outputPath": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileSortService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mpanylyk\\AppData\\Roaming\\NuGet\\NuGet.Config",
