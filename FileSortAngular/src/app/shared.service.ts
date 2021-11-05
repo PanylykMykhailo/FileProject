@@ -16,6 +16,14 @@ export class SharedService {
   {
     return this.http.get<any>(environment.APIFileUrl + '/File/GetOnlyFile');
   }
+  getOnlyVideo():Observable<any[]>
+  {
+    return this.http.get<any>(environment.APIVideoUrl);
+  }
+  getOnlyPhoto():Observable<any[]>
+  {
+    return this.http.get<any>(environment.APIPhotoUrl);
+  }
   renameFile(val:any)
   {
     return this.http.put(environment.APIUrl + '/File/RenameFile',val)

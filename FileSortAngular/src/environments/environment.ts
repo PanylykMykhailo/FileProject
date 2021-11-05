@@ -5,7 +5,9 @@
 export const environment = {
   production: false,
   APIUrl:"https://localhost:5001/api",
-  APIFileUrl:"https://localhost:6001/api/fileservice"
+  APIFileUrl:"https://localhost:6001/api/fileservice",
+  APIVideoUrl:"someHost",
+  APIPhotoUrl:"someHost"
 };
 
 /*
