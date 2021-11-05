@@ -6,6 +6,7 @@ namespace FileSortService.Dtos
     public class FileReadDto
     {
         public int CountFile{get;set;}
+        public List<string> folderPath{get;set;}
         public List<InfoAboutFileDto> infoaboutFile{get;set;}
     }
     public class InfoAboutFileDto

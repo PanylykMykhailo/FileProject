@@ -33,9 +33,9 @@ namespace FileSortService
             Console.WriteLine("--> Getting all File....");
             var fileItem = _iFileSortRepository.GetAllFile("Test",null);
             //return Ok(fileItem);
-            return Ok(_mapper.Map<List<InfoAboutFileDto>>(fileItem));
+            return Ok(_mapper.Map<FileReadDto>(fileItem));
         }
-        [HttpGet("{namefile}/{typeName}",Name = "InfoAboutFile")]
+        [HttpGet("{namefile}*{typeName}",Name = "InfoAboutFile")]
         public ActionResult<InfoAboutFile> InfoAboutFile(string nameFile,string typeFile)
         {
             Console.WriteLine($"--> Getting about {nameFile}....");

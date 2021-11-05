@@ -13,20 +13,20 @@ namespace FileSortService.Repository
         private string rootPath = Environment.CurrentDirectory;
         public InfoAboutFiles GetAllFile(string pathFolder,string typeFile)
         {
-            var updatepath = pathFolder.Split('*').ToList().Count!=0 ? pathFolder.Replace("*",@"\").ToString() : pathFolder;
-            var files = Directory.GetFiles(rootPath + @"\" + pathFolder, $"*.{typeFile}*", SearchOption.TopDirectoryOnly);
-            var checkFolder = CheckFolder(rootPath,typeFile);
+            var updatepath = pathFolder.Split('*').ToList().Count!=0 ? rootPath + @"\" + pathFolder.Replace("*",@"\").ToString() : rootPath + @"\" + pathFolder;
+            var files = Directory.GetFiles(updatepath, $"*.{typeFile}*", SearchOption.TopDirectoryOnly);
+            var checkFolder = CheckFolder(updatepath,typeFile);
             InfoAboutFiles infoAboutFiles = new();
-            infoAboutFiles.folderPath = pathFolder.Split('/').ToList(); 
-            List<InfoAboutFile> infoaboutFile = new();
+            infoAboutFiles.folderPath = pathFolder.Split('*').ToList();
+            infoAboutFiles.infoaboutFile = new(); 
             if (checkFolder != null)
             {
-                infoaboutFile.AddRange(checkFolder);
+                infoAboutFiles.infoaboutFile.AddRange(checkFolder);
             }
             foreach (var item in files)
             {
                 var infoFile = new System.IO.FileInfo(item);
-                infoaboutFile.Add(new InfoAboutFile()
+                infoAboutFiles.infoaboutFile.Add(new InfoAboutFile()
                 {
                     NameFile = Path.GetFileNameWithoutExtension(item),
                     TypeFile = infoFile.Extension,

@@ -34,12 +34,11 @@ namespace FileService.Controllers
             };
             return infoAboutFileCop;
         }
-            
-        [Route("GetOnlyFile")]
-        [HttpGet]
-        public async Task<InfoAboutFiles> GetOnlyFile()
+
+        [HttpGet("GetOnlyFile/{pathFolder}")]
+        public async Task<InfoAboutFiles> GetOnlyFile(string pathFolder)
         {
-            var getOnlyFile = await _iFileSortDataClient.GetOnlyFile("Test","txt");
+            var getOnlyFile =  await _iFileSortDataClient.GetOnlyFile(pathFolder,"txt");
             return getOnlyFile;
         }
     }
