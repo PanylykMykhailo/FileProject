@@ -11,4 +11,11 @@
 /FileSortService/[Tt]est
 
 
+/PhotoService/.vs
+/PhotoService/[Oo]bj
+/PhotoService/[Bb]in
 
+
+/VideoService/.vs
+/VideoService/[Oo]bj
+/VideoService/[Bb]in
