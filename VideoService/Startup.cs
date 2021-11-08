@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using VideoService.SyncDataServices.Http;
 
 namespace VideoService
 {
@@ -26,7 +27,7 @@ namespace VideoService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddHttpClient<IFileSortDataClient,HttpFileSortDataClient>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -43,7 +44,10 @@ namespace VideoService
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "VideoService v1"));
             }
-
+            app.UseCors(x => x
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
             app.UseHttpsRedirection();
 
             app.UseRouting();

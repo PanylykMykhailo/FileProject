@@ -14,8 +14,8 @@ namespace VideoService.Controllers
         {
             _iFileSortDataClient = iFileSortDataClient;
         }
-        [HttpGet("GetOnlyPhoto/{pathFolder}")]
-        public async Task<InfoAboutVideos> GetOnlyPhoto(string pathFolder)
+        [HttpGet("GetOnlyVideo/{pathFolder}")]
+        public async Task<InfoAboutVideos> GetOnlyVideo(string pathFolder)
         {
 
             var getOnlyFile =  await _iFileSortDataClient.GetOnlyVideo(pathFolder,"");
