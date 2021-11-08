@@ -18,7 +18,7 @@ namespace PhotoService.Controllers
         public async Task<InfoAboutPhotos> GetOnlyPhoto(string pathFolder)
         {
 
-            var getOnlyFile =  await _iFileSortDataClient.GetOnlyPhoto(pathFolder,"txt");
+            var getOnlyFile =  await _iFileSortDataClient.GetOnlyPhoto(pathFolder,"jpg");
             return getOnlyFile;
         }
     }
