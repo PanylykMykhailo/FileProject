@@ -18,7 +18,7 @@ namespace VideoService.Controllers
         public async Task<InfoAboutVideos> GetOnlyVideo(string pathFolder)
         {
 
-            var getOnlyFile =  await _iFileSortDataClient.GetOnlyVideo(pathFolder,"");
+            var getOnlyFile =  await _iFileSortDataClient.GetOnlyVideo(pathFolder,"mp4");
             return getOnlyFile;
         }
     }
