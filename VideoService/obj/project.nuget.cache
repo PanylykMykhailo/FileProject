@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "JCrRxDzQ9taR82CQWC7XSpoQMBQUWT5fPMq4P49/CF/7DRgrx+P9SMk8L4Ksnp+6BNvCELGRg/uZNGFa+icNtQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\VideoService\\VideoService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mpanylyk\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\mpanylyk\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\mpanylyk\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\mpanylyk\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\mpanylyk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\mpanylyk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
