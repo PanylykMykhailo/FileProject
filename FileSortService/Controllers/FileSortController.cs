@@ -101,7 +101,7 @@ namespace FileSortService
             Console.WriteLine("--> Delete File");
             try
             {
-                var tryDeleteFile = _iFileSortRepository.DeleteFile(parameter.nameFile,parameter.typeFile);
+                var tryDeleteFile = _iFileSortRepository.DeleteFile(parameter.nameFile,parameter.typeFile,parameter.currentDirectory);
                 if(tryDeleteFile!=null)
                 {
                     return new JsonResult(tryDeleteFile);
@@ -124,7 +124,7 @@ namespace FileSortService
             Console.WriteLine("--> Rename File");
             try
             {
-                var tryRename = _iFileSortRepository.RenameFile(parameter.nameFile,parameter.typeFile,parameter.newNameFile);
+                var tryRename = _iFileSortRepository.RenameFile(parameter.nameFile,parameter.typeFile,parameter.newNameFile,parameter.currentDirectory);
                 if(tryRename!=null)
                 {
                     return new JsonResult("Old name :" + parameter.nameFile + "\n"
@@ -137,7 +137,6 @@ namespace FileSortService
             }
             catch (Exception)
             {
-                
                 throw;
             }
         } 

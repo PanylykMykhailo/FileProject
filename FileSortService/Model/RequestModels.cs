@@ -9,6 +9,7 @@ namespace FileSortService.Model
         public string nameFile{get;set;}
         public string typeFile{get;set;}
         public string newNameFile{get;set;}
+        public string currentDirectory{get;set;}
     }
     public class ParameterResponse
     {

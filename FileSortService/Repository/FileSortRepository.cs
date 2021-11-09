@@ -54,7 +54,7 @@ namespace FileSortService.Repository
                 return null;
             }
         }
-        public string DeleteFile(string nameFile,string typeName)
+        public string DeleteFile(string nameFile,string typeName,string currentDirectory)
         {
             var filePath = rootPath + @"\" + nameFile + typeName;
             if (System.IO.File.Exists(filePath)) 
@@ -64,7 +64,7 @@ namespace FileSortService.Repository
             }
            return null;
         }
-        public string RenameFile(string nameFile,string typeName,string newNameFile)
+        public string RenameFile(string nameFile,string typeName,string newNameFile,string currentDirectory)
         {
             FileInfo fi = new FileInfo(rootPath + @"\" + nameFile + typeName);
             if (fi.Exists)
