@@ -70,6 +70,7 @@ namespace FileSortService
         [HttpPost]
         public JsonResult SaveFile()
         {
+            Console.WriteLine("--> Upload File");
             try
             {
                 var httpRequest = Request.Form;
@@ -83,9 +84,9 @@ namespace FileSortService
                 }
                 return new JsonResult(fileName);
             }
-            catch(Exception)
+            catch(Exception ex)
             {
-                return new JsonResult("anon.png");
+                return new JsonResult(ex);
             }
         }
 
