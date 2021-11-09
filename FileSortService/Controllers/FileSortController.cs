@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 using AutoMapper;
 using FileSortService.Dtos;
@@ -68,7 +70,7 @@ namespace FileSortService
         }
         [Route("SaveFile")]
         [HttpPost]
-        public JsonResult SaveFile()
+        public HttpResponseMessage SaveFile()
         {
             Console.WriteLine("--> Upload File");
             try
@@ -82,17 +84,18 @@ namespace FileSortService
                 {
                      postedFile.CopyTo(stream);
                 }
-                return new JsonResult(fileName);
+                return new HttpResponseMessage(HttpStatusCode.Created);
             }
-            catch(Exception ex)
+            catch(Exception)
             {
-                return new JsonResult(ex);
+                return new HttpResponseMessage(HttpStatusCode.OK);
             }
         }
 
         [HttpDelete]
         public JsonResult DeleteFile(ParameterRequest parameter)
         {
+            Console.WriteLine("--> Delete File");
             try
             {
                 var tryDeleteFile = _iFileSortRepository.DeleteFile(parameter.nameFile,parameter.typeFile);
@@ -115,6 +118,7 @@ namespace FileSortService
         [HttpPut]
         public JsonResult RenameFile(ParameterRequest parameter)
         {
+            Console.WriteLine("--> Rename File");
             try
             {
                 var tryRename = _iFileSortRepository.RenameFile(parameter.nameFile,parameter.typeFile,parameter.newNameFile);
