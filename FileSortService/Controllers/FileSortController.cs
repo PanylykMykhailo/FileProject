@@ -70,19 +70,22 @@ namespace FileSortService
         }
         [Route("SaveFile")]
         [HttpPost]
-        public HttpResponseMessage SaveFile()
+        public async Task<HttpResponseMessage> SaveFile()
         {
             Console.WriteLine("--> Upload File");
             try
             {
                 var httpRequest = Request.Form;
-                var postedFile = httpRequest.Files[0];
-                string fileName = postedFile.FileName;
-                var physicalPath = _env.ContentRootPath + "/Test/" + fileName;
-
-                using (var stream = new FileStream(physicalPath,FileMode.Create))
+                foreach (var postedFile in httpRequest.Files)
                 {
-                     postedFile.CopyTo(stream);
+                    string fileName = postedFile.FileName;
+                    var physicalPath = _env.ContentRootPath + "/Test/" + fileName;
+
+                    using (var stream = new FileStream(physicalPath,FileMode.Create))
+                    {
+                        await postedFile.CopyToAsync(stream);
+                        Console.WriteLine(DateTime.UtcNow + fileName);
+                    }
                 }
                 return new HttpResponseMessage(HttpStatusCode.Created);
             }
