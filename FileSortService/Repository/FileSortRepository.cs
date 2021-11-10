@@ -56,16 +56,34 @@ namespace FileSortService.Repository
                 return null;
             }
         }
-        public string DeleteFile(string nameFile,string typeName,string currentDirectory)
+        public HttpStatusCode DeleteFile(ParameterRequest parameter)
         {
-            var updatepath = currentDirectory.Split('*').ToList().Count!=0 ? rootPath + @"\" + currentDirectory.Replace("*",@"\").ToString() : rootPath + @"\" + currentDirectory;
-            var filePath = updatepath + @"\" + nameFile + typeName;
-            if (System.IO.File.Exists(filePath)) 
-            { 
-                System.IO.File.Delete(filePath);
-                 return nameFile + typeName;
+            var updatepath = parameter.currentDirectory.Split('*').ToList().Count!=0 ? rootPath + @"\" + parameter.currentDirectory.Replace("*",@"\").ToString() : rootPath + @"\" + parameter.currentDirectory;
+            var filePath = updatepath + @"\" + parameter.nameFile + parameter.typeFile;
+            if(parameter.isFolder)
+            {
+                DirectoryInfo di = new DirectoryInfo(filePath);
+                foreach (FileInfo file in di.GetFiles())
+                {
+                    file.Delete(); 
+                }
+                foreach (DirectoryInfo dir in di.GetDirectories())
+                {
+                    dir.Delete(true); 
+                }
+                Directory.Delete(filePath);
+                return HttpStatusCode.OK;
             }
-           return null;
+            else
+            {
+                if (System.IO.File.Exists(filePath)) 
+                { 
+                    System.IO.File.Delete(filePath);
+                    return HttpStatusCode.OK;
+                }
+                return HttpStatusCode.Conflict;
+            }
+            
         }
         public string RenameFile(string nameFile,string typeName,string newNameFile,string currentDirectory)
         {
@@ -103,8 +121,8 @@ namespace FileSortService.Repository
             }
             else
             {
-                FileInfo fi = new FileInfo(rootPath + @"\" + infoAboutFile.NameFile + infoAboutFile.TypeFile);
-                DirectoryInfo di = new DirectoryInfo(rootPath);
+                FileInfo fi = new FileInfo(updatepath + @"\" + infoAboutFile.NameFile + infoAboutFile.TypeFile);
+                DirectoryInfo di = new DirectoryInfo(updatepath);
                 if (!di.Exists)
                 {
                     di.Create();

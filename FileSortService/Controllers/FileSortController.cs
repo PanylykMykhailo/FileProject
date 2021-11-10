@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ using FileSortService.Model;
 using FileSortService.Repository;
 using FileSortService.SyncDataServices.Http;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FileSortService
@@ -70,18 +72,20 @@ namespace FileSortService
             
             //return CreatedAtRoute(nameof(InfoAboutFile),new {nameFile = fileReadDto.NameFile,typeName = fileReadDto.TypeFile},fileReadDto);
         }
-        [Route("SaveFile")]
+        [Route("SaveFile/{currentDirectory}")]
         [HttpPost]
-        public async Task<HttpResponseMessage> SaveFile()
+        public async Task<HttpResponseMessage> SaveFile(string currentDirectory)
         {
             Console.WriteLine("--> Upload File");
+            var updatepath = currentDirectory.Split('*').ToList().Count!=0 ? _env.ContentRootPath + @"\" + currentDirectory.Replace("*",@"\").ToString() : _env.ContentRootPath + @"\" + currentDirectory;
+            System.Console.WriteLine(updatepath);
             try
             {
                 var httpRequest = Request.Form;
                 foreach (var postedFile in httpRequest.Files)
                 {
                     string fileName = postedFile.FileName;
-                    var physicalPath = _env.ContentRootPath + "/Test/" + fileName;
+                    var physicalPath = updatepath +@"\" + fileName;
 
                     using (var stream = new FileStream(physicalPath,FileMode.Create))
                     {
@@ -93,29 +97,29 @@ namespace FileSortService
             }
             catch(Exception)
             {
-                return new HttpResponseMessage(HttpStatusCode.OK);
+                return new HttpResponseMessage(HttpStatusCode.BadRequest);
             }
         }
 
         [HttpDelete]
-        public JsonResult DeleteFile(ParameterRequest parameter)
+        public HttpStatusCode DeleteFile(ParameterRequest parameter)
         {
             Console.WriteLine("--> Delete File");
             try
             {
-                var tryDeleteFile = _iFileSortRepository.DeleteFile(parameter.nameFile,parameter.typeFile,parameter.currentDirectory);
-                if(tryDeleteFile!=null)
+                var tryDeleteFile = _iFileSortRepository.DeleteFile(parameter);
+                if(tryDeleteFile == HttpStatusCode.OK)
                 {
-                    return new JsonResult(tryDeleteFile);
+                    return tryDeleteFile;
                 }
                 else
                 {
-                    return new JsonResult(NotFound() + parameter.nameFile + parameter.typeFile);
+                    return tryDeleteFile;
                 }
             }
             catch(Exception)
             {
-                return new JsonResult(NotFound());
+                return HttpStatusCode.NotFound;
             }
             
         }
