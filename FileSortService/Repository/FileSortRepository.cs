@@ -88,13 +88,22 @@ namespace FileSortService.Repository
         public string RenameFile(string nameFile,string typeName,string newNameFile,string currentDirectory)
         {
             var updatepath = currentDirectory.Split('*').ToList().Count!=0 ? rootPath + @"\" + currentDirectory.Replace("*",@"\").ToString() : rootPath + @"\" + currentDirectory;
-            FileInfo fi = new FileInfo(updatepath + @"\" + nameFile + typeName);
-            if (fi.Exists)
+            if(typeName=="folder")
             {
-                System.IO.File.Move(updatepath + @"\" + nameFile + typeName, updatepath + @"\" + newNameFile + typeName);
-                return nameFile + typeName;
+                 Directory.Move(updatepath + @"\" + nameFile, updatepath + @"\" + newNameFile );
+                 return nameFile;
             }
-            return null;
+            else
+            {
+                 FileInfo fi = new FileInfo(updatepath + @"\" + nameFile + typeName);
+                if (fi.Exists)
+                {
+                    System.IO.File.Move(updatepath + @"\" + nameFile + typeName, updatepath + @"\" + newNameFile + typeName);
+                    return nameFile + typeName;
+                }
+                return null;
+            }
+           
         }
         public bool OpenAndEdit(string nameFile,string typeName,string infoAdd)
         {
