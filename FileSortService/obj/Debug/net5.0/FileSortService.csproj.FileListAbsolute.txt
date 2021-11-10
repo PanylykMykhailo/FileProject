@@ -124,3 +124,11 @@ C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\obj\Debug\net5.0
 C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\obj\Debug\net5.0\ref\FileSortService.dll
 C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\obj\Debug\net5.0\FileSortService.pdb
 C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\obj\Debug\net5.0\FileSortService.genruntimeconfig.cache
+C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\Humanizer.dll
+C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll

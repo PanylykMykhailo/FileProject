@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
-using FileSortService.Model;
+using FileSortService.Model.WorkModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FileSortService.Repository

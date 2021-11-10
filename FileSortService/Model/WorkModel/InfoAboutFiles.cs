@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace FileSortService.Model
+namespace FileSortService.Model.WorkModel
 {
     public class InfoAboutFiles
     {

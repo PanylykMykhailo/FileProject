@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Net;
-using FileSortService.Model;
+using FileSortService.Model.WorkModel;
 
 namespace FileSortService.Repository
 {

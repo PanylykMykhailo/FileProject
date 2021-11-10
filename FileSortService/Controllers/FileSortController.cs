@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using AutoMapper;
 using FileSortService.Dtos;
-using FileSortService.Model;
+using FileSortService.Model.WorkModel;
 using FileSortService.Repository;
 using FileSortService.SyncDataServices.Http;
 using Microsoft.AspNetCore.Hosting;
