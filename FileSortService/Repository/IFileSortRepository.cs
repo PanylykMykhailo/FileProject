@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Net;
 using FileSortService.Model;
 
 namespace FileSortService.Repository
@@ -10,6 +11,6 @@ namespace FileSortService.Repository
         string DeleteFile(string nameFile,string typeName,string currentDirectory);
         string RenameFile(string nameFile,string typeName,string newNameFile,string currentDirectory);
         bool OpenAndEdit(string nameFile,string typeName,string infoAdd);
-        bool CreateFile(InfoAboutFile infoAboutFile);
+        HttpStatusCode CreateFile(InfoAboutFile infoAboutFile);
     }
 }

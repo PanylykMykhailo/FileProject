@@ -19,6 +19,7 @@ namespace FileSortService.Model
         public string DateCreatedFile{get;set;} 
         public bool isFolder{get;set;}
         public int fileInFolder{get;set;}
+        public string currentDirectory{get;set;}
     }
 }
 

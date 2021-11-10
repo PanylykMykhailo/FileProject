@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using FileSortService.Model;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FileSortService.Repository
 {
@@ -56,7 +58,8 @@ namespace FileSortService.Repository
         }
         public string DeleteFile(string nameFile,string typeName,string currentDirectory)
         {
-            var filePath = rootPath + @"\" + nameFile + typeName;
+            var updatepath = currentDirectory.Split('*').ToList().Count!=0 ? rootPath + @"\" + currentDirectory.Replace("*",@"\").ToString() : rootPath + @"\" + currentDirectory;
+            var filePath = updatepath + @"\" + nameFile + typeName;
             if (System.IO.File.Exists(filePath)) 
             { 
                 System.IO.File.Delete(filePath);
@@ -66,10 +69,11 @@ namespace FileSortService.Repository
         }
         public string RenameFile(string nameFile,string typeName,string newNameFile,string currentDirectory)
         {
-            FileInfo fi = new FileInfo(rootPath + @"\" + nameFile + typeName);
+            var updatepath = currentDirectory.Split('*').ToList().Count!=0 ? rootPath + @"\" + currentDirectory.Replace("*",@"\").ToString() : rootPath + @"\" + currentDirectory;
+            FileInfo fi = new FileInfo(updatepath + @"\" + nameFile + typeName);
             if (fi.Exists)
             {
-                System.IO.File.Move(rootPath + @"\" + nameFile + typeName, rootPath + @"\" + newNameFile + typeName);
+                System.IO.File.Move(updatepath + @"\" + nameFile + typeName, updatepath + @"\" + newNameFile + typeName);
                 return nameFile + typeName;
             }
             return null;
@@ -84,19 +88,35 @@ namespace FileSortService.Repository
             }
             return false;
         }
-        public bool CreateFile(InfoAboutFile infoAboutFile)
+        public HttpStatusCode CreateFile(InfoAboutFile infoAboutFile)
         {
-            FileInfo fi = new FileInfo(rootPath + @"\" + infoAboutFile.NameFile + infoAboutFile.TypeFile);
-            DirectoryInfo di = new DirectoryInfo(rootPath);
-            if (!di.Exists)
+            var updatepath = infoAboutFile.currentDirectory.Split('*').ToList().Count!=0 ? rootPath + @"\" + infoAboutFile.currentDirectory.Replace("*",@"\").ToString() : rootPath + @"\" + infoAboutFile.currentDirectory;
+            if(infoAboutFile.isFolder)
             {
-                di.Create();
+                string[] searchFile = Directory.GetDirectories(updatepath, $"*{infoAboutFile.NameFile}*", SearchOption.TopDirectoryOnly);
+                if(searchFile.Length == 0)
+                {
+                    Directory.CreateDirectory(updatepath+@"\"+infoAboutFile.NameFile);
+                    return HttpStatusCode.Created;
+                }
+                return HttpStatusCode.Conflict;
             }
-            if (!fi.Exists)
+            else
             {
-                fi.Create().Dispose();
+                FileInfo fi = new FileInfo(rootPath + @"\" + infoAboutFile.NameFile + infoAboutFile.TypeFile);
+                DirectoryInfo di = new DirectoryInfo(rootPath);
+                if (!di.Exists)
+                {
+                    di.Create();
+                    return HttpStatusCode.Created;
+                }
+                if (!fi.Exists)
+                {
+                    fi.Create().Dispose();
+                    return HttpStatusCode.Conflict;
+                }
+                return HttpStatusCode.Forbidden;
             }
-            return true;
         }
         public List<InfoAboutFile> CheckFolder(string rootPath,string typeFile) 
         {

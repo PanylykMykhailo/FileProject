@@ -51,22 +51,24 @@ namespace FileSortService
             return NotFound();
         }
         [HttpPost]
-        public async Task<ActionResult<InfoAboutFile>> CreateFile(InfoAboutFileDtos infoAboutFile)
+        public HttpStatusCode CreateFile(InfoAboutFileDtos infoAboutFile)//async Task<>
         {
             var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
-            _iFileSortRepository.CreateFile(infoAboutFileModel);
             
-            var fileReadDto = _mapper.Map<InfoAboutFileDto>(infoAboutFileModel);
-
-            try
-            {
-                await _fileDataClient.SendFileSortToFileS(fileReadDto);
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine($"--> Could not send synchrinously : {ex.Message}");
-            }
-            return CreatedAtRoute(nameof(InfoAboutFile),new {nameFile = fileReadDto.NameFile,typeName = fileReadDto.TypeFile},fileReadDto);
+            //var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
+            var statusCode =  _iFileSortRepository.CreateFile(infoAboutFileModel);
+            return statusCode;
+            //var fileReadDto = _mapper.Map<InfoAboutFileDto>(infoAboutFileModel);
+            // try
+            // {
+            //     await _fileDataClient.SendFileSortToFileS(fileReadDto);
+            // }
+            // catch(Exception ex)
+            // {
+            //     Console.WriteLine($"--> Could not send synchrinously : {ex.Message}");
+            // }
+            
+            //return CreatedAtRoute(nameof(InfoAboutFile),new {nameFile = fileReadDto.NameFile,typeName = fileReadDto.TypeFile},fileReadDto);
         }
         [Route("SaveFile")]
         [HttpPost]
@@ -122,6 +124,7 @@ namespace FileSortService
         public JsonResult RenameFile(ParameterRequest parameter)
         {
             Console.WriteLine("--> Rename File");
+            System.Console.WriteLine(parameter.currentDirectory);
             try
             {
                 var tryRename = _iFileSortRepository.RenameFile(parameter.nameFile,parameter.typeFile,parameter.newNameFile,parameter.currentDirectory);
