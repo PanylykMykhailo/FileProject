@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using FileSortService.Data;
 using FileSortService.Model.WorkModel;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +13,11 @@ namespace FileSortService.Repository
     public class FileSortRepository : IFileSortRepository
     {
         //private string rootPath = "Test";
+        private readonly AppDbContext _context;
+        public FileSortRepository(AppDbContext context)
+        {
+            _context = context;
+        }
         private string rootPath = Environment.CurrentDirectory;
         public InfoAboutFiles GetAllFile(string pathFolder,string typeFile)
         {

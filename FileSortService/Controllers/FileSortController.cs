@@ -6,7 +6,9 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using AutoMapper;
+using FileSortService.Data;
 using FileSortService.Dtos;
+using FileSortService.Model.DatabaseModel;
 using FileSortService.Model.WorkModel;
 using FileSortService.Repository;
 using FileSortService.SyncDataServices.Http;
@@ -24,12 +26,68 @@ namespace FileSortService
         private readonly IMapper _mapper;
         private readonly IFileDataClient _fileDataClient;
         private readonly IWebHostEnvironment _env;
-        public FileController(IFileSortRepository iFileSortRepository , IMapper mapper,IFileDataClient  fileDataClient, IWebHostEnvironment env)
+        private readonly AppDbContext _appDbContext;
+
+        public FileController(IFileSortRepository iFileSortRepository, IMapper mapper, IFileDataClient fileDataClient, IWebHostEnvironment env, AppDbContext appDbContext)
         {
             _iFileSortRepository = iFileSortRepository;
             _mapper = mapper;
             _fileDataClient = fileDataClient;
             _env = env;
+            _appDbContext = appDbContext;
+        }
+        [Route("InsertExtension")]
+        [HttpPost]
+        public void InsertExtension() 
+        {
+            if (_appDbContext.ExtenCategory.Count() == 0) 
+            {
+                List<ExtensionCategory> extenCategory = new();
+                extenCategory.Add(new ExtensionCategory {Id = Guid.NewGuid(), nameCategory =  "File" });
+                extenCategory.Add(new ExtensionCategory {Id = Guid.NewGuid(), nameCategory = "Photo" });
+                extenCategory.Add(new ExtensionCategory { Id = Guid.NewGuid(), nameCategory = "Video" });
+                _appDbContext.ExtenCategory.AddRange(extenCategory);
+                _appDbContext.SaveChanges();
+            }
+            if (_appDbContext.ExtenValue.Count() == 0) 
+            {
+                List<string> OnlyFile = new List<string> { ".txt", ".doc", ".docx", ".docm", ".rtf", ".odt", ".pdf", ".arj", ".zip", ".rar", ".tar" };
+                List<string> OnlyPhoto = new List<string> { ".svg", ".apng", ".fle", ".wlmp", ".bmp", ".gif", ".jpeg", ".tiff", ".png", ".eps", ".pdf", ".wmf", ".jpg", ".jfif" };
+                List<string> OnlyVideo = new List<string> { ".mp3", ".mp4", ".wav", ".wma", ".midi", ".avi", ".flv", ".swf", ".wmv", ".mov", ".mpeg" };
+                Dictionary<string, List<string>> lists = new Dictionary<string, List<string>>();
+                lists.Add("OnlyFile", OnlyFile);
+                lists.Add("OnlyPhoto", OnlyPhoto);
+                lists.Add("OnlyVideo", OnlyVideo);
+                List<ExtensionValue> extensionValues = new();
+                foreach (var exten in lists.Keys)
+                {
+                    ExtensionCategory whatcategory = new();
+                    switch (exten)
+                    {
+                        case "OnlyFile":
+                            whatcategory = _appDbContext.ExtenCategory.Select(x => x).Where(u => u.nameCategory == "File").FirstOrDefault();
+                            break;
+                        case "OnlyPhoto":
+                            whatcategory = _appDbContext.ExtenCategory.Select(x => x).Where(u => u.nameCategory == "Photo").FirstOrDefault();
+                            break;
+                        case "OnlyVideo":
+                            whatcategory = _appDbContext.ExtenCategory.Select(x => x).Where(u => u.nameCategory == "Video").FirstOrDefault();
+                            break;
+                        default:
+                            break;
+                    }
+                    if (whatcategory != null)
+                    {
+                        foreach (var item in lists[exten])
+                        {
+                            extensionValues.Add(new ExtensionValue { Id = Guid.NewGuid(), extensionCategory =  whatcategory, extensionValue = item });
+                        }
+                    }
+
+                }
+               _appDbContext.ExtenValue.AddRange(extensionValues);
+                _appDbContext.SaveChanges();
+            }
         }
         [HttpGet("{pathfolder}/{typeFile}")]
         public ActionResult<FileReadDto> GetAllFiles(string pathfolder,string typeFile)
