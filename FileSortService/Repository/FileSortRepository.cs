@@ -6,6 +6,7 @@ using System.Net;
 using System.Text;
 using FileSortService.Data;
 using FileSortService.Model.WorkModel;
+using FileSortService.Model.DatabaseModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FileSortService.Repository
@@ -38,6 +39,13 @@ namespace FileSortService.Repository
                 {
                     NameFile = Path.GetFileNameWithoutExtension(item),
                     TypeFile = infoFile.Extension,
+                    typeCategory =   _context.ExtenValue.Select(x => new ExtensionValue
+                    {
+                        Id = x.Id,
+                        extensionCategory = x.extensionCategory,
+                        extensionValue = x.extensionValue
+                    })
+                    .Where(u => u.extensionValue == infoFile.Extension).FirstOrDefault().extensionCategory.nameCategory,
                     SizeFile = infoFile.Length.ToString() + " bytes",
                     DateCreatedFile = infoFile.CreationTime.ToShortDateString() +" " + infoFile.CreationTime.ToShortTimeString()
                 });
@@ -111,15 +119,30 @@ namespace FileSortService.Repository
             }
            
         }
-        public bool OpenAndEdit(string nameFile,string typeName,string infoAdd)
+        public string EditFile(WorkWithFile parameter)
         {
-            var filePath = rootPath + @"\" + nameFile + typeName;
-            if (System.IO.File.Exists(filePath)) 
-            { 
-                File.AppendAllText(filePath, infoAdd);
-                return true;
+            var updatepath = parameter.currentDirectory.Split('*').ToList().Count!=0 ? rootPath + @"\" + parameter.currentDirectory.Replace("*",@"\").ToString() : rootPath + @"\" + parameter.currentDirectory;
+            updatepath = updatepath + @"\" + parameter.nameFile + parameter.typeFile;
+            switch(parameter.workbranch)
+            {
+                case 1:
+                    string text = System.IO.File.ReadAllText(updatepath);
+                    return text;
+                case 2:
+                    File.Create(updatepath).Close();
+                    File.AppendAllText(updatepath,parameter.content);
+                    return "WorkWithFile";
+                default:
+                    break;
             }
-            return false;
+            return "work";
+            // var filePath = rootPath + @"\" + nameFile + typeName;
+            // if (System.IO.File.Exists(filePath)) 
+            // { 
+            //     File.AppendAllText(filePath, infoAdd);
+            //     return true;
+            // }
+            // return false;
         }
         public HttpStatusCode CreateFile(InfoAboutFile infoAboutFile)
         {

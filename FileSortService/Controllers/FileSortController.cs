@@ -87,7 +87,7 @@ namespace FileSortService
                 }
                _appDbContext.ExtenValue.AddRange(extensionValues);
                 _appDbContext.SaveChanges();
-            }
+            } 
         }
         [HttpGet("{pathfolder}/{typeFile}")]
         public ActionResult<FileReadDto> GetAllFiles(string pathfolder,string typeFile)
@@ -205,6 +205,13 @@ namespace FileSortService
                 throw;
             }
         } 
+        [Route("EditFile")]
+        [HttpPut]
+        public JsonResult EditFile(WorkWithFile parameter)
+        {
+            var getStatus = _iFileSortRepository.EditFile(parameter);
+            return new JsonResult(getStatus);
+        }
         
     }
 }

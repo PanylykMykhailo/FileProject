@@ -10,7 +10,7 @@ namespace FileSortService.Repository
         InfoAboutFile InfoAboutFile(string nameFile,string typeName);
         HttpStatusCode DeleteFile(ParameterRequest parameter);
         string RenameFile(string nameFile,string typeName,string newNameFile,string currentDirectory);
-        bool OpenAndEdit(string nameFile,string typeName,string infoAdd);
+        string EditFile(WorkWithFile parameter);
         HttpStatusCode CreateFile(InfoAboutFile infoAboutFile);
     }
 }

@@ -15,6 +15,7 @@ namespace FileSortService.Model.WorkModel
     {
         public string NameFile{get;set;}
         public string TypeFile{get;set;}
+        public string typeCategory{get;set;}
         public string SizeFile{get;set;}
         public string DateCreatedFile{get;set;} 
         public bool isFolder{get;set;}
