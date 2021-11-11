@@ -21,6 +21,7 @@ namespace FileSortService
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseWebRoot("Test");
                 });
     }
 }
