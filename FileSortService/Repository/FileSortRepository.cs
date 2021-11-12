@@ -8,16 +8,18 @@ using FileSortService.Data;
 using FileSortService.Model.WorkModel;
 using FileSortService.Model.DatabaseModel;
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.Extensions.Configuration;
 namespace FileSortService.Repository
 {
     public class FileSortRepository : IFileSortRepository
     {
         //private string rootPath = "Test";
         private readonly AppDbContext _context;
-        public FileSortRepository(AppDbContext context)
+        private readonly IConfiguration _configuration;
+        public FileSortRepository(AppDbContext context,IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
         private string rootPath = Environment.CurrentDirectory;
         public InfoAboutFiles GetAllFile(string pathFolder,string typeFile)
@@ -46,6 +48,7 @@ namespace FileSortService.Repository
                         extensionValue = x.extensionValue
                     })
                     .Where(u => u.extensionValue == infoFile.Extension).FirstOrDefault().extensionCategory.nameCategory,
+                    linkToOpen =  $"{_configuration["WorkLink"]}/{pathFolder.Replace("*","/")}/{Path.GetFileName(item)}", 
                     SizeFile = infoFile.Length.ToString() + " bytes",
                     DateCreatedFile = infoFile.CreationTime.ToShortDateString() +" " + infoFile.CreationTime.ToShortTimeString()
                 });
