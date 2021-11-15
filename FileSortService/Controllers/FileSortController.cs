@@ -110,26 +110,26 @@ namespace FileSortService
             }
             return NotFound();
         }
-        [HttpPost]
-        public HttpStatusCode CreateFile(InfoAboutFileDtos infoAboutFile)//async Task<>
-        {
-            var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
+        // [HttpPost]
+        // public HttpStatusCode CreateFile(InfoAboutFileDtos infoAboutFile)//async Task<>
+        // {
+        //     var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
             
-            //var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
-            var statusCode =  _iFileSortRepository.CreateFile(infoAboutFileModel);
-            return statusCode;
-            //var fileReadDto = _mapper.Map<InfoAboutFileDto>(infoAboutFileModel);
-            // try
-            // {
-            //     await _fileDataClient.SendFileSortToFileS(fileReadDto);
-            // }
-            // catch(Exception ex)
-            // {
-            //     Console.WriteLine($"--> Could not send synchrinously : {ex.Message}");
-            // }
+        //     //var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
+        //     var statusCode =  _iFileSortRepository.CreateFile(infoAboutFileModel);
+        //     return statusCode;
+        //     //var fileReadDto = _mapper.Map<InfoAboutFileDto>(infoAboutFileModel);
+        //     // try
+        //     // {
+        //     //     await _fileDataClient.SendFileSortToFileS(fileReadDto);
+        //     // }
+        //     // catch(Exception ex)
+        //     // {
+        //     //     Console.WriteLine($"--> Could not send synchrinously : {ex.Message}");
+        //     // }
             
-            //return CreatedAtRoute(nameof(InfoAboutFile),new {nameFile = fileReadDto.NameFile,typeName = fileReadDto.TypeFile},fileReadDto);
-        }
+        //     //return CreatedAtRoute(nameof(InfoAboutFile),new {nameFile = fileReadDto.NameFile,typeName = fileReadDto.TypeFile},fileReadDto);
+        // }
         [Route("SaveFile/{currentDirectory}")]
         [HttpPost]
         public async Task<HttpResponseMessage> SaveFile(string currentDirectory)
@@ -140,6 +140,7 @@ namespace FileSortService
             try
             {
                 var httpRequest = Request.Form;
+                System.Console.WriteLine(httpRequest);
                 foreach (var postedFile in httpRequest.Files)
                 {
                     string fileName = postedFile.FileName;
@@ -158,7 +159,16 @@ namespace FileSortService
                 return new HttpResponseMessage(HttpStatusCode.BadRequest);
             }
         }
-
+        //[Route("SaveFile2/")]
+        [HttpPost]
+        public async Task<HttpStatusCode> SaveFile2(List<ParameterRequest> parameter) //[FromQuery] string currentDirectory,
+        {
+            System.Console.WriteLine("-->Start Work");
+            var listTime = await _iFileSortRepository.SaveFile2(parameter);
+            if(listTime.Count!=0)
+                return HttpStatusCode.Created; 
+            return HttpStatusCode.BadRequest;
+        }
         [HttpDelete]
         public HttpStatusCode DeleteFile(ParameterRequest parameter)
         {

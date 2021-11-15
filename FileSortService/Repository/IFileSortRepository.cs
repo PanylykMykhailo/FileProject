@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Net;
 using FileSortService.Model.WorkModel;
-
+using System.Threading.Tasks;
 namespace FileSortService.Repository
 {
     public interface IFileSortRepository
@@ -12,5 +12,6 @@ namespace FileSortService.Repository
         string RenameFile(string nameFile,string typeName,string newNameFile,string currentDirectory);
         string EditFile(WorkWithFile parameter);
         HttpStatusCode CreateFile(InfoAboutFile infoAboutFile);
+        Task<List<string>> SaveFile2(List<ParameterRequest> parameter);
     }
 }

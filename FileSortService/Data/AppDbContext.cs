@@ -9,5 +9,6 @@ namespace FileSortService.Data
         public AppDbContext(DbContextOptions options):base(options) { }
         public DbSet<ExtensionCategory> ExtenCategory { get; set; }
         public DbSet<ExtensionValue> ExtenValue { get; set; }
+        
     }
 }
