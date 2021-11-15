@@ -6,8 +6,8 @@
 /FileService/[Bb]in
 
 /FileSortService/.vs
-/FileSortService/[Oo]bj
-/FileSortService/bin
+/FileSortService/obj/
+/FileSortService/[Bb]in/
 /FileSortService/[Tt]est
 /FileSortService/[Mm]igrations
 
