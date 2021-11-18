@@ -165,3 +165,4 @@ C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0
 C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\Humanizer.dll
 C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\obj\Debug\net5.0\FileSortService.csproj.CopyComplete
+C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\LumenWorks.Framework.IO.dll

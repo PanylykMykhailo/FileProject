@@ -110,26 +110,26 @@ namespace FileSortService
             }
             return NotFound();
         }
-        // [HttpPost]
-        // public HttpStatusCode CreateFile(InfoAboutFileDtos infoAboutFile)//async Task<>
-        // {
-        //     var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
+        [HttpPost]
+        public HttpStatusCode CreateFile(InfoAboutFileDtos infoAboutFile)//async Task<>
+        {
+            var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
             
-        //     //var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
-        //     var statusCode =  _iFileSortRepository.CreateFile(infoAboutFileModel);
-        //     return statusCode;
-        //     //var fileReadDto = _mapper.Map<InfoAboutFileDto>(infoAboutFileModel);
-        //     // try
-        //     // {
-        //     //     await _fileDataClient.SendFileSortToFileS(fileReadDto);
-        //     // }
-        //     // catch(Exception ex)
-        //     // {
-        //     //     Console.WriteLine($"--> Could not send synchrinously : {ex.Message}");
-        //     // }
+            //var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
+            var statusCode =  _iFileSortRepository.CreateFile(infoAboutFileModel);
+            return statusCode;
+            //var fileReadDto = _mapper.Map<InfoAboutFileDto>(infoAboutFileModel);
+            // try
+            // {
+            //     await _fileDataClient.SendFileSortToFileS(fileReadDto);
+            // }
+            // catch(Exception ex)
+            // {
+            //     Console.WriteLine($"--> Could not send synchrinously : {ex.Message}");
+            // }
             
-        //     //return CreatedAtRoute(nameof(InfoAboutFile),new {nameFile = fileReadDto.NameFile,typeName = fileReadDto.TypeFile},fileReadDto);
-        // }
+            //return CreatedAtRoute(nameof(InfoAboutFile),new {nameFile = fileReadDto.NameFile,typeName = fileReadDto.TypeFile},fileReadDto);
+        }
         [Route("SaveFile/{currentDirectory}")]
         [HttpPost]
         public async Task<HttpResponseMessage> SaveFile(string currentDirectory)
@@ -159,7 +159,7 @@ namespace FileSortService
                 return new HttpResponseMessage(HttpStatusCode.BadRequest);
             }
         }
-        //[Route("SaveFile2/")]
+        [Route("SaveFile2")]
         [HttpPost]
         public async Task<HttpStatusCode> SaveFile2(List<ParameterRequest> parameter) //[FromQuery] string currentDirectory,
         {

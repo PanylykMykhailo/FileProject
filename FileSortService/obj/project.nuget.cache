@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QGqczU13Xtah5ehKySxcYyi3pRL6KZns6Ycb7ziWtqvXF5YXb7TjJWhIRtjxmyNjQ7cUCstM1upjLUzszZNhFg==",
+  "dgSpecHash": "Ryzan/pYyD5p4MsSBNxw+xxPJmHOVfBD069RQjiVnM1XHMF5rjhfYaFr60UVm3XamadCX4dveukCXh1ycZOq4g==",
   "success": true,
   "projectFilePath": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileSortService\\FileSortService.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\mpanylyk\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\mpanylyk\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\mpanylyk\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\mpanylyk\\.nuget\\packages\\lumenworkscsvreader\\4.0.0\\lumenworkscsvreader.4.0.0.nupkg.sha512",
     "C:\\Users\\mpanylyk\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\mpanylyk\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\mpanylyk\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

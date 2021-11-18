@@ -141,13 +141,6 @@ namespace FileSortService.Repository
                     break;
             }
             return "work";
-            // var filePath = rootPath + @"\" + nameFile + typeName;
-            // if (System.IO.File.Exists(filePath)) 
-            // { 
-            //     File.AppendAllText(filePath, infoAdd);
-            //     return true;
-            // }
-            // return false;
         }
         public HttpStatusCode CreateFile(InfoAboutFile infoAboutFile)
         {
@@ -157,6 +150,16 @@ namespace FileSortService.Repository
                 string[] searchFile = Directory.GetDirectories(updatepath, $"*{infoAboutFile.NameFile}*", SearchOption.TopDirectoryOnly);
                 if (searchFile.Length == 0)
                 {
+                    _context.Architecture.Add( new ArchitectureFolder {
+                        Id = Guid.NewGuid(),
+                        nameFile = infoAboutFile.NameFile,
+                        typeFile = "folder",
+                        isFolder = infoAboutFile.isFolder,
+                        dateCreatedFile = DateTime.Now.ToShortDateString(),
+                        pathfolder = infoAboutFile.currentDirectory,
+                        sizeFile = "0 bytes"
+                    });
+                    _context.SaveChanges();
                     Directory.CreateDirectory(updatepath + @"\" + infoAboutFile.NameFile);
                     return HttpStatusCode.Created;
                 }
@@ -173,8 +176,19 @@ namespace FileSortService.Repository
                 }
                 if (!fi.Exists)
                 {
+                    _context.Architecture.Add( new ArchitectureFolder {
+                        Id = Guid.NewGuid(),
+                        nameFile = infoAboutFile.NameFile,
+                        typeFile = infoAboutFile.TypeFile,
+                        isFolder = infoAboutFile.isFolder,
+                        dateCreatedFile = DateTime.Now.ToShortDateString(),
+                        linkToOpen =  $"{_configuration["WorkLink"]}/{infoAboutFile.currentDirectory.Replace("*", "/")}/{infoAboutFile.NameFile}.{infoAboutFile.TypeFile}",
+                        pathfolder = infoAboutFile.currentDirectory,
+                        sizeFile = "0 bytes"
+                    });
+                    _context.SaveChanges();
                     fi.Create().Dispose();
-                    return HttpStatusCode.Conflict;
+                    return HttpStatusCode.Created;
                 }
                 return HttpStatusCode.Forbidden;
             }
