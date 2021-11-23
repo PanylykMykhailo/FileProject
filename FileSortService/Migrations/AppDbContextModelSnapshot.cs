@@ -19,6 +19,46 @@ namespace FileSortService.Migrations
                 .HasAnnotation("ProductVersion", "5.0.12")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("FileSortService.Model.DatabaseModel.ArchitectureFolder", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("dateCreatedFile")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("fileInFolder")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("isFolder")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("linkToOpen")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nameFile")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("pathfolder")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("sizeFile")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("typeCategoryId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("typeFile")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("typeCategoryId");
+
+                    b.ToTable("Architecture");
+                });
+
             modelBuilder.Entity("FileSortService.Model.DatabaseModel.ExtensionCategory", b =>
                 {
                     b.Property<Guid>("Id")
@@ -26,7 +66,7 @@ namespace FileSortService.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("nameCategory")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(20)");
 
                     b.HasKey("Id");
 
@@ -43,7 +83,7 @@ namespace FileSortService.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("extensionValue")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(20)");
 
                     b.HasKey("Id");
 
@@ -52,13 +92,62 @@ namespace FileSortService.Migrations
                     b.ToTable("ExtenValue");
                 });
 
+            modelBuilder.Entity("FileSortService.Model.DatabaseModel.TypeFileFromUpload", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("hexSignature")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("typeCategoryId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("typeFile")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("typeCategoryId");
+
+                    b.ToTable("UploadCheck");
+                });
+
+            modelBuilder.Entity("FileSortService.Model.DatabaseModel.ArchitectureFolder", b =>
+                {
+                    b.HasOne("FileSortService.Model.DatabaseModel.ExtensionCategory", "typeCategory")
+                        .WithMany("architectureFolder")
+                        .HasForeignKey("typeCategoryId");
+
+                    b.Navigation("typeCategory");
+                });
+
             modelBuilder.Entity("FileSortService.Model.DatabaseModel.ExtensionValue", b =>
                 {
                     b.HasOne("FileSortService.Model.DatabaseModel.ExtensionCategory", "extensionCategory")
-                        .WithMany()
+                        .WithMany("extensionValue")
                         .HasForeignKey("extensionCategoryId");
 
                     b.Navigation("extensionCategory");
+                });
+
+            modelBuilder.Entity("FileSortService.Model.DatabaseModel.TypeFileFromUpload", b =>
+                {
+                    b.HasOne("FileSortService.Model.DatabaseModel.ExtensionCategory", "extensionCategory")
+                        .WithMany("typeFileFromUploads")
+                        .HasForeignKey("typeCategoryId");
+
+                    b.Navigation("extensionCategory");
+                });
+
+            modelBuilder.Entity("FileSortService.Model.DatabaseModel.ExtensionCategory", b =>
+                {
+                    b.Navigation("architectureFolder");
+
+                    b.Navigation("extensionValue");
+
+                    b.Navigation("typeFileFromUploads");
                 });
 #pragma warning restore 612, 618
         }

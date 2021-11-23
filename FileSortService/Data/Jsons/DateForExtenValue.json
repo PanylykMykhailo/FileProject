@@ -1,0 +1,1905 @@
+[
+  {
+    "Id": "2e3a94de-8f29-4d18-8bf2-12aabaf94387",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".txt"
+  },
+  {
+    "Id": "283a234b-b872-462e-bcab-a0fca27f0a99",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".doc"
+  },
+  {
+    "Id": "8ded8932-7e4f-4074-8f31-67031d0f424a",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".docx"
+  },
+  {
+    "Id": "3fddb6ed-8df1-4565-a104-b184cca6ba32",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".docm"
+  },
+  {
+    "Id": "69ccff45-5e39-4147-ad7e-d37fde6ea6d5",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".rtf"
+  },
+  {
+    "Id": "90e89044-da7c-41f7-8868-edb20144a679",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".odt"
+  },
+  {
+    "Id": "7d32b212-aea8-4f19-aa4d-b72fb5b398fa",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".pdf"
+  },
+  {
+    "Id": "60b85aac-b490-4cf8-9535-afbd3eb993ae",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".arj"
+  },
+  {
+    "Id": "aebd9156-c6f5-46d2-95c6-d6d710a6fa35",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".zip"
+  },
+  {
+    "Id": "f938f5b4-a24f-42d7-9f5f-fc71e62cdbe1",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".rar"
+  },
+  {
+    "Id": "4a48732f-b64d-4fd6-9d56-8398136aa75e",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".tar"
+  },
+  {
+    "Id": "68c7cba8-ffc1-466c-8c6b-a45c0081f25d",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".pcap"
+  },
+  {
+    "Id": "b0be2e90-e533-4764-8807-c6fc180f50b5",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".pcapng"
+  },
+  {
+    "Id": "662a4147-2e9b-4734-8111-9d2d4f35e18f",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".rpm"
+  },
+  {
+    "Id": "9da2bb6d-e97a-4f83-b42a-97edad8d7921",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".bin"
+  },
+  {
+    "Id": "440fbac4-95ef-4ca8-aca3-2078511206ac",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".PIF"
+  },
+  {
+    "Id": "7b6bc994-b79a-42fe-8ca3-0bb454141384",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".SEA"
+  },
+  {
+    "Id": "bd456070-9ca9-4ede-87d3-bfa8a4d33c80",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".YTR"
+  },
+  {
+    "Id": "26e8e16b-ba0a-4ead-afdf-52c84d726a97",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".PDB"
+  },
+  {
+    "Id": "105d7f76-7310-4782-831a-e3b7fa1ab837",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".DBA"
+  },
+  {
+    "Id": "e3ca6f69-bace-470e-9de2-110978828bcb",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".TDA"
+  },
+  {
+    "Id": "28e0b90d-e7bb-41b8-86ce-eaf8f2077918",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".z"
+  },
+  {
+    "Id": "cc4b0615-56fc-46b2-9450-e9d31a0f613a",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".tar.z"
+  },
+  {
+    "Id": "80d4b667-32d9-493e-93c5-94775e74e659",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".bac"
+  },
+  {
+    "Id": "ab0d3b9e-185c-4a43-8cd5-e988308157f5",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".bz2"
+  },
+  {
+    "Id": "d44304cc-ed4f-40a4-88ad-698e13b0c8f8",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".iff"
+  },
+  {
+    "Id": "c998418c-f679-45a6-9760-73132f381d59",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".svx"
+  },
+  {
+    "Id": "16c1e230-6513-4147-ade7-502e120710da",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".faxx"
+  },
+  {
+    "Id": "f46ff961-cc08-489c-8fec-d885fa6d2f96",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".fax"
+  },
+  {
+    "Id": "230c42d4-8cd0-4c15-b7dd-ff513134cea3",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".ftxt"
+  },
+  {
+    "Id": "dbb5dea4-5710-47fc-9a5e-bc654c367e12",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".lz"
+  },
+  {
+    "Id": "c967820f-7acf-446c-b2b9-e5c84f3f77ca",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".exe"
+  },
+  {
+    "Id": "be4f9caa-d844-4b77-989a-f49a5a42d1ca",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".jar"
+  },
+  {
+    "Id": "5620c172-ce5d-43a4-9a43-ceb2754ea815",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".ods"
+  },
+  {
+    "Id": "15e051ce-373a-4f79-adf5-2c7efdb05ae8",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".xlsx"
+  },
+  {
+    "Id": "2c98a58c-c043-44cf-96d8-0f2e6dcad6b7",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".apk"
+  },
+  {
+    "Id": "ccba8e8f-2649-47a0-814b-0a62adfd550d",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".aar"
+  },
+  {
+    "Id": "b21609ba-46bb-4e29-b90f-d37e76a036b1",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".class"
+  },
+  {
+    "Id": "e572f08f-0198-4b7a-af88-14d5654ff4cf",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".iso"
+  },
+  {
+    "Id": "f6876025-7c89-4cc9-975f-17f1c1fb3436",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".xls"
+  },
+  {
+    "Id": "7c6ece56-886c-4915-813f-021268b3643a",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".msg"
+  },
+  {
+    "Id": "d79f307c-3714-4dc8-8e89-b601fe569bdc",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".dex"
+  },
+  {
+    "Id": "c702a8ad-9210-41ee-87fe-5e12834087ed",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".vmdk"
+  },
+  {
+    "Id": "1077ea3d-9e4f-4c02-b0e7-cca2c7f6e15c",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".crx"
+  },
+  {
+    "Id": "06ac8965-6330-4b68-a03b-8795b70a51d6",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".fh8"
+  },
+  {
+    "Id": "18d5dd32-292d-4ca6-8609-7c69085b2c47",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".cwk"
+  },
+  {
+    "Id": "ca6998d3-e435-4584-b5eb-794c782ad1b8",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".toast"
+  },
+  {
+    "Id": "3bcee97c-5483-40d8-a738-66a2deea0569",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".xar"
+  },
+  {
+    "Id": "c245f74c-b02b-4a98-a954-c6ff30f431e7",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".dat"
+  },
+  {
+    "Id": "04a504df-35b3-4d17-bfa4-54e91b0e5567",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".nes"
+  },
+  {
+    "Id": "4ee6dd08-98f3-4a46-8285-de1a2148a2c8",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".tar"
+  },
+  {
+    "Id": "8e054c7f-7bcb-4f71-8f90-8d0eab33f1d6",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".tox"
+  },
+  {
+    "Id": "4637507d-99c7-4473-bb49-f7c1ed7103fe",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".7z"
+  },
+  {
+    "Id": "1efc83e8-a314-4e35-b725-fcc31cc41279",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".gz"
+  },
+  {
+    "Id": "67f105cf-1c6d-47bf-b968-c3ba4c995571",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".tar.gz"
+  },
+  {
+    "Id": "b7b2fe63-6da6-4687-af9c-af0798103eba",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".xz"
+  },
+  {
+    "Id": "8bc5d340-c8af-4025-9b25-6087070e5cbc",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".tar.xz"
+  },
+  {
+    "Id": "f27e6a23-da41-4fd5-b6d6-cb54d33f7f4a",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".lz4"
+  },
+  {
+    "Id": "8dbd06ba-7d59-4022-9ec7-20a78461862c",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".cab"
+  },
+  {
+    "Id": "6f38f394-64ea-4f84-a579-855e7ce2e46b",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".stg"
+  },
+  {
+    "Id": "cffa5934-12dc-44a9-828c-0ef69d283ac3",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".der"
+  },
+  {
+    "Id": "bc755ffa-cdf9-4081-90cc-ade2242ce966",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".woff"
+  },
+  {
+    "Id": "6f3fe4ab-da2a-43e7-87f6-ba7738e7791c",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".woff2"
+  },
+  {
+    "Id": "d96aab3e-4cfe-48ae-aa76-6946673f3881",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".XML"
+  },
+  {
+    "Id": "529ba13f-e681-490d-ab0c-73f52821cdbf",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".wasm"
+  },
+  {
+    "Id": "99dbdb26-6414-403a-b56a-66402dd2a0ff",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".lep"
+  },
+  {
+    "Id": "c0f2f61a-4839-4b8c-a938-4fae67e59ae0",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".deb"
+  },
+  {
+    "Id": "c45fecf6-f3f0-4564-83d4-ca3217eeda98",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".tsv"
+  },
+  {
+    "Id": "c450bd67-505f-46d2-b9ce-a7c761c88124",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".tsa"
+  },
+  {
+    "Id": "cbfc063b-fcd1-4eaf-be78-649e4f244ad8",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".zlib"
+  },
+  {
+    "Id": "19defd3d-943a-4762-a6f5-374d2029091a",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".lzfse"
+  },
+  {
+    "Id": "5ccae975-53bd-462b-942f-054b73776c8e",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".avro"
+  },
+  {
+    "Id": "13c5e151-1c87-4b25-a3c1-bbc9e205ddb0",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".rc"
+  },
+  {
+    "Id": "e2358f35-0f64-487d-8989-1328cecaa04e",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".p25"
+  },
+  {
+    "Id": "6782bd62-d904-497a-9960-a24e49873158",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".obt"
+  },
+  {
+    "Id": "444de2d1-a9e9-455b-8d4e-5d3b44befcaf",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".pcv"
+  },
+  {
+    "Id": "f308d2cf-bcc8-400d-b396-d2cb963dff57",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".pbt"
+  },
+  {
+    "Id": "dfe4f7ea-e7ca-4581-bd6a-20a5b4184584",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".pdt"
+  },
+  {
+    "Id": "abc2ab17-a6bc-48ca-852e-07cd7a6af8b3",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".pea"
+  },
+  {
+    "Id": "959e9476-a705-4b77-a461-968a89c35863",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".peb"
+  },
+  {
+    "Id": "6399f7c1-0eeb-4b84-a5ea-4f91eac224aa",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".pet"
+  },
+  {
+    "Id": "16b1c706-3411-425c-b1f5-73098504d5b2",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".pgt"
+  },
+  {
+    "Id": "aa641828-bb65-4b26-ae16-7176adb6cb86",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".pjt"
+  },
+  {
+    "Id": "6a976454-8c54-489c-a0db-b09bf8797906",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".pkt"
+  },
+  {
+    "Id": "1059f1e8-d43e-44eb-9dd9-cb0eca697fa4",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".pmt"
+  },
+  {
+    "Id": "500d6850-0c15-429f-a7cd-f521b530a292",
+    "extensionCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".luac"
+  },
+  {
+    "Id": "fd5469ff-89ac-4620-809a-58b87ae95cb2",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".svg"
+  },
+  {
+    "Id": "b47e6eeb-61d5-496c-b005-0559506869d8",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".apng"
+  },
+  {
+    "Id": "a78c76a0-dddc-4843-a907-0d13b74b75a2",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".fle"
+  },
+  {
+    "Id": "b7572d3e-f8de-481e-9afe-766b18f00fc9",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".wlmp"
+  },
+  {
+    "Id": "02d56b58-f2e7-449d-99ea-6f3530f921a1",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".bmp"
+  },
+  {
+    "Id": "23182bbe-2314-4e4c-a720-fc71b2c8b03b",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".gif"
+  },
+  {
+    "Id": "534e0509-a215-4a3a-a1e0-3c65ea3e7d70",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".jpeg"
+  },
+  {
+    "Id": "e8b841aa-e0ab-4bb5-ae59-1bd612e8e3e2",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".tiff"
+  },
+  {
+    "Id": "0cb25db5-ba34-42af-81e9-388d99efef3b",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".png"
+  },
+  {
+    "Id": "6a04d8e0-1826-4e0d-a797-505b8c394716",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".eps"
+  },
+  {
+    "Id": "2992e728-d8f0-45bc-a67b-46b0686e4c74",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".wmf"
+  },
+  {
+    "Id": "6c27901e-3c50-40cd-b280-edfbbdac1bf4",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".jpg"
+  },
+  {
+    "Id": "6e80d3d5-de84-4ca6-9c3b-bd5c35a8d1dc",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".jfif"
+  },
+  {
+    "Id": "4cbf16d9-c7be-4e6a-8daf-ad1195f0c6fd",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".PIC"
+  },
+  {
+    "Id": "366c93cf-1da8-44f4-8bb4-15ea0e1299a9",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".ico"
+  },
+  {
+    "Id": "91533401-49df-4961-85b8-f654b7f139aa",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".tif"
+  },
+  {
+    "Id": "5f0a84d1-8d2f-4a55-8674-a859a2c88a12",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".cr2"
+  },
+  {
+    "Id": "de90e352-a544-4fab-aea9-5d8575aad002",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".cin"
+  },
+  {
+    "Id": "31a5828f-ccc1-4bd0-9d68-fab95b20fefa",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".dpx"
+  },
+  {
+    "Id": "02fadd24-33b0-475b-8f36-7fe78db99421",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".exr"
+  },
+  {
+    "Id": "3858e8a4-acaf-4346-b873-78f3c68afa07",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".bpg"
+  },
+  {
+    "Id": "6d70e59c-2e7e-4582-8b0b-f471d70ddbe7",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".ilbm"
+  },
+  {
+    "Id": "502f832a-ed4b-4809-bb67-db05892c87de",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".lbm"
+  },
+  {
+    "Id": "93493425-7d20-4b83-93a4-9b36422714ac",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".ibm"
+  },
+  {
+    "Id": "1dbcbcd9-e4c3-4210-baaf-178492acd65e",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".acbm"
+  },
+  {
+    "Id": "04ec53e7-e098-428b-8956-dcbe51132897",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".anbm"
+  },
+  {
+    "Id": "7c8eb0a1-51e5-4801-8b18-06382ec62c15",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".odp"
+  },
+  {
+    "Id": "272331f8-70a1-4a5b-974d-2521b8cd9c8a",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".pptx"
+  },
+  {
+    "Id": "6582cfae-4891-493f-815b-7393959ee32c",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".ps"
+  },
+  {
+    "Id": "79b3b5ec-df8b-4040-b6b3-c07f8ebc47cb",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".psd"
+  },
+  {
+    "Id": "0e5080f4-4857-45aa-92a7-9460f9cfa797",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".dib"
+  },
+  {
+    "Id": "e11e6427-8c88-4486-b2f7-484998904ef1",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".fits"
+  },
+  {
+    "Id": "257e4577-3425-44a6-b6e3-722559abe612",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".ppt"
+  },
+  {
+    "Id": "0907490d-9aa7-4546-9cab-b8646c53ba54",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".dmg"
+  },
+  {
+    "Id": "7b9835d9-f6f7-4402-af4d-03bb724adee5",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".flif"
+  },
+  {
+    "Id": "860ec95c-73dc-45df-b38c-a9255956720b",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".djvu"
+  },
+  {
+    "Id": "79d50c89-7e73-49ae-8830-cb44c0d31530",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".djv"
+  },
+  {
+    "Id": "230c37a5-9d97-49c4-bd12-a1a26d1559a8",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".dcm"
+  },
+  {
+    "Id": "f758a555-38ba-41b8-b4b2-37b60b4b477f",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".webp"
+  },
+  {
+    "Id": "22f884e3-20dd-42c9-86d6-1c73028fd91b",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".ez2"
+  },
+  {
+    "Id": "420cfe12-b13b-4063-9adb-ba4057ea2595",
+    "extensionCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".ez3"
+  },
+  {
+    "Id": "e1ac4664-1ce2-4890-9bf7-20b0b92741ee",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".mp3"
+  },
+  {
+    "Id": "f3764331-6ae0-436d-b5b7-bfd772c629d2",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".mp4"
+  },
+  {
+    "Id": "6e351654-b572-4041-b7bf-ea003cadf565",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".wav"
+  },
+  {
+    "Id": "594d7633-7676-487b-a971-e2060a33318d",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".wma"
+  },
+  {
+    "Id": "b55bdeed-c0dc-4923-bc56-f0c4f0c777af",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".midi"
+  },
+  {
+    "Id": "a8a46e6d-ea62-4299-88f1-ba7190d4246f",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".avi"
+  },
+  {
+    "Id": "f6d9837f-2ced-4aff-b508-6e92dd205968",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".flv"
+  },
+  {
+    "Id": "ef195a56-965a-439e-be95-895722862419",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".swf"
+  },
+  {
+    "Id": "ba07c0e8-5935-4449-aa9f-8d1335e12023",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".wmv"
+  },
+  {
+    "Id": "930c8b0b-d749-4a05-a83a-9c4af24df497",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".mov"
+  },
+  {
+    "Id": "3a322e98-ad13-42b3-9196-17bd82b00db6",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".mpeg"
+  },
+  {
+    "Id": "b08f76f9-e624-4b84-b829-98d93e5f37aa",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".3gp"
+  },
+  {
+    "Id": "45346c4d-d624-4a78-9fa2-e23ba2218549",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".3g2"
+  },
+  {
+    "Id": "9a6ef885-4c96-4328-9d8b-906693d989b0",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".8svx"
+  },
+  {
+    "Id": "cb770e77-b1ea-4b99-a3ae-a841e1a08637",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".8sv"
+  },
+  {
+    "Id": "211ddea9-3815-4d0e-aa06-4c925d253f5f",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".snd"
+  },
+  {
+    "Id": "abbdf987-7f48-4248-ab48-18977720b185",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".anim"
+  },
+  {
+    "Id": "781bfcf1-97dd-41e2-88ea-84919c54cab7",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".smus"
+  },
+  {
+    "Id": "389ddc09-65f7-468b-8779-e776aff60194",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".smu"
+  },
+  {
+    "Id": "4931e819-b6c2-445a-9462-b40781348a94",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".mus"
+  },
+  {
+    "Id": "f88d7e9b-ba0b-4382-a8bd-18da89cd39b3",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".cmus"
+  },
+  {
+    "Id": "70e79e0d-1864-421e-ae65-8bbd3596813e",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".yuvn"
+  },
+  {
+    "Id": "2c6c7980-02ac-4e19-969a-ff3508e4166d",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".yuv"
+  },
+  {
+    "Id": "ecfef6ff-467d-4b3f-9e55-0ee067c10b5f",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".aiff"
+  },
+  {
+    "Id": "ccba99a6-d06b-4d0e-b894-3bf4426a420e",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".aif"
+  },
+  {
+    "Id": "1a0da3ee-e7b9-415b-abcb-a0ac365c18fe",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".aifc"
+  },
+  {
+    "Id": "da21bcc1-05be-48c0-a11d-553a74ea9909",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".idx"
+  },
+  {
+    "Id": "18dc0467-4e59-4189-a852-f786f8cc0f7a",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".vsdx"
+  },
+  {
+    "Id": "91953f07-fb55-4b54-9df5-98f7f850bd35",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".asf"
+  },
+  {
+    "Id": "1ece041a-cae8-4bf7-ad38-ca6e059ab42e",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".ogg"
+  },
+  {
+    "Id": "49bd7178-2491-4ebd-8234-f5401fed569d",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".oga"
+  },
+  {
+    "Id": "3f56b530-74e8-4744-a2b4-140892d79116",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".ogv"
+  },
+  {
+    "Id": "5511c2d1-5493-4909-aeba-3d7832df9bc0",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".flac"
+  },
+  {
+    "Id": "2d805893-f839-4c7c-8488-d2a687f9807c",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".mid"
+  },
+  {
+    "Id": "e41ff32d-3e9e-40df-a2b2-66825b6e0cae",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".MLV"
+  },
+  {
+    "Id": "9e40ad61-4477-40eb-90c2-3ba336859548",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".mkv"
+  },
+  {
+    "Id": "a8dea200-93d3-4fd4-9ec5-623794d735b9",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".mka"
+  },
+  {
+    "Id": "f74e1752-583e-4a55-974d-533b0f964225",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".mks"
+  },
+  {
+    "Id": "a44a7af0-b227-4aff-9023-f5bf88c52b2e",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".mk3d"
+  },
+  {
+    "Id": "2e5eef75-ca20-4c96-afd8-b169c4541741",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".webm"
+  },
+  {
+    "Id": "0885ecf9-e881-4536-b656-756a8c299b56",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".ts"
+  },
+  {
+    "Id": "faf7225f-9656-4e92-8ea4-7999d046ba7e",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".m2p"
+  },
+  {
+    "Id": "bb83ab20-87dd-4b7f-8ac1-22b0e5c3a37a",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".vob"
+  },
+  {
+    "Id": "c0a14d7d-8342-4299-8052-d7b24b2570d2",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".mpg"
+  },
+  {
+    "Id": "df4a4851-3534-4a56-a78e-5163dba6b5e2",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".mpg"
+  },
+  {
+    "Id": "72d84ce5-6e4e-4eef-9ebd-ed3da8c4cd97",
+    "extensionCategory": {
+      "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+      "nameCategory": "Video",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "extensionValue": ".orc"
+  }
+]

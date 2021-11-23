@@ -36,67 +36,36 @@ namespace FileSortService
             _env = env;
             _appDbContext = appDbContext;
         }
+        [Route("Autofill")]
+        [HttpGet]
+        public IEnumerable<ArchitectureFolder> Geting() 
+        {
+            var result = _iFileSortRepository.GetArchitecture();
+            return result;
+        }
+        [Route("UploadCheck")]
+        [HttpGet]
+        public IEnumerable<TypeFileFromUpload> GetDate()//
+        {
+            var result = _iFileSortRepository.GetDate();
+            return result;
+        }
         [Route("InsertExtension")]
         [HttpPost]
         public void InsertExtension() 
         {
-            if (_appDbContext.ExtenCategory.Count() == 0) 
-            {
-                List<ExtensionCategory> extenCategory = new();
-                extenCategory.Add(new ExtensionCategory {Id = Guid.NewGuid(), nameCategory =  "File" });
-                extenCategory.Add(new ExtensionCategory {Id = Guid.NewGuid(), nameCategory = "Photo" });
-                extenCategory.Add(new ExtensionCategory { Id = Guid.NewGuid(), nameCategory = "Video" });
-                _appDbContext.ExtenCategory.AddRange(extenCategory);
-                _appDbContext.SaveChanges();
-            }
-            if (_appDbContext.ExtenValue.Count() == 0) 
-            {
-                List<string> OnlyFile = new List<string> { ".txt", ".doc", ".docx", ".docm", ".rtf", ".odt", ".pdf", ".arj", ".zip", ".rar", ".tar" };
-                List<string> OnlyPhoto = new List<string> { ".svg", ".apng", ".fle", ".wlmp", ".bmp", ".gif", ".jpeg", ".tiff", ".png", ".eps", ".pdf", ".wmf", ".jpg", ".jfif" };
-                List<string> OnlyVideo = new List<string> { ".mp3", ".mp4", ".wav", ".wma", ".midi", ".avi", ".flv", ".swf", ".wmv", ".mov", ".mpeg" };
-                Dictionary<string, List<string>> lists = new Dictionary<string, List<string>>();
-                lists.Add("OnlyFile", OnlyFile);
-                lists.Add("OnlyPhoto", OnlyPhoto);
-                lists.Add("OnlyVideo", OnlyVideo);
-                List<ExtensionValue> extensionValues = new();
-                foreach (var exten in lists.Keys)
-                {
-                    ExtensionCategory whatcategory = new();
-                    switch (exten)
-                    {
-                        case "OnlyFile":
-                            whatcategory = _appDbContext.ExtenCategory.Select(x => x).Where(u => u.nameCategory == "File").FirstOrDefault();
-                            break;
-                        case "OnlyPhoto":
-                            whatcategory = _appDbContext.ExtenCategory.Select(x => x).Where(u => u.nameCategory == "Photo").FirstOrDefault();
-                            break;
-                        case "OnlyVideo":
-                            whatcategory = _appDbContext.ExtenCategory.Select(x => x).Where(u => u.nameCategory == "Video").FirstOrDefault();
-                            break;
-                        default:
-                            break;
-                    }
-                    if (whatcategory != null)
-                    {
-                        foreach (var item in lists[exten])
-                        {
-                            extensionValues.Add(new ExtensionValue { Id = Guid.NewGuid(), extensionCategory =  whatcategory, extensionValue = item });
-                        }
-                    }
-
-                }
-               _appDbContext.ExtenValue.AddRange(extensionValues);
-                _appDbContext.SaveChanges();
-            } 
+            _iFileSortRepository.InsertExt();
         }
         [HttpGet("{pathfolder}/{typeFile}")]
-        public ActionResult<FileReadDto> GetAllFiles(string pathfolder,string typeFile)
+        public IEnumerable<ArchitectureFolder> GetAllFiles(string pathfolder,string typeFile)//<ActionResult>
         {
             Console.WriteLine("--> Getting all File....");
-            typeFile = typeFile == "*" ? null : typeFile;  
-            var fileItem = _iFileSortRepository.GetAllFile(pathfolder,typeFile);
-            //return Ok(fileItem);
-            return Ok(_mapper.Map<FileReadDto>(fileItem));
+            //typeFile = typeFile == "*" ? null : typeFile;  
+            //var fileItem = _iFileSortRepository.GetAllFile(pathfolder,typeFile);
+            //return Ok(_mapper.Map<FileReadDto>(fileItem));
+            typeFile = typeFile == "*" ? null : typeFile;
+            var fileItem = _iFileSortRepository.GetAllFileV2(pathfolder,typeFile);
+            return fileItem;
         }
         [HttpGet("{namefile}*{typeName}",Name = "InfoAboutFile")]
         public ActionResult<InfoAboutFile> InfoAboutFile(string nameFile,string typeFile)
@@ -110,26 +79,26 @@ namespace FileSortService
             }
             return NotFound();
         }
-        // [HttpPost]
-        // public HttpStatusCode CreateFile(InfoAboutFileDtos infoAboutFile)//async Task<>
-        // {
-        //     var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
+        [HttpPost]
+        public HttpStatusCode CreateFile(InfoAboutFileDtos infoAboutFile)//async Task<>
+        {
+            var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
             
-        //     //var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
-        //     var statusCode =  _iFileSortRepository.CreateFile(infoAboutFileModel);
-        //     return statusCode;
-        //     //var fileReadDto = _mapper.Map<InfoAboutFileDto>(infoAboutFileModel);
-        //     // try
-        //     // {
-        //     //     await _fileDataClient.SendFileSortToFileS(fileReadDto);
-        //     // }
-        //     // catch(Exception ex)
-        //     // {
-        //     //     Console.WriteLine($"--> Could not send synchrinously : {ex.Message}");
-        //     // }
+            //var infoAboutFileModel = _mapper.Map<InfoAboutFile>(infoAboutFile);
+            var statusCode =  _iFileSortRepository.CreateFile(infoAboutFileModel);
+            return statusCode;
+            //var fileReadDto = _mapper.Map<InfoAboutFileDto>(infoAboutFileModel);
+            // try
+            // {
+            //     await _fileDataClient.SendFileSortToFileS(fileReadDto);
+            // }
+            // catch(Exception ex)
+            // {
+            //     Console.WriteLine($"--> Could not send synchrinously : {ex.Message}");
+            // }
             
-        //     //return CreatedAtRoute(nameof(InfoAboutFile),new {nameFile = fileReadDto.NameFile,typeName = fileReadDto.TypeFile},fileReadDto);
-        // }
+            //return CreatedAtRoute(nameof(InfoAboutFile),new {nameFile = fileReadDto.NameFile,typeName = fileReadDto.TypeFile},fileReadDto);
+        }
         [Route("SaveFile/{currentDirectory}")]
         [HttpPost]
         public async Task<HttpResponseMessage> SaveFile(string currentDirectory)
@@ -159,7 +128,7 @@ namespace FileSortService
                 return new HttpResponseMessage(HttpStatusCode.BadRequest);
             }
         }
-        //[Route("SaveFile2/")]
+        [Route("SaveFile2")]
         [HttpPost]
         public async Task<HttpStatusCode> SaveFile2(List<ParameterRequest> parameter) //[FromQuery] string currentDirectory,
         {
@@ -222,6 +191,13 @@ namespace FileSortService
             var getStatus = _iFileSortRepository.EditFile(parameter);
             return new JsonResult(getStatus);
         }
-        
+        [Route("CheckJson")]
+        [HttpGet]
+        public string CheckJson() 
+        {
+            DeserealizeJsonDate deserealizeJsonDate = new DeserealizeJsonDate();
+
+            return deserealizeJsonDate.ReturnDateForArchitecture("Up").ToString();
+        }
     }
 }
