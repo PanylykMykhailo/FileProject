@@ -274,34 +274,37 @@ namespace FileSortService.Repository
             }
             Console.WriteLine(getInfo.Count());
             return getInfo;
-            //var checkFolder = CheckFolder(updatepath, typeFile);
-            //InfoAboutFiles infoAboutFiles = new();
-            //infoAboutFiles.folderPath = pathFolder.Split('*').ToList();
-            //infoAboutFiles.infoaboutFile = new();
-            //if (checkFolder != null)
-            //{
-            //    infoAboutFiles.infoaboutFile.AddRange(checkFolder);
-            //}
-            //foreach (var item in files)
-            //{
-            //    var infoFile = new System.IO.FileInfo(item);
-            //    infoAboutFiles.infoaboutFile.Add(new InfoAboutFile()
-            //    {
-            //        NameFile = Path.GetFileNameWithoutExtension(item),
-            //        TypeFile = infoFile.Extension,
-            //        typeCategory = _context.ExtenValue.Select(x => new ExtensionValue
-            //        {
-            //            Id = x.Id,
-            //            extensionCategory = x.extensionCategory,
-            //            extensionValue = x.extensionValue
-            //        })
-            //        .Where(u => u.extensionValue == infoFile.Extension).FirstOrDefault().extensionCategory.nameCategory,
-            //        linkToOpen = $"{_configuration["WorkLink"]}/{pathFolder.Replace("*", "/")}/{Path.GetFileName(item)}",
-            //        SizeFile = infoFile.Length.ToString() + " bytes",
-            //        DateCreatedFile = infoFile.CreationTime.ToShortDateString() + " " + infoFile.CreationTime.ToShortTimeString()
-            //    });
-            //}
-            //return infoAboutFiles;
+            // var checkFolder = CheckFolderV2(updatepath, typeFile);
+            // InfoAboutFiles infoAboutFiles = new();
+            // infoAboutFiles.folderPath = pathFolder.Split('*').ToList();
+            // infoAboutFiles.infoaboutFile = new();
+            // if (checkFolder != null)
+            // {
+            //     infoAboutFiles.infoaboutFile.AddRange(checkFolder);
+            // }
+        }
+        public List<InfoAboutFile> CheckFolderV2(string rootPath,string typeFile)
+        {
+            var checking = Directory.GetDirectories(rootPath).Select(r => r.Replace(rootPath + @"\", "")).ToList();
+            if (checking.Count != 0)
+            {
+                List<InfoAboutFile> infoaboutFileinFolder = new List<InfoAboutFile>();
+                foreach (var item in checking)
+                {
+                    var aboutFolder = new System.IO.DirectoryInfo(rootPath + @"\" + item);
+                    infoaboutFileinFolder.Add(new InfoAboutFile()
+                    {
+                        NameFile = item,
+                        TypeFile = aboutFolder.Extension,
+                        SizeFile = aboutFolder.GetFiles().Length + " bytes",
+                        DateCreatedFile = aboutFolder.CreationTime.ToShortDateString() + " " + aboutFolder.CreationTime.ToShortTimeString(),
+                        isFolder = true,
+                        fileInFolder = Directory.GetFiles(rootPath + @"\" + item, $"*.{typeFile}*", SearchOption.AllDirectories).Length
+                    });
+                }
+                return infoaboutFileinFolder;
+            }
+            return null;
         }
 
 

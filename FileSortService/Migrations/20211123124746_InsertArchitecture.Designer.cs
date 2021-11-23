@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FileSortService.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20211123084714_SQLScript")]
-    partial class SQLScript
+    [Migration("20211123124746_InsertArchitecture")]
+    partial class InsertArchitecture
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
