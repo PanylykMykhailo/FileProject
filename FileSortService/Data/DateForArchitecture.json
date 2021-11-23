@@ -1,0 +1,386 @@
+[
+  {
+    "Id": "dd37853d-3c69-47f1-bd78-38402698d44f",
+    "nameFile": "ChangeName",
+    "typeFile": ".txt",
+    "typeCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/ChangeName.txt",
+    "sizeFile": "205 bytes",
+    "dateCreatedFile": "10/28/2021 13:44",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test"
+  },
+  {
+    "Id": "ee52ddbb-09b1-4339-bdc1-5c12811dd95c",
+    "nameFile": "gateway",
+    "typeFile": ".txt",
+    "typeCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/gateway.txt",
+    "sizeFile": "0 bytes",
+    "dateCreatedFile": "11/1/2021 10:01",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test"
+  },
+  {
+    "Id": "e72cec54-6ee7-4f9d-9755-ad07ac94d5b5",
+    "nameFile": "new",
+    "typeFile": ".bmp",
+    "typeCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/new.bmp",
+    "sizeFile": "0 bytes",
+    "dateCreatedFile": "11/10/2021 10:45",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test"
+  },
+  {
+    "Id": "b513e6bc-6db5-4e2d-b426-50c90e7a6943",
+    "nameFile": "Plurasights",
+    "typeFile": ".txt",
+    "typeCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/Plurasights.txt",
+    "sizeFile": "39 bytes",
+    "dateCreatedFile": "11/9/2021 11:52",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test"
+  },
+  {
+    "Id": "586f5ebf-1859-4451-b758-fe4adeebd731",
+    "nameFile": "rich",
+    "typeFile": ".rtf",
+    "typeCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/rich.rtf",
+    "sizeFile": "7 bytes",
+    "dateCreatedFile": "11/10/2021 10:49",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test"
+  },
+  {
+    "Id": "0f14be20-40dc-4423-8899-72ddb096cc8f",
+    "nameFile": "simplefile2",
+    "typeFile": ".txt",
+    "typeCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/simplefile2.txt",
+    "sizeFile": "0 bytes",
+    "dateCreatedFile": "10/28/2021 13:44",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test"
+  },
+  {
+    "Id": "b7a512e6-c896-4240-a5ad-f56c327fa3b0",
+    "nameFile": "sticker",
+    "typeFile": ".jpg",
+    "typeCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/sticker.jpg",
+    "sizeFile": "26574 bytes",
+    "dateCreatedFile": "11/9/2021 11:53",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test"
+  },
+  {
+    "Id": "c9bd8cce-88a1-46b8-9f14-2138e977fdd8",
+    "nameFile": "test1",
+    "typeFile": ".jpg",
+    "typeCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/test1.jpg",
+    "sizeFile": "118379 bytes",
+    "dateCreatedFile": "10/28/2021 13:46",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test"
+  },
+  {
+    "Id": "131d4028-37f0-4d3b-9236-521edfa20403",
+    "nameFile": "test2",
+    "typeFile": ".jfif",
+    "typeCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/test2.jfif",
+    "sizeFile": "10391 bytes",
+    "dateCreatedFile": "10/28/2021 13:46",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test"
+  },
+  {
+    "Id": "8517dd1d-7f5c-4b17-8258-76552ac5dcd2",
+    "nameFile": "zip",
+    "typeFile": ".zip",
+    "typeCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/zip.zip",
+    "sizeFile": "22 bytes",
+    "dateCreatedFile": "11/10/2021 10:50",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test"
+  },
+  {
+    "Id": "41b74f3b-5102-424b-a1b9-c9f4c04d229e",
+    "nameFile": "File",
+    "typeFile": "",
+    "typeCategory": null,
+    "linkToOpen": null,
+    "sizeFile": "1 bytes",
+    "dateCreatedFile": "10/28/2021 13:54",
+    "isFolder": true,
+    "fileInFolder": 2,
+    "pathfolder": "Test"
+  },
+  {
+    "Id": "c27d8f51-9067-4245-8459-df563c801ce0",
+    "nameFile": "include",
+    "typeFile": "",
+    "typeCategory": null,
+    "linkToOpen": null,
+    "sizeFile": "1 bytes",
+    "dateCreatedFile": "11/18/2021 22:16",
+    "isFolder": true,
+    "fileInFolder": 1,
+    "pathfolder": "Test"
+  },
+  {
+    "Id": "0a8beb66-4a38-4b38-bf39-4eba67003501",
+    "nameFile": "PasteFile",
+    "typeFile": "",
+    "typeCategory": null,
+    "linkToOpen": null,
+    "sizeFile": "4 bytes",
+    "dateCreatedFile": "10/28/2021 14:40",
+    "isFolder": true,
+    "fileInFolder": 5,
+    "pathfolder": "Test"
+  },
+  {
+    "Id": "ea70ebc5-078b-4eaf-96ef-fae9722053e8",
+    "nameFile": "check",
+    "typeFile": ".txt",
+    "typeCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/File/check.txt",
+    "sizeFile": "0 bytes",
+    "dateCreatedFile": "10/28/2021 13:55",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test*File"
+  },
+  {
+    "Id": "3d161bf7-e919-4aae-945a-eac9b030eea3",
+    "nameFile": "fileInclude",
+    "typeFile": "",
+    "typeCategory": null,
+    "linkToOpen": null,
+    "sizeFile": "1 bytes",
+    "dateCreatedFile": "11/18/2021 22:16",
+    "isFolder": true,
+    "fileInFolder": 1,
+    "pathfolder": "Test*File"
+  },
+  {
+    "Id": "3e394040-ec35-4f1b-b826-2b7d17ebec9f",
+    "nameFile": "zip",
+    "typeFile": ".zip",
+    "typeCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/include/zip.zip",
+    "sizeFile": "22 bytes",
+    "dateCreatedFile": "11/18/2021 22:17",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test*include"
+  },
+  {
+    "Id": "55bb97e9-0231-4368-83ca-6a57d6c51e29",
+    "nameFile": "simplefile1",
+    "typeFile": ".txt",
+    "typeCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/PasteFile/simplefile1.txt",
+    "sizeFile": "0 bytes",
+    "dateCreatedFile": "10/28/2021 14:46",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test*PasteFile"
+  },
+  {
+    "Id": "519c468f-0a74-42a7-b5b1-0ef0893f3cfa",
+    "nameFile": "simplefile2",
+    "typeFile": ".txt",
+    "typeCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/PasteFile/simplefile2.txt",
+    "sizeFile": "0 bytes",
+    "dateCreatedFile": "10/28/2021 14:46",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test*PasteFile"
+  },
+  {
+    "Id": "5037620c-3e5d-4068-81c2-43335d923f5d",
+    "nameFile": "test1",
+    "typeFile": ".jpg",
+    "typeCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/PasteFile/test1.jpg",
+    "sizeFile": "118379 bytes",
+    "dateCreatedFile": "10/28/2021 14:46",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test*PasteFile"
+  },
+  {
+    "Id": "1cafffc1-58df-416f-ab56-625ef879165e",
+    "nameFile": "test2",
+    "typeFile": ".jfif",
+    "typeCategory": {
+      "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+      "nameCategory": "Photo",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/PasteFile/test2.jfif",
+    "sizeFile": "10391 bytes",
+    "dateCreatedFile": "10/28/2021 14:46",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test*PasteFile"
+  },
+  {
+    "Id": "32ca1fc5-aea9-4eb4-a372-ffd9d4b7a5c5",
+    "nameFile": "includes2",
+    "typeFile": "",
+    "typeCategory": null,
+    "linkToOpen": null,
+    "sizeFile": "1 bytes",
+    "dateCreatedFile": "11/18/2021 22:17",
+    "isFolder": true,
+    "fileInFolder": 1,
+    "pathfolder": "Test*PasteFile"
+  },
+  {
+    "Id": "cb2e23bc-8193-46b8-b7d3-5e35d1ef40f8",
+    "nameFile": "testing",
+    "typeFile": ".txt",
+    "typeCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/File/fileInclude/testing.txt",
+    "sizeFile": "0 bytes",
+    "dateCreatedFile": "11/18/2021 22:16",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test*File*fileInclude"
+  },
+  {
+    "Id": "ae74e863-8a67-4606-a0b7-5d9fec9b6a1e",
+    "nameFile": "longText",
+    "typeFile": ".rtf",
+    "typeCategory": {
+      "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+      "nameCategory": "File",
+      "architectureFolder": null,
+      "extensionValue": null,
+      "typeFileFromUploads": null
+    },
+    "linkToOpen": "/Test/PasteFile/includes2/longText.rtf",
+    "sizeFile": "7 bytes",
+    "dateCreatedFile": "11/18/2021 22:17",
+    "isFolder": false,
+    "fileInFolder": 0,
+    "pathfolder": "Test*PasteFile*includes2"
+  }
+]

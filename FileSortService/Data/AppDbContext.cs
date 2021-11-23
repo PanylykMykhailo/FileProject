@@ -1,4 +1,5 @@
 
+using FileSortService.Configurations;
 using FileSortService.Model.DatabaseModel;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,11 +15,12 @@ namespace FileSortService.Data
         public DbSet<TypeFileFromUpload> UploadCheck { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            AutofillTypeFile getData = new AutofillTypeFile();
-            modelBuilder.Entity<TypeFileFromUpload>(tfu =>
-            {  
-                tfu.HasData(getData.GetDate());
-            });
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof (ExtensionCategoryConfiguration).Assembly);
+            
+            //modelBuilder.ApplyConfiguration(new ExtensionCategoryConfiguration());
+            //modelBuilder.ApplyConfiguration(new ExtensionValueConfiguration());
+            //modelBuilder.ApplyConfiguration(new ArchitectureFolderConfiguration());
+            //modelBuilder.ApplyConfiguration(new TypeFileFromUploadConfiguration());
         }
     }
 }

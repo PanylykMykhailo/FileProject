@@ -1,0 +1,23 @@
+[
+  {
+    "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
+    "nameCategory": "File",
+    "architectureFolder": null,
+    "extensionValue": null,
+    "typeFileFromUploads": null
+  },
+  {
+    "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
+    "nameCategory": "Photo",
+    "architectureFolder": null,
+    "extensionValue": null,
+    "typeFileFromUploads": null
+  },
+  {
+    "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
+    "nameCategory": "Video",
+    "architectureFolder": null,
+    "extensionValue": null,
+    "typeFileFromUploads": null
+  }
+]

@@ -9,8 +9,6 @@ namespace FileSortService.Model.DatabaseModel
         [Key]
         public Guid Id{get;set;}
         public ExtensionCategory extensionCategory{get;set;}
-        [ForeignKey("extensionCategoryId")]
-        public Guid extensionCategoryId { get; set; }
         public string typeFile {get;set;}
         public string hexSignature {get;set;}
     }
