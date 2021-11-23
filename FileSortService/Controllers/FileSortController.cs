@@ -197,7 +197,7 @@ namespace FileSortService
         {
             DeserealizeJsonDate deserealizeJsonDate = new DeserealizeJsonDate();
 
-            return deserealizeJsonDate.ReturnDateForArchitecture("Down").ToString();
+            return deserealizeJsonDate.ReturnDateForArchitecture("Up").ToString();
         }
     }
 }

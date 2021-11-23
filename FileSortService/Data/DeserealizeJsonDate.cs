@@ -15,6 +15,7 @@ namespace FileSortService.Data
         private readonly string rootExtenCategory = @"C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\Data\DateForExtenCategory.json";
         private readonly string rootExtenValue = @"C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\Data\DateForExtenValue.json";
         private readonly string rootUploadCheck = @"C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\Data\DateForUploadCheck.json";
+
         public StringBuilder ReturnDateForArchitecture(string action) 
         {
             StringBuilder scriptArchitecture = new StringBuilder().Append("Insert Into [Architecture] (Id,nameFile,typeFile,typeCategoryId,linkToOpen,sizeFile,dateCreatedFile,isFolder,fileInFolder,pathfolder)\n").Append("Values ");
