@@ -74,6 +74,7 @@ namespace FileSortService.Data
                 {
                     jsonExtenCategory = JsonConvert.DeserializeObject<List<ExtensionCategory>>(reader.ReadToEnd());
                 }
+
                 foreach (var item in jsonExtenCategory)
                 {
                     switch (action)

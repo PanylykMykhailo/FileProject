@@ -8,6 +8,7 @@ namespace FileSortService.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             DeserealizeJsonDate deserealizeJsonDate = new DeserealizeJsonDate();
+            //doSCSRIPT doSCSRIPT = new doSCSRIPT();
             migrationBuilder.Sql(deserealizeJsonDate.ReturnDateForExtenCategory("Up").ToString());
         }
 
