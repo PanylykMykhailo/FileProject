@@ -13,10 +13,8 @@ namespace FileSortService.Configurations
     {
         public void Configure(EntityTypeBuilder<TypeFileFromUpload> builder)
         {
-            //AutofillTypeFile getData = new AutofillTypeFile();
             builder.HasKey(exId => exId.Id);
-            //builder.HasOne(extV => extV.extensionCategory).WithMany(extC => extC.typeFileFromUploads).HasForeignKey("typeCategoryId");
-           // builder.HasData(getData.GetDate());
+            builder.HasOne(extV => extV.extensionCategory).WithMany(extC => extC.typeFileFromUploads).HasForeignKey("typeCategoryId");
         }
     }
 }

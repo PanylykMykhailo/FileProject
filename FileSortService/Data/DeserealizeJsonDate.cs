@@ -13,6 +13,7 @@ using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.Scripting;
 using System.Text.Json;
 using Newtonsoft.Json;
+using NPOI.SS.Formula.Functions;
 
 namespace FileSortService.Data
 {
@@ -202,7 +203,7 @@ namespace FileSortService.Data
                 return exception;
             }
         }
-        public List<TOut> TryGetCollection<TOut>(string filename)//,string action
+        public List<TOut> TryGetCollection<TOut>(string filename)
         {
             List<TOut> jsonDesrealize = new();
             var resourcePath = assembly.GetManifestResourceNames()
@@ -216,20 +217,14 @@ namespace FileSortService.Data
             }
             return jsonDesrealize;
         }
-        
-        
     }
     public class WriteScript 
     {
-        //public StringBuilder ReturnScript() 
-        //{
-
-        //}
         public StringBuilder WriteScriptAll<TOut>(string filename)
         {
             DeserealizeJsonDate deserealizeJsonDate = new DeserealizeJsonDate();
             var jsonDesrealize = deserealizeJsonDate.TryGetCollection<TOut>(filename);
-            var script = HeaderInsert(jsonDesrealize[0]);
+            var script = HeaderInsert<TOut>(jsonDesrealize[0]);
             var exp = CreatePredicate<TOut>(script[1].ToString()).Result;
             foreach (var item in jsonDesrealize)
             {
@@ -238,7 +233,7 @@ namespace FileSortService.Data
             return script[0].Remove(script[0].Length - 2,1);
         }
         
-        public List<StringBuilder> HeaderInsert(dynamic obj)
+        public List<StringBuilder> HeaderInsert<TOut>(TOut obj)
         {
             StringBuilder script = new StringBuilder($"Insert Into {obj.GetType().Name} (");
             StringBuilder scriptValues = new StringBuilder("item => {return $\"");
@@ -246,60 +241,56 @@ namespace FileSortService.Data
             var nameColumn = obj.GetType().GetProperties();
             for (int i = 0; i < nameColumn.Length; i++)
             {
-                if (nameColumn[i].PropertyType.FullName.StartsWith(Assembly.GetCallingAssembly().GetName().Name))
+                var jsonIgnoreAttribute = nameColumn[i].CustomAttributes.Count() != 0 ? nameColumn[i].CustomAttributes.ToList().FirstOrDefault().AttributeType.Name : "none";
+                if (jsonIgnoreAttribute != "JsonIgnoreAttribute") 
                 {
-                    if (i == nameColumn.Length - 1)
+                    if (nameColumn[i].PropertyType.FullName.StartsWith(Assembly.GetCallingAssembly().GetName().Name))
                     {
-                        script.Append($"{nameColumn[i].Name + "Id"})\n");
-                        scriptValues.Append("{((item?." + nameColumn[i].Name + "?.Id.ToString() ?? null) == null ? \"null\" : $\"'{item." + nameColumn[i].Name + ".Id}'\")}");
-                        countProperty++;
-                        continue;
+                        if (i == nameColumn.Length - 1)
+                        {
+                            script.Append($"{nameColumn[i].Name + "Id"})\n");
+                            scriptValues.Append("{((item?." + nameColumn[i].Name + "?.Id.ToString() ?? null) == null ? \"null\" : $\"'{item." + nameColumn[i].Name + ".Id}'\")}");
+                            countProperty++;
+                            continue;
+                        }
+                        else
+                        {
+                            script.Append($"{nameColumn[i].Name + "Id"},");
+                            scriptValues.Append("{((item?." + nameColumn[i].Name + "?.Id.ToString() ?? null) == null ? \"null\" : $\"'{item." + nameColumn[i].Name + ".Id}'\")},");
+                            countProperty++;
+                            continue;
+                        }
                     }
                     else
                     {
-                        script.Append($"{nameColumn[i].Name + "Id"},");
-                        scriptValues.Append("{((item?." + nameColumn[i].Name + "?.Id.ToString() ?? null) == null ? \"null\" : $\"'{item." + nameColumn[i].Name + ".Id}'\")},");
-                        countProperty++;
-                        continue;
-                    }
-                }
-                else if (i == nameColumn.Length - 1)
-                {
-                    script.Append($"{nameColumn[i].Name})\n");
-                    scriptValues.Append("'{item." + nameColumn[i].Name + "}'\";");
-                    countProperty++;
-                }
-                else
-                {
-                    switch (nameColumn[i].PropertyType.FullName)
-                    {
-                        case "System.Int32":
-                            script.Append($"{nameColumn[i].Name},");
-                            scriptValues.Append("{item." + nameColumn[i].Name + "},");
-                            countProperty++;
-                            break;
-                        case "System.Boolean":
-                            script.Append($"{nameColumn[i].Name},");
-                            scriptValues.Append("{(item." + nameColumn[i].Name + " == true ? 1 : 0)},");
-                            countProperty++;
-                            break;
-                        default:
-                            script.Append($"{nameColumn[i].Name},");
-                            scriptValues.Append("'{item." + nameColumn[i].Name + "}',");
-                            countProperty++;
-                            break;
+                        switch (nameColumn[i].PropertyType.FullName)
+                        {
+                            case "System.Int32":
+                                script.Append($"{nameColumn[i].Name},");
+                                scriptValues.Append("{item." + nameColumn[i].Name + "},");
+                                countProperty++;
+                                break;
+                            case "System.Boolean":
+                                script.Append($"{nameColumn[i].Name},");
+                                scriptValues.Append("{(item." + nameColumn[i].Name + " == true ? 1 : 0)},");
+                                countProperty++;
+                                break;
+                            default:
+                                script.Append($"{nameColumn[i].Name},");
+                                scriptValues.Append("'{item." + nameColumn[i].Name + "}',");
+                                countProperty++;
+                                break;
 
+                        }
                     }
                 }
+                
             }
-            scriptValues.Append("}");
-            Console.WriteLine(scriptValues.ToString());
-            script.Append("Values ");
+            scriptValues.Remove(scriptValues.Length - 1, 1).Append("\";}");
+
+            script.Remove(script.Length - 1, 1).Append(")\nValues ");
+
             List<StringBuilder> scripts = new List<StringBuilder>() { script, scriptValues };
-            //Dictionary<StringBuilder, StringBuilder> scripts = new Dictionary<StringBuilder, StringBuilder>()
-            //{
-            //    {}
-            //};
             return scripts;
         }
         public async Task<Func<T, string>> CreatePredicate<T>(string command)

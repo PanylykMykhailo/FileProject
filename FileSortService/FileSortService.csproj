@@ -38,4 +38,7 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
     <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\Migrations\" />
+  </ItemGroup>
 </Project>

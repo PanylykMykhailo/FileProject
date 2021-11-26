@@ -1,10 +1,10 @@
 [
   {
-    "Id": "5adc6572-9f2c-4d59-a1b6-56dae95996a9",
+    "Id": "1f2e2716-7e8e-4760-b4ff-45e29b325a41",
     "nameFile": "ChangeName",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "96d23a03-6a1e-4814-b1d9-7b99ece09fb3",
+      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/ChangeName.txt",
@@ -15,11 +15,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "c68f3fdf-e07a-4ad4-abc2-8866bb5cff37",
+    "Id": "5516ee78-e8e7-48c4-bd8a-69c3eebc82e1",
     "nameFile": "gateway",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "96d23a03-6a1e-4814-b1d9-7b99ece09fb3",
+      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/gateway.txt",
@@ -30,11 +30,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "39495ada-9d18-42de-86bc-f52ca8fa5d01",
+    "Id": "3d891269-b08d-4c5f-8f5d-ef92d34e835f",
     "nameFile": "new",
     "typeFile": ".bmp",
     "typeCategory": {
-      "Id": "e78be859-a069-4b1f-9be5-42d5c6097028",
+      "Id": "ed2e1e4f-75ba-4dc0-a449-1cf03ea0bbca",
       "nameCategory": "Photo"
     },
     "linkToOpen": "/Test/new.bmp",
@@ -45,11 +45,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "6f8548f8-2002-47e8-9e5d-b03d3ae23fa4",
+    "Id": "d19d0037-b928-45af-a978-5176a24fef4d",
     "nameFile": "Plurasights",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "96d23a03-6a1e-4814-b1d9-7b99ece09fb3",
+      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/Plurasights.txt",
@@ -60,11 +60,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "bf3ed48b-c888-4a4f-8cc7-c98f99dfb92a",
+    "Id": "1416d007-951a-41c3-9aca-a840dbf230e3",
     "nameFile": "rich",
     "typeFile": ".rtf",
     "typeCategory": {
-      "Id": "96d23a03-6a1e-4814-b1d9-7b99ece09fb3",
+      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/rich.rtf",
@@ -75,11 +75,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "f495466e-de4f-4e28-bc86-0b2638745203",
+    "Id": "2f58f775-e786-46a5-b3b7-f5fdb39e8c69",
     "nameFile": "simplefile2",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "96d23a03-6a1e-4814-b1d9-7b99ece09fb3",
+      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/simplefile2.txt",
@@ -90,11 +90,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "91b07cf8-f2e9-417a-9d35-f1d032cf17c6",
+    "Id": "5a299d54-78bf-4503-bfba-f87db12e994a",
     "nameFile": "sticker",
     "typeFile": ".jpg",
     "typeCategory": {
-      "Id": "e78be859-a069-4b1f-9be5-42d5c6097028",
+      "Id": "ed2e1e4f-75ba-4dc0-a449-1cf03ea0bbca",
       "nameCategory": "Photo"
     },
     "linkToOpen": "/Test/sticker.jpg",
@@ -105,11 +105,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "5852d872-72ab-437b-b952-cbc7c6d47d70",
+    "Id": "a123ab79-2165-41bd-887d-c36547c5492f",
     "nameFile": "test1",
     "typeFile": ".jpg",
     "typeCategory": {
-      "Id": "e78be859-a069-4b1f-9be5-42d5c6097028",
+      "Id": "ed2e1e4f-75ba-4dc0-a449-1cf03ea0bbca",
       "nameCategory": "Photo"
     },
     "linkToOpen": "/Test/test1.jpg",
@@ -120,11 +120,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "0c4c0eaf-5af1-44a4-823b-3aab4465a4b2",
+    "Id": "f1c4eb41-af81-45be-a48e-69376a7f966c",
     "nameFile": "test2",
     "typeFile": ".jfif",
     "typeCategory": {
-      "Id": "e78be859-a069-4b1f-9be5-42d5c6097028",
+      "Id": "ed2e1e4f-75ba-4dc0-a449-1cf03ea0bbca",
       "nameCategory": "Photo"
     },
     "linkToOpen": "/Test/test2.jfif",
@@ -135,11 +135,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "92461d00-dc42-4f92-bba5-5cf27b2320f0",
+    "Id": "f3a1b226-8773-4f1d-b0b1-d4f7f34026e5",
     "nameFile": "zip",
     "typeFile": ".zip",
     "typeCategory": {
-      "Id": "96d23a03-6a1e-4814-b1d9-7b99ece09fb3",
+      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/zip.zip",
@@ -150,7 +150,7 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "0782a4a0-406a-4306-a581-b8272b68a979",
+    "Id": "ebb04b3e-8aaa-4f16-b3b3-fc78d41c4479",
     "nameFile": "File",
     "typeFile": "",
     "typeCategory": null,
@@ -162,7 +162,7 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "c8c65a29-f5ae-4468-ac91-7d09c136c3cf",
+    "Id": "46af48aa-f0dd-4688-993b-57525a1e76e0",
     "nameFile": "include",
     "typeFile": "",
     "typeCategory": null,
@@ -174,7 +174,7 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "7c050594-6e41-4f80-8c5b-18d1e4fec66e",
+    "Id": "884b7fab-ae57-4334-a1c4-86c0c1d5a1b2",
     "nameFile": "PasteFile",
     "typeFile": "",
     "typeCategory": null,
@@ -186,11 +186,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "086687bc-3ef7-4392-8d7a-275751abac96",
+    "Id": "3e646ac4-efaf-4fd8-b295-6633db22ff07",
     "nameFile": "check",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "96d23a03-6a1e-4814-b1d9-7b99ece09fb3",
+      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/File/check.txt",
@@ -201,7 +201,7 @@
     "pathfolder": "Test*File"
   },
   {
-    "Id": "17340785-a183-4d43-9009-fcd5a45bf035",
+    "Id": "d4768213-e272-4e00-9984-5ffad57ef626",
     "nameFile": "fileInclude",
     "typeFile": "",
     "typeCategory": null,
@@ -213,11 +213,11 @@
     "pathfolder": "Test*File"
   },
   {
-    "Id": "f04b15ef-4b22-4344-a848-1e6ae3fe9fd5",
+    "Id": "56de566a-96db-4e8d-a9ce-6dfc09bb2290",
     "nameFile": "zip",
     "typeFile": ".zip",
     "typeCategory": {
-      "Id": "96d23a03-6a1e-4814-b1d9-7b99ece09fb3",
+      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/include/zip.zip",
@@ -228,11 +228,11 @@
     "pathfolder": "Test*include"
   },
   {
-    "Id": "7d8eec14-c38a-438d-8ea3-d714d63f776c",
+    "Id": "1472b252-611d-43f6-8e5b-58f1b3a60081",
     "nameFile": "simplefile1",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "96d23a03-6a1e-4814-b1d9-7b99ece09fb3",
+      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/PasteFile/simplefile1.txt",
@@ -243,11 +243,11 @@
     "pathfolder": "Test*PasteFile"
   },
   {
-    "Id": "61493151-cc11-4bf2-b7aa-c8cb903abe20",
+    "Id": "d77ffb8a-8f7f-4a16-9db1-f66fd0c8ecc1",
     "nameFile": "simplefile2",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "96d23a03-6a1e-4814-b1d9-7b99ece09fb3",
+      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/PasteFile/simplefile2.txt",
@@ -258,11 +258,11 @@
     "pathfolder": "Test*PasteFile"
   },
   {
-    "Id": "a4b218c8-901a-40bc-899f-5e6c536580d9",
+    "Id": "ea3f75f4-e56d-4f9f-823d-ea79284b0220",
     "nameFile": "test1",
     "typeFile": ".jpg",
     "typeCategory": {
-      "Id": "e78be859-a069-4b1f-9be5-42d5c6097028",
+      "Id": "ed2e1e4f-75ba-4dc0-a449-1cf03ea0bbca",
       "nameCategory": "Photo"
     },
     "linkToOpen": "/Test/PasteFile/test1.jpg",
@@ -273,11 +273,11 @@
     "pathfolder": "Test*PasteFile"
   },
   {
-    "Id": "b4c9f445-8ba4-4dd5-ba70-1f70024c3151",
+    "Id": "f612e14e-015b-4bfe-a7d4-d6dd947a6cc6",
     "nameFile": "test2",
     "typeFile": ".jfif",
     "typeCategory": {
-      "Id": "e78be859-a069-4b1f-9be5-42d5c6097028",
+      "Id": "ed2e1e4f-75ba-4dc0-a449-1cf03ea0bbca",
       "nameCategory": "Photo"
     },
     "linkToOpen": "/Test/PasteFile/test2.jfif",
@@ -288,7 +288,7 @@
     "pathfolder": "Test*PasteFile"
   },
   {
-    "Id": "27a6174d-1112-4b9a-9313-046b514ffcc6",
+    "Id": "71889d32-26e1-495b-9133-5fb852b0e710",
     "nameFile": "includes2",
     "typeFile": "",
     "typeCategory": null,
@@ -300,11 +300,11 @@
     "pathfolder": "Test*PasteFile"
   },
   {
-    "Id": "31988d06-3e69-4fe9-8452-0550152d4163",
+    "Id": "45de98db-5910-41ef-ba92-0189136c3dd0",
     "nameFile": "testing",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "96d23a03-6a1e-4814-b1d9-7b99ece09fb3",
+      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/File/fileInclude/testing.txt",
@@ -315,11 +315,11 @@
     "pathfolder": "Test*File*fileInclude"
   },
   {
-    "Id": "e3c526ad-6450-4bc1-a0e7-edf4f1f56e27",
+    "Id": "e04bda3c-5e13-479a-b37c-257b785c83a9",
     "nameFile": "longText",
     "typeFile": ".rtf",
     "typeCategory": {
-      "Id": "96d23a03-6a1e-4814-b1d9-7b99ece09fb3",
+      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/PasteFile/includes2/longText.rtf",
