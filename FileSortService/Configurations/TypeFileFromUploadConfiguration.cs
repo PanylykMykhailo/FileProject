@@ -15,7 +15,7 @@ namespace FileSortService.Configurations
         {
             //AutofillTypeFile getData = new AutofillTypeFile();
             builder.HasKey(exId => exId.Id);
-            builder.HasOne(extV => extV.extensionCategory).WithMany(extC => extC.typeFileFromUploads).HasForeignKey("typeCategoryId");
+            //builder.HasOne(extV => extV.extensionCategory).WithMany(extC => extC.typeFileFromUploads).HasForeignKey("typeCategoryId");
            // builder.HasData(getData.GetDate());
         }
     }

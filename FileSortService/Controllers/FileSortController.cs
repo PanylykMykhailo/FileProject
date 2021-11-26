@@ -193,11 +193,13 @@ namespace FileSortService
         }
         [Route("CheckJson")]
         [HttpGet]
-        public string CheckJson() 
+        public string CheckJson() //
         {
-            DeserealizeJsonDate deserealizeJsonDate = new DeserealizeJsonDate();
-
-            return deserealizeJsonDate.ReturnDateForArchitecture("Up").ToString();
+            WriteScript writeScript = new WriteScript();
+            return writeScript.WriteScriptAll<ExtensionCategory>("DateForExtenCategory.json").ToString();
+            //deserealizeJsonDate.TryGetCollection<ExtensionValue>("DateForExtenValue.json")
+            //return null;
+            //return deserealizeJsonDate.ReturnDateForArchitecture("Up").ToString();
         }
     }
 }

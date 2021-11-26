@@ -1,23 +1,14 @@
 [
   {
-    "Id": "08a47ffc-6af7-4ac7-9f18-2eabf7183517",
-    "nameCategory": "File",
-    "architectureFolder": null,
-    "extensionValue": null,
-    "typeFileFromUploads": null
+    "Id": "96d23a03-6a1e-4814-b1d9-7b99ece09fb3",
+    "nameCategory": "File"
   },
   {
-    "Id": "18d95f85-0b1d-47d9-8e95-fab4cfabf71d",
-    "nameCategory": "Photo",
-    "architectureFolder": null,
-    "extensionValue": null,
-    "typeFileFromUploads": null
+    "Id": "e78be859-a069-4b1f-9be5-42d5c6097028",
+    "nameCategory": "Photo"
   },
   {
-    "Id": "15013570-26f2-45c8-8948-b4ce5384b675",
-    "nameCategory": "Video",
-    "architectureFolder": null,
-    "extensionValue": null,
-    "typeFileFromUploads": null
+    "Id": "3b635d7d-1dd0-4ee1-94c5-db8835a9a4f6",
+    "nameCategory": "Video"
   }
 ]

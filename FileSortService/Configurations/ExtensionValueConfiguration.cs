@@ -14,7 +14,7 @@ namespace FileSortService.Configurations
         {
             builder.HasKey(exId => exId.Id);
             builder.Property(ext => ext.extensionValue).HasColumnType("varchar(20)");
-            builder.HasOne(extV => extV.extensionCategory).WithMany(extC => extC.extensionValue);
+            //builder.HasOne(extV => extV.extensionCategory).WithMany(extC => extC.extensionValue);
         }
     }
 }

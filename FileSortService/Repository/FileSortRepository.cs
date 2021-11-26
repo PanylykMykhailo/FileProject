@@ -315,7 +315,9 @@ namespace FileSortService.Repository
             List<string> dateFolder = new List<string>() { root + "Test" };
             List<ArchitectureFolder> include = new List<ArchitectureFolder>();
             var result = ReturnAllIncludeFolder(dateFolder, include);
-            File.WriteAllText(@"C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\Data\DateForArchitecture.json", JsonConvert.SerializeObject(result, Formatting.Indented));
+            JsonSerializerSettings jsSettings = new JsonSerializerSettings();
+            jsSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+            File.WriteAllText(@"C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\Data\Jsons\DateForArchitecture.json", JsonConvert.SerializeObject(result, Formatting.Indented, jsSettings));
             File.AppendAllText(rootTest, script.ToString() + "\n\n");
             return result;
         }
@@ -420,7 +422,7 @@ namespace FileSortService.Repository
         {
             List<TypeFileFromUpload> simpleTest2 = new();
             simpleTest2.AddRange(ReturnCollaritive());
-            File.WriteAllText(@"C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\Data\DateForUploadCheck.json", JsonConvert.SerializeObject(simpleTest2, Formatting.Indented));
+            File.WriteAllText(@"C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\Data\Jsons\DateForUploadCheck.json", JsonConvert.SerializeObject(simpleTest2, Formatting.Indented));
             File.AppendAllText(rootTest, scriptUpload.ToString() + "\n\n");
             return simpleTest2;
         }
@@ -508,6 +510,8 @@ namespace FileSortService.Repository
         ////////////////////////Insert////////////////////////
         public void InsertExt() 
         {
+            JsonSerializerSettings jsSettings = new JsonSerializerSettings();
+            jsSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
             if (_context.ExtenCategory.Count() == 0)
             {
                 List<ExtensionCategory> extenCategory = new();
@@ -520,7 +524,7 @@ namespace FileSortService.Repository
                     scriptExtenCategory.Append($"('{id}','{item}'),\n");
                     
                 };
-                File.WriteAllText(@"C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\Data\DateForExtenCategory.json", JsonConvert.SerializeObject(extenCategory, Formatting.Indented));
+                File.WriteAllText(@"C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\Data\Jsons\DateForExtenCategory.json", JsonConvert.SerializeObject(extenCategory, Formatting.Indented, jsSettings));
                 _context.ExtenCategory.AddRange(extenCategory);
                 _context.SaveChanges();
                 File.AppendAllText(rootTest, scriptExtenCategory.ToString() + "\n\n");
@@ -565,7 +569,7 @@ namespace FileSortService.Repository
                     }
 
                 }
-                File.WriteAllText(@"C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\Data\DateForExtenValue.json", JsonConvert.SerializeObject(extensionValues, Formatting.Indented));
+                File.WriteAllText(@"C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\Data\Jsons\DateForExtenValue.json", JsonConvert.SerializeObject(extensionValues, Formatting.Indented, jsSettings));
                 _context.ExtenValue.AddRange(extensionValues);
                 _context.SaveChanges();
                 File.AppendAllText(rootTest,scriptExtenVal.ToString() + "\n\n");

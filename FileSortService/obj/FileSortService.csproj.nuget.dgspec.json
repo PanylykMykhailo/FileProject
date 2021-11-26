@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[8.1.1, )"
             },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Json.Net": {
               "target": "Package",
               "version": "[1.0.33, )"
@@ -51,6 +55,10 @@
             "LumenWorksCsvReader": {
               "target": "Package",
               "version": "[4.0.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Scripting": {
+              "target": "Package",
+              "version": "[4.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -66,6 +74,10 @@
               "target": "Package",
               "version": "[5.0.12, )"
             },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.5.5, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -73,6 +85,10 @@
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "System.Threading.Tasks": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [

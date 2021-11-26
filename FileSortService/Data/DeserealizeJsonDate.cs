@@ -1,5 +1,5 @@
 ﻿using FileSortService.Model.DatabaseModel;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,13 +7,19 @@ using System.Reflection;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity.Infrastructure;
+using System.Collections.Specialized;
+using Microsoft.CodeAnalysis.CSharp.Scripting;
+using Microsoft.CodeAnalysis.Scripting;
+using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace FileSortService.Data
 {
     public class DeserealizeJsonDate
     {
         private readonly Assembly assembly = Assembly.GetExecutingAssembly();
-        public StringBuilder ReturnDateForArchitecture(string action) 
+        public StringBuilder ReturnDateForArchitecture(string action)
         {
             StringBuilder scriptArchitecture = new StringBuilder().Append("Insert Into [Architecture] (Id,nameFile,typeFile,typeCategoryId,linkToOpen,sizeFile,dateCreatedFile,isFolder,fileInFolder,pathfolder)\n").Append("Values ");
             StringBuilder scriptArchitectureRemove = new StringBuilder().Append("Delete from Architecture \n ").Append("Where ");
@@ -33,8 +39,8 @@ namespace FileSortService.Data
                     {
                         case "Up":
                             var folder = item.isFolder == true ? 1 : 0;
-                            var typeCategory = item?.typeCategory?.Id == null ? "null" : $"'{item.typeCategory.Id}'";
-                            scriptArchitecture.Append($"('{item?.Id}','{item?.nameFile}','{item.typeFile}',{typeCategory},'{item?.linkToOpen}','{item?.sizeFile}','{item?.dateCreatedFile}',{folder},{item?.fileInFolder},'{item?.pathfolder}'),\n");
+                            //var typeCategory = item?.typeCategory?.Id == null ? "null" : $"'{item.typeCategory.Id}'";
+                            scriptArchitecture.Append($"('{item?.Id}','{item?.nameFile}','{item.typeFile}',{(item?.typeCategory?.Id == null ? "null" : $"'{item.typeCategory.Id}'")},'{item?.linkToOpen}','{item?.sizeFile}','{item?.dateCreatedFile}',{folder},{item?.fileInFolder},'{item?.pathfolder}'),\n");
                             break;
                         case "Down":
                             scriptArchitectureRemove.Append($"Id = '{item.Id}' or\n");
@@ -56,9 +62,9 @@ namespace FileSortService.Data
                 {
                     exception = new StringBuilder("File in this name not found in project");
                 }
-                return  exception;
+                return exception;
             }
-             
+
         }
         public StringBuilder ReturnDateForExtenCategory(string action)
         {
@@ -195,6 +201,112 @@ namespace FileSortService.Data
                 }
                 return exception;
             }
+        }
+        public List<TOut> TryGetCollection<TOut>(string filename)//,string action
+        {
+            List<TOut> jsonDesrealize = new();
+            var resourcePath = assembly.GetManifestResourceNames()
+            .Single(str => str.EndsWith(filename));
+            var jsonSerializerSettings = new JsonSerializerSettings();
+            jsonSerializerSettings.MissingMemberHandling = MissingMemberHandling.Ignore;
+            using (Stream stream = assembly.GetManifestResourceStream(resourcePath))
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                jsonDesrealize = JsonConvert.DeserializeObject<List<TOut>>(reader.ReadToEnd(), jsonSerializerSettings);
+            }
+            return jsonDesrealize;
+        }
+        
+        
+    }
+    public class WriteScript 
+    {
+        //public StringBuilder ReturnScript() 
+        //{
+
+        //}
+        public StringBuilder WriteScriptAll<TOut>(string filename)
+        {
+            DeserealizeJsonDate deserealizeJsonDate = new DeserealizeJsonDate();
+            var jsonDesrealize = deserealizeJsonDate.TryGetCollection<TOut>(filename);
+            var script = HeaderInsert(jsonDesrealize[0]);
+            var exp = CreatePredicate<TOut>(script[1].ToString()).Result;
+            foreach (var item in jsonDesrealize)
+            {
+                script[0].Append("(" + exp(item)+ "),\n");
+            }
+            return script[0].Remove(script[0].Length - 2,1);
+        }
+        
+        public List<StringBuilder> HeaderInsert(dynamic obj)
+        {
+            StringBuilder script = new StringBuilder($"Insert Into {obj.GetType().Name} (");
+            StringBuilder scriptValues = new StringBuilder("item => {return $\"");
+            int countProperty = 0;
+            var nameColumn = obj.GetType().GetProperties();
+            for (int i = 0; i < nameColumn.Length; i++)
+            {
+                if (nameColumn[i].PropertyType.FullName.StartsWith(Assembly.GetCallingAssembly().GetName().Name))
+                {
+                    if (i == nameColumn.Length - 1)
+                    {
+                        script.Append($"{nameColumn[i].Name + "Id"})\n");
+                        scriptValues.Append("{((item?." + nameColumn[i].Name + "?.Id.ToString() ?? null) == null ? \"null\" : $\"'{item." + nameColumn[i].Name + ".Id}'\")}");
+                        countProperty++;
+                        continue;
+                    }
+                    else
+                    {
+                        script.Append($"{nameColumn[i].Name + "Id"},");
+                        scriptValues.Append("{((item?." + nameColumn[i].Name + "?.Id.ToString() ?? null) == null ? \"null\" : $\"'{item." + nameColumn[i].Name + ".Id}'\")},");
+                        countProperty++;
+                        continue;
+                    }
+                }
+                else if (i == nameColumn.Length - 1)
+                {
+                    script.Append($"{nameColumn[i].Name})\n");
+                    scriptValues.Append("'{item." + nameColumn[i].Name + "}'\";");
+                    countProperty++;
+                }
+                else
+                {
+                    switch (nameColumn[i].PropertyType.FullName)
+                    {
+                        case "System.Int32":
+                            script.Append($"{nameColumn[i].Name},");
+                            scriptValues.Append("{item." + nameColumn[i].Name + "},");
+                            countProperty++;
+                            break;
+                        case "System.Boolean":
+                            script.Append($"{nameColumn[i].Name},");
+                            scriptValues.Append("{(item." + nameColumn[i].Name + " == true ? 1 : 0)},");
+                            countProperty++;
+                            break;
+                        default:
+                            script.Append($"{nameColumn[i].Name},");
+                            scriptValues.Append("'{item." + nameColumn[i].Name + "}',");
+                            countProperty++;
+                            break;
+
+                    }
+                }
+            }
+            scriptValues.Append("}");
+            Console.WriteLine(scriptValues.ToString());
+            script.Append("Values ");
+            List<StringBuilder> scripts = new List<StringBuilder>() { script, scriptValues };
+            //Dictionary<StringBuilder, StringBuilder> scripts = new Dictionary<StringBuilder, StringBuilder>()
+            //{
+            //    {}
+            //};
+            return scripts;
+        }
+        public async Task<Func<T, string>> CreatePredicate<T>(string command)
+        {
+            var options = ScriptOptions.Default.AddReferences(typeof(T).Assembly);
+            var predicate = await CSharpScript.EvaluateAsync<Func<T, string>>(command, options).ConfigureAwait(true);
+            return predicate;
         }
     }
 }

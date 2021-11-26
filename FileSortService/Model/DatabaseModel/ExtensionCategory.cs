@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace FileSortService.Model.DatabaseModel
 {
@@ -11,7 +11,7 @@ namespace FileSortService.Model.DatabaseModel
         public Guid Id { get; set; }
         public string nameCategory { get; set; }
         [JsonIgnore]
-        public ICollection<ArchitectureFolder> architectureFolder { get; set;}
+        public ICollection<ArchitectureFolder> architectureFolder { get; set; }
         [JsonIgnore]
         public ICollection<ExtensionValue> extensionValue { get; set; }
         [JsonIgnore]
