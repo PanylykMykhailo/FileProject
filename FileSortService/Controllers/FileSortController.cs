@@ -57,7 +57,7 @@ namespace FileSortService
             _iFileSortRepository.InsertExt();
         }
         [HttpGet("{pathfolder}/{typeFile}")]
-        public IEnumerable<ArchitectureFolder> GetAllFiles(string pathfolder,string typeFile)//<ActionResult>
+        public InfoAboutFiles GetAllFiles(string pathfolder,string typeFile)//<ActionResult>
         {
             Console.WriteLine("--> Getting all File....");
             //typeFile = typeFile == "*" ? null : typeFile;  

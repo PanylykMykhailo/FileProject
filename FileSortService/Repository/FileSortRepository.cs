@@ -230,7 +230,6 @@ namespace FileSortService.Repository
         }
         public async Task<List<string>> SaveFile2(List<ParameterRequest> parameter)
         {
-            //WriteAllBytes
             List<string> timeSpend = new();
             int iteration = 0;
             foreach (var item in parameter)
@@ -253,53 +252,59 @@ namespace FileSortService.Repository
                         fi.Create().Dispose();
                     }
                 }
-                //B: Run stuff you want timed
                 timer.Stop();
-                timeSpend.Add(timer.Elapsed.ToString());
-                //TimeSpan timeTaken = timer.Elapsed;
-                //string foo = "Time taken: " + timeTaken.ToString(@"m\:ss\.fff");     
+                timeSpend.Add(timer.Elapsed.ToString());     
             }
             return timeSpend;
-            //System.Console.WriteLine(parameter.nameFile);
         }
-        public IEnumerable<ArchitectureFolder> GetAllFileV2(string pathFolder, string typeFile)
+        public InfoAboutFiles GetAllFileV2(string pathFolder, string typeFile)
         {
-            var updatepath = pathFolder.Split('*').ToList().Count != 0 ? rootPath + @"\" + pathFolder.Replace("*", @"\").ToString() : rootPath + @"\" + pathFolder;
-            var checkFolder = pathFolder.Replace(rootPath, "").Split('\\').ToList().Count != 0 ? pathFolder.Replace(rootPath, "").Replace("\\", "*").ToString() : pathFolder.Replace(rootPath, "").ToString();
-            var files = Directory.GetFiles(updatepath, $"*{typeFile}*", SearchOption.TopDirectoryOnly);
-            IEnumerable<ArchitectureFolder> getInfo = new List<ArchitectureFolder>();
-            if (files.Length != 0)
+            var checkFolder = CheckFolderV2(pathFolder, typeFile);
+            InfoAboutFiles infoAboutFiles = new();
+            infoAboutFiles.folderPath = pathFolder.Split('*').ToList();
+            infoAboutFiles.infoaboutFile = new();
+            if (checkFolder != null)
             {
-                getInfo = _context.Architecture.Where(u => u.pathfolder == checkFolder);//&& u.typeFile == typeFile
+                infoAboutFiles.infoaboutFile.AddRange(checkFolder);
             }
-            Console.WriteLine(getInfo.Count());
-            return getInfo;
-            // var checkFolder = CheckFolderV2(updatepath, typeFile);
-            // InfoAboutFiles infoAboutFiles = new();
-            // infoAboutFiles.folderPath = pathFolder.Split('*').ToList();
-            // infoAboutFiles.infoaboutFile = new();
-            // if (checkFolder != null)
-            // {
-            //     infoAboutFiles.infoaboutFile.AddRange(checkFolder);
-            // }
+            var files = _context.Architecture.Select(x => x).Where(y => y.pathfolder == rootPath && !y.isFolder).ToList();
+            foreach (var item in files)
+            {
+                //var infoFile = new System.IO.FileInfo(item);
+                infoAboutFiles.infoaboutFile.Add(new InfoAboutFile()
+                {
+                    NameFile = item.nameFile,
+                    TypeFile = item.typeFile,
+                    typeCategory = _context.ExtenValue.Select(x => new ExtensionValue
+                    {
+                        Id = x.Id,
+                        extensionCategory = x.extensionCategory,
+                        extensionValue = x.extensionValue
+                    })
+                    .Where(u => u.Id == item.typeCategory.Id).FirstOrDefault().extensionCategory.nameCategory,
+                    linkToOpen = item.linkToOpen,
+                    SizeFile = item.sizeFile,
+                    DateCreatedFile = item.dateCreatedFile
+                });
+            }
+            return infoAboutFiles;
         }
         public List<InfoAboutFile> CheckFolderV2(string rootPath,string typeFile)
         {
-            var checking = Directory.GetDirectories(rootPath).Select(r => r.Replace(rootPath + @"\", "")).ToList();
-            if (checking.Count != 0)
+            var folder = _context.Architecture.Select(x => x).Where(y => y.pathfolder == rootPath).ToList();
+            if (folder.Count != 0)
             {
                 List<InfoAboutFile> infoaboutFileinFolder = new List<InfoAboutFile>();
-                foreach (var item in checking)
+                foreach (var item in folder)
                 {
-                    var aboutFolder = new System.IO.DirectoryInfo(rootPath + @"\" + item);
                     infoaboutFileinFolder.Add(new InfoAboutFile()
                     {
-                        NameFile = item,
-                        TypeFile = aboutFolder.Extension,
-                        SizeFile = aboutFolder.GetFiles().Length + " bytes",
-                        DateCreatedFile = aboutFolder.CreationTime.ToShortDateString() + " " + aboutFolder.CreationTime.ToShortTimeString(),
+                        NameFile = item.nameFile,
+                        TypeFile = item.typeFile,
+                        SizeFile = item.sizeFile,
+                        DateCreatedFile = item.dateCreatedFile,
                         isFolder = true,
-                        fileInFolder = Directory.GetFiles(rootPath + @"\" + item, $"*.{typeFile}*", SearchOption.AllDirectories).Length
+                        fileInFolder = _context.Architecture.Where(x => x.pathfolder == rootPath+"*"+item.nameFile).Count()
                     });
                 }
                 return infoaboutFileinFolder;
