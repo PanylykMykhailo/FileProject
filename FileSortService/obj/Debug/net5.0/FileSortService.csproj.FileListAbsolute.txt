@@ -238,4 +238,3 @@ C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0
 C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
-C:\Users\mpanylyk\source\repos\File\FileProject\FileSortService\obj\Debug\net5.0\FileSortService.csproj.CopyComplete

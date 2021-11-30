@@ -267,21 +267,29 @@ namespace FileSortService.Repository
             {
                 infoAboutFiles.infoaboutFile.AddRange(checkFolder);
             }
-            var files = _context.Architecture.Select(x => x).Where(y => y.pathfolder == rootPath && !y.isFolder).ToList();
+            var files = _context.Architecture.Select(x => new ArchitectureFolder 
+            {
+                Id = x.Id,
+                nameFile = x.nameFile,
+                typeFile = x.typeFile,
+                typeCategory = new ExtensionCategory { 
+                    Id = x.typeCategory.Id,
+                    nameCategory = x.typeCategory.nameCategory
+                },
+                linkToOpen = x.linkToOpen,
+                pathfolder = x.pathfolder,
+                sizeFile = x.sizeFile,
+                isFolder = x.isFolder,
+                fileInFolder = x.fileInFolder,
+                dateCreatedFile = x.dateCreatedFile
+            }).Where(y => y.pathfolder == pathFolder && !y.isFolder).ToList();
             foreach (var item in files)
             {
-                //var infoFile = new System.IO.FileInfo(item);
                 infoAboutFiles.infoaboutFile.Add(new InfoAboutFile()
                 {
                     NameFile = item.nameFile,
                     TypeFile = item.typeFile,
-                    typeCategory = _context.ExtenValue.Select(x => new ExtensionValue
-                    {
-                        Id = x.Id,
-                        extensionCategory = x.extensionCategory,
-                        extensionValue = x.extensionValue
-                    })
-                    .Where(u => u.Id == item.typeCategory.Id).FirstOrDefault().extensionCategory.nameCategory,
+                    typeCategory = _context.ExtenCategory.Find(item.typeCategory.Id).nameCategory,
                     linkToOpen = item.linkToOpen,
                     SizeFile = item.sizeFile,
                     DateCreatedFile = item.dateCreatedFile
@@ -291,7 +299,7 @@ namespace FileSortService.Repository
         }
         public List<InfoAboutFile> CheckFolderV2(string rootPath,string typeFile)
         {
-            var folder = _context.Architecture.Select(x => x).Where(y => y.pathfolder == rootPath).ToList();
+            var folder = _context.Architecture.Select(x => x).Where(y => y.pathfolder == rootPath && y.isFolder).ToList();
             if (folder.Count != 0)
             {
                 List<InfoAboutFile> infoaboutFileinFolder = new List<InfoAboutFile>();

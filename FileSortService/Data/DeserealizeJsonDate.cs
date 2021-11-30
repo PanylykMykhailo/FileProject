@@ -40,7 +40,6 @@ namespace FileSortService.Data
                     {
                         case "Up":
                             var folder = item.isFolder == true ? 1 : 0;
-                            //var typeCategory = item?.typeCategory?.Id == null ? "null" : $"'{item.typeCategory.Id}'";
                             scriptArchitecture.Append($"('{item?.Id}','{item?.nameFile}','{item.typeFile}',{(item?.typeCategory?.Id == null ? "null" : $"'{item.typeCategory.Id}'")},'{item?.linkToOpen}','{item?.sizeFile}','{item?.dateCreatedFile}',{folder},{item?.fileInFolder},'{item?.pathfolder}'),\n");
                             break;
                         case "Down":
