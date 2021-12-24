@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FileSortService.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20211130123759_SQLScript")]
-    partial class SQLScript
+    [Migration("20211224112521_Empthy migration")]
+    partial class Empthymigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

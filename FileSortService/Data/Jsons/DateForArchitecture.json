@@ -1,25 +1,25 @@
 [
   {
-    "Id": "1f2e2716-7e8e-4760-b4ff-45e29b325a41",
+    "Id": "5d1b8908-5cc9-4821-a179-76f658515107",
     "nameFile": "ChangeName",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/ChangeName.txt",
-    "sizeFile": "205 bytes",
+    "sizeFile": "33 bytes",
     "dateCreatedFile": "11/23/2021 11:39",
     "isFolder": false,
     "fileInFolder": 0,
     "pathfolder": "Test"
   },
   {
-    "Id": "5516ee78-e8e7-48c4-bd8a-69c3eebc82e1",
+    "Id": "c4c1d64f-110e-4f3e-9423-d6b22a47446f",
     "nameFile": "gateway",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/gateway.txt",
@@ -30,11 +30,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "3d891269-b08d-4c5f-8f5d-ef92d34e835f",
+    "Id": "8f332752-d66e-420b-8935-cdb0c931b283",
     "nameFile": "new",
     "typeFile": ".bmp",
     "typeCategory": {
-      "Id": "ed2e1e4f-75ba-4dc0-a449-1cf03ea0bbca",
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
       "nameCategory": "Photo"
     },
     "linkToOpen": "/Test/new.bmp",
@@ -45,11 +45,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "d19d0037-b928-45af-a978-5176a24fef4d",
+    "Id": "e6a1e4c1-773d-4a00-9617-bb89cb845ff5",
     "nameFile": "Plurasights",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/Plurasights.txt",
@@ -60,11 +60,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "1416d007-951a-41c3-9aca-a840dbf230e3",
+    "Id": "3e0bc931-ee59-45d8-90d8-68610dced69d",
     "nameFile": "rich",
     "typeFile": ".rtf",
     "typeCategory": {
-      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/rich.rtf",
@@ -75,11 +75,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "2f58f775-e786-46a5-b3b7-f5fdb39e8c69",
+    "Id": "349bffd6-41fe-446c-aa84-646ba648e288",
     "nameFile": "simplefile2",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/simplefile2.txt",
@@ -90,11 +90,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "5a299d54-78bf-4503-bfba-f87db12e994a",
+    "Id": "0de72581-22f1-4c81-a3ca-1ea181929138",
     "nameFile": "sticker",
     "typeFile": ".jpg",
     "typeCategory": {
-      "Id": "ed2e1e4f-75ba-4dc0-a449-1cf03ea0bbca",
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
       "nameCategory": "Photo"
     },
     "linkToOpen": "/Test/sticker.jpg",
@@ -105,11 +105,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "a123ab79-2165-41bd-887d-c36547c5492f",
+    "Id": "299054f1-f0cc-4846-bcf3-37c0bcdb7063",
     "nameFile": "test1",
     "typeFile": ".jpg",
     "typeCategory": {
-      "Id": "ed2e1e4f-75ba-4dc0-a449-1cf03ea0bbca",
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
       "nameCategory": "Photo"
     },
     "linkToOpen": "/Test/test1.jpg",
@@ -120,11 +120,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "f1c4eb41-af81-45be-a48e-69376a7f966c",
+    "Id": "3f97ee70-768c-4026-b309-ac837af57632",
     "nameFile": "test2",
     "typeFile": ".jfif",
     "typeCategory": {
-      "Id": "ed2e1e4f-75ba-4dc0-a449-1cf03ea0bbca",
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
       "nameCategory": "Photo"
     },
     "linkToOpen": "/Test/test2.jfif",
@@ -135,11 +135,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "f3a1b226-8773-4f1d-b0b1-d4f7f34026e5",
+    "Id": "23c9c786-e57f-4901-93a9-097876273703",
     "nameFile": "zip",
     "typeFile": ".zip",
     "typeCategory": {
-      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/zip.zip",
@@ -150,7 +150,7 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "ebb04b3e-8aaa-4f16-b3b3-fc78d41c4479",
+    "Id": "164bd804-a171-4f3e-8eff-b206732150ac",
     "nameFile": "File",
     "typeFile": "",
     "typeCategory": null,
@@ -162,7 +162,7 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "46af48aa-f0dd-4688-993b-57525a1e76e0",
+    "Id": "e47a8228-336c-4931-9c8b-6ef9f10a4380",
     "nameFile": "include",
     "typeFile": "",
     "typeCategory": null,
@@ -174,7 +174,7 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "884b7fab-ae57-4334-a1c4-86c0c1d5a1b2",
+    "Id": "b5fb3c88-8210-4919-98d3-68210cf7f2af",
     "nameFile": "PasteFile",
     "typeFile": "",
     "typeCategory": null,
@@ -186,11 +186,11 @@
     "pathfolder": "Test"
   },
   {
-    "Id": "3e646ac4-efaf-4fd8-b295-6633db22ff07",
+    "Id": "a37ae2c0-d103-484d-ad1c-350e48f7121c",
     "nameFile": "check",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/File/check.txt",
@@ -201,7 +201,7 @@
     "pathfolder": "Test*File"
   },
   {
-    "Id": "d4768213-e272-4e00-9984-5ffad57ef626",
+    "Id": "fb7f333c-afe1-4610-b9d3-b24476e1111d",
     "nameFile": "fileInclude",
     "typeFile": "",
     "typeCategory": null,
@@ -213,11 +213,11 @@
     "pathfolder": "Test*File"
   },
   {
-    "Id": "56de566a-96db-4e8d-a9ce-6dfc09bb2290",
+    "Id": "5ac6a763-1aeb-4020-abe3-57ad43127e03",
     "nameFile": "zip",
     "typeFile": ".zip",
     "typeCategory": {
-      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/include/zip.zip",
@@ -228,11 +228,11 @@
     "pathfolder": "Test*include"
   },
   {
-    "Id": "1472b252-611d-43f6-8e5b-58f1b3a60081",
+    "Id": "35bf53d3-dc9c-4e6c-97aa-6355a0ad615a",
     "nameFile": "simplefile1",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/PasteFile/simplefile1.txt",
@@ -243,11 +243,11 @@
     "pathfolder": "Test*PasteFile"
   },
   {
-    "Id": "d77ffb8a-8f7f-4a16-9db1-f66fd0c8ecc1",
+    "Id": "87e4741c-283d-477f-8d72-62a51b7db81d",
     "nameFile": "simplefile2",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/PasteFile/simplefile2.txt",
@@ -258,11 +258,11 @@
     "pathfolder": "Test*PasteFile"
   },
   {
-    "Id": "ea3f75f4-e56d-4f9f-823d-ea79284b0220",
+    "Id": "99f735c8-47e4-4515-b0fb-a7ce2681ed82",
     "nameFile": "test1",
     "typeFile": ".jpg",
     "typeCategory": {
-      "Id": "ed2e1e4f-75ba-4dc0-a449-1cf03ea0bbca",
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
       "nameCategory": "Photo"
     },
     "linkToOpen": "/Test/PasteFile/test1.jpg",
@@ -273,11 +273,11 @@
     "pathfolder": "Test*PasteFile"
   },
   {
-    "Id": "f612e14e-015b-4bfe-a7d4-d6dd947a6cc6",
+    "Id": "42eb3f49-f4a1-4fb0-a755-2d668c8c1d9a",
     "nameFile": "test2",
     "typeFile": ".jfif",
     "typeCategory": {
-      "Id": "ed2e1e4f-75ba-4dc0-a449-1cf03ea0bbca",
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
       "nameCategory": "Photo"
     },
     "linkToOpen": "/Test/PasteFile/test2.jfif",
@@ -288,7 +288,7 @@
     "pathfolder": "Test*PasteFile"
   },
   {
-    "Id": "71889d32-26e1-495b-9133-5fb852b0e710",
+    "Id": "98498795-db9f-4e80-8b97-5c2fadddd28a",
     "nameFile": "includes2",
     "typeFile": "",
     "typeCategory": null,
@@ -300,11 +300,11 @@
     "pathfolder": "Test*PasteFile"
   },
   {
-    "Id": "45de98db-5910-41ef-ba92-0189136c3dd0",
+    "Id": "edc80d0c-fb21-4077-a247-45fd1408e997",
     "nameFile": "testing",
     "typeFile": ".txt",
     "typeCategory": {
-      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/File/fileInclude/testing.txt",
@@ -315,11 +315,11 @@
     "pathfolder": "Test*File*fileInclude"
   },
   {
-    "Id": "e04bda3c-5e13-479a-b37c-257b785c83a9",
+    "Id": "a9511685-a3ee-4451-8113-563daba9710c",
     "nameFile": "longText",
     "typeFile": ".rtf",
     "typeCategory": {
-      "Id": "ab78717a-9389-4135-9577-d2c38965771d",
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
       "nameCategory": "File"
     },
     "linkToOpen": "/Test/PasteFile/includes2/longText.rtf",

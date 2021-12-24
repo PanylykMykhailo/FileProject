@@ -219,12 +219,12 @@ namespace FileSortService.Data
     }
     public class WriteScript 
     {
-        public StringBuilder WriteScriptAll<TOut>(string filename)
+        public StringBuilder WriteScriptAll<TOut>(string filename,string action)
         {
             DeserealizeJsonDate deserealizeJsonDate = new DeserealizeJsonDate();
             var jsonDesrealize = deserealizeJsonDate.TryGetCollection<TOut>(filename);
             List<StringBuilder>[] mass = new List<StringBuilder>[2] { HeaderInsert<TOut>(jsonDesrealize[0]), HeaderDelete<TOut>(jsonDesrealize[0]) };
-            List<List<string>> helpSeparator = new List<List<string>> { new List<string> { "(", ")", "1" }, new List<string> { "Id = ", " OR", "2" } };
+            List<List<string>> helpSeparator = new List<List<string>> { new List<string> { "(", "),","2","1" }, new List<string> { "Id = ", " OR","3","2" } };
             for (int i = 0; i < mass.Length; i++)
             {
                 var exp = CreatePredicate<TOut>(mass[i][1].ToString()).Result;
@@ -232,7 +232,7 @@ namespace FileSortService.Data
                 {
                     mass[i][0].Append(helpSeparator[i][0] + exp(elem) + helpSeparator[i][1]+"\n");
                 }
-                mass[i][0].Remove(mass[i][0].Length - 3, Convert.ToInt32(helpSeparator[i][2]));
+                mass[i][0].Remove(mass[i][0].Length - Convert.ToInt32(helpSeparator[i][2]), Convert.ToInt32(helpSeparator[i][3]));
             }
             return mass[0][0].Append("\n" + mass[1][0]);
         }

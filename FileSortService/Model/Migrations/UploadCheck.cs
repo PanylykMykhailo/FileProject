@@ -4,11 +4,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FileSortService.Model.Migrations
 {
-    public class TypeFileFromUpload
+    public class UploadCheck
     {
         [Key]
         public Guid Id {get;set;}
-        public ExtensionCategory extensionCategory {get;set;}
+        public ExtensionCategory typeCategory { get;set;}
         public string typeFile {get;set;}
         public string hexSignature {get;set;}
     }
