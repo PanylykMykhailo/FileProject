@@ -1,10 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
 using AutoMapper;
 using FileSortService.Data;
 using FileSortService.Dtos;
@@ -13,8 +6,14 @@ using FileSortService.Model.WorkModel;
 using FileSortService.Repository;
 using FileSortService.SyncDataServices.Http;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace FileSortService
 {
@@ -196,7 +195,7 @@ namespace FileSortService
         public string CheckJson()
         {
             WriteScript writeScript = new WriteScript();
-            return writeScript.WriteScriptAll<ExtensionCategory>("DateForExtenCategory.json").ToString();
+            return writeScript.WriteScriptAll<Model.Migrations.ArchitectureFolder>("DateForArchitecture.json").ToString();
         }
     }
 }

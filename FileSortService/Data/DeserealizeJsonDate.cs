@@ -207,12 +207,12 @@ namespace FileSortService.Data
             List<TOut> jsonDesrealize = new();
             var resourcePath = assembly.GetManifestResourceNames()
             .Single(str => str.EndsWith(filename));
-            var jsonSerializerSettings = new JsonSerializerSettings();
-            jsonSerializerSettings.MissingMemberHandling = MissingMemberHandling.Ignore;
+            //var jsonSerializerSettings = new JsonSerializerSettings();
+            //jsonSerializerSettings.MissingMemberHandling = MissingMemberHandling.Ignore;
             using (Stream stream = assembly.GetManifestResourceStream(resourcePath))
             using (StreamReader reader = new StreamReader(stream))
             {
-                jsonDesrealize = JsonConvert.DeserializeObject<List<TOut>>(reader.ReadToEnd(), jsonSerializerSettings);
+                jsonDesrealize = JsonConvert.DeserializeObject<List<TOut>>(reader.ReadToEnd());//, jsonSerializerSettings
             }
             return jsonDesrealize;
         }
@@ -223,13 +223,18 @@ namespace FileSortService.Data
         {
             DeserealizeJsonDate deserealizeJsonDate = new DeserealizeJsonDate();
             var jsonDesrealize = deserealizeJsonDate.TryGetCollection<TOut>(filename);
-            var script = HeaderInsert<TOut>(jsonDesrealize[0]);
-            var exp = CreatePredicate<TOut>(script[1].ToString()).Result;
-            foreach (var item in jsonDesrealize)
+            List<StringBuilder>[] mass = new List<StringBuilder>[2] { HeaderInsert<TOut>(jsonDesrealize[0]), HeaderDelete<TOut>(jsonDesrealize[0]) };
+            List<List<string>> helpSeparator = new List<List<string>> { new List<string> { "(", ")", "1" }, new List<string> { "Id = ", " OR", "2" } };
+            for (int i = 0; i < mass.Length; i++)
             {
-                script[0].Append("(" + exp(item)+ "),\n");
+                var exp = CreatePredicate<TOut>(mass[i][1].ToString()).Result;
+                foreach (var elem in jsonDesrealize)
+                {
+                    mass[i][0].Append(helpSeparator[i][0] + exp(elem) + helpSeparator[i][1]+"\n");
+                }
+                mass[i][0].Remove(mass[i][0].Length - 3, Convert.ToInt32(helpSeparator[i][2]));
             }
-            return script[0].Remove(script[0].Length - 2,1);
+            return mass[0][0].Append("\n" + mass[1][0]);
         }
         
         public List<StringBuilder> HeaderInsert<TOut>(TOut obj)
@@ -240,9 +245,9 @@ namespace FileSortService.Data
             var nameColumn = obj.GetType().GetProperties();
             for (int i = 0; i < nameColumn.Length; i++)
             {
-                var jsonIgnoreAttribute = nameColumn[i].CustomAttributes.Count() != 0 ? nameColumn[i].CustomAttributes.ToList().FirstOrDefault().AttributeType.Name : "none";
-                if (jsonIgnoreAttribute != "JsonIgnoreAttribute") 
-                {
+                //var jsonIgnoreAttribute = nameColumn[i].CustomAttributes.Count() != 0 ? nameColumn[i].CustomAttributes.ToList().FirstOrDefault().AttributeType.Name : "none";
+                //if (jsonIgnoreAttribute != "JsonIgnoreAttribute") 
+                //{
                     if (nameColumn[i].PropertyType.FullName.StartsWith(Assembly.GetCallingAssembly().GetName().Name))
                     {
                         if (i == nameColumn.Length - 1)
@@ -282,13 +287,20 @@ namespace FileSortService.Data
 
                         }
                     }
-                }
+                //}
                 
             }
             scriptValues.Remove(scriptValues.Length - 1, 1).Append("\";}");
 
             script.Remove(script.Length - 1, 1).Append(")\nValues ");
 
+            List<StringBuilder> scripts = new List<StringBuilder>() { script, scriptValues };
+            return scripts;
+        }
+        public List<StringBuilder> HeaderDelete<TOut>(TOut obj) 
+        {
+            StringBuilder script = new StringBuilder($"Delete from {obj.GetType().Name}\nWhere ");
+            StringBuilder scriptValues = new StringBuilder("item => {return $\"'{item.Id}'\";}");
             List<StringBuilder> scripts = new List<StringBuilder>() { script, scriptValues };
             return scripts;
         }
