@@ -1,22 +1,20 @@
 ﻿using FileSortService.Model.DatabaseModel;
-//using Newtonsoft.Json;
+using FileSortService.Model.WorkModel;
+using Microsoft.CodeAnalysis.CSharp.Scripting;
+using Microsoft.CodeAnalysis.Scripting;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity.Infrastructure;
-using System.Collections.Specialized;
-using Microsoft.CodeAnalysis.CSharp.Scripting;
-using Microsoft.CodeAnalysis.Scripting;
-using System.Text.Json;
-using Newtonsoft.Json;
-using NPOI.SS.Formula.Functions;
 
 namespace FileSortService.Data
 {
+    
     public class DeserealizeJsonDate
     {
         private readonly Assembly assembly = Assembly.GetExecutingAssembly();
@@ -207,34 +205,45 @@ namespace FileSortService.Data
             List<TOut> jsonDesrealize = new();
             var resourcePath = assembly.GetManifestResourceNames()
             .Single(str => str.EndsWith(filename));
-            //var jsonSerializerSettings = new JsonSerializerSettings();
-            //jsonSerializerSettings.MissingMemberHandling = MissingMemberHandling.Ignore;
+            
             using (Stream stream = assembly.GetManifestResourceStream(resourcePath))
             using (StreamReader reader = new StreamReader(stream))
             {
-                jsonDesrealize = JsonConvert.DeserializeObject<List<TOut>>(reader.ReadToEnd());//, jsonSerializerSettings
+                jsonDesrealize = JsonConvert.DeserializeObject<List<TOut>>(reader.ReadToEnd());
             }
             return jsonDesrealize;
         }
     }
     public class WriteScript 
     {
+        private readonly Assembly checkFile = Assembly.GetExecutingAssembly();
         public StringBuilder WriteScriptAll<TOut>(string filename,string action)
         {
             DeserealizeJsonDate deserealizeJsonDate = new DeserealizeJsonDate();
             var jsonDesrealize = deserealizeJsonDate.TryGetCollection<TOut>(filename);
-            List<StringBuilder>[] mass = new List<StringBuilder>[2] { HeaderInsert<TOut>(jsonDesrealize[0]), HeaderDelete<TOut>(jsonDesrealize[0]) };
-            List<List<string>> helpSeparator = new List<List<string>> { new List<string> { "(", "),","2","1" }, new List<string> { "Id = ", " OR","3","2" } };
-            for (int i = 0; i < mass.Length; i++)
+            List<StringBuilder> script = new();
+            HelperSeparator helperSeparator = new();
+            switch (action) 
             {
-                var exp = CreatePredicate<TOut>(mass[i][1].ToString()).Result;
-                foreach (var elem in jsonDesrealize)
-                {
-                    mass[i][0].Append(helpSeparator[i][0] + exp(elem) + helpSeparator[i][1]+"\n");
-                }
-                mass[i][0].Remove(mass[i][0].Length - Convert.ToInt32(helpSeparator[i][2]), Convert.ToInt32(helpSeparator[i][3]));
+                case "Up":
+                    helperSeparator = deserealizeJsonDate.TryGetCollection<HelperSeparator>("HelperSeparator.json").Where(x=>x.action=="Up").FirstOrDefault();
+                    script = HeaderInsert<TOut>(jsonDesrealize[0]);
+                    break;
+                case "Down":
+                    helperSeparator = deserealizeJsonDate.TryGetCollection<HelperSeparator>("HelperSeparator.json").Where(x => x.action == "Down").FirstOrDefault();
+                    script = HeaderDelete<TOut>(jsonDesrealize[0]);
+                    break;
+                default:
+                    return null;
             }
-            return mass[0][0].Append("\n" + mass[1][0]);
+            var exp = CreatePredicate<TOut>(script[1].ToString()).Result;
+            foreach (var elem in jsonDesrealize)
+            {
+                script[0].Append(helperSeparator.startSymbolLine + exp(elem) + helperSeparator.finishSymbolLine + "\n");
+            }
+            script[0].Remove(script[0].Length - helperSeparator.positionRemovedSymbol, helperSeparator.lengthRemovedSymbol);
+            return script[0];
+
         }
         
         public List<StringBuilder> HeaderInsert<TOut>(TOut obj)
@@ -309,6 +318,24 @@ namespace FileSortService.Data
             var options = ScriptOptions.Default.AddReferences(typeof(T).Assembly);
             var predicate = await CSharpScript.EvaluateAsync<Func<T, string>>(command, options).ConfigureAwait(true);
             return predicate;
+        }
+        public HelperSeparator DeserealizeFileHS(string filename,string action) 
+        {
+            HelperSeparator jsonDesrealize = new();
+            try
+            {
+                var resourcePath = checkFile.GetManifestResourceNames().Single(str => str.EndsWith(filename));
+                using (Stream stream = checkFile.GetManifestResourceStream(resourcePath))
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    jsonDesrealize = JsonConvert.DeserializeObject<HelperSeparator>(reader.ReadToEnd());
+                }
+                return jsonDesrealize;
+            }
+            catch(Exception ex) 
+            {
+                return null;
+            }
         }
     }
 }

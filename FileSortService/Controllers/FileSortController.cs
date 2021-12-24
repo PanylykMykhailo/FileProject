@@ -195,7 +195,7 @@ namespace FileSortService
         public string CheckJson()
         {
             WriteScript writeScript = new WriteScript();
-            return writeScript.WriteScriptAll<Model.Migrations.Architecture>("DateForArchitecture.json","Up").ToString();
+            return writeScript.WriteScriptAll<Model.Migrations.Architecture>("DateForArchitecture.json","Down").ToString();
         }
     }
 }

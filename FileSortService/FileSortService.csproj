@@ -14,6 +14,7 @@
     <Content Remove="Data\Jsons\DateForExtenCategory.json" />
     <Content Remove="Data\Jsons\DateForExtenValue.json" />
     <Content Remove="Data\Jsons\DateForUploadCheck.json" />
+    <Content Remove="Data\Jsons\HelperSeparator.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +22,9 @@
     <EmbeddedResource Include="Data\Jsons\DateForExtenCategory.json" />
     <EmbeddedResource Include="Data\Jsons\DateForExtenValue.json" />
     <EmbeddedResource Include="Data\Jsons\DateForUploadCheck.json" />
+    <EmbeddedResource Include="Data\Jsons\HelperSeparator.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
