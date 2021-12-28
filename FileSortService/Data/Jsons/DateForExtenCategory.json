@@ -1,0 +1,14 @@
+[
+  {
+    "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+    "nameCategory": "File"
+  },
+  {
+    "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+    "nameCategory": "Photo"
+  },
+  {
+    "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+    "nameCategory": "Video"
+  }
+]

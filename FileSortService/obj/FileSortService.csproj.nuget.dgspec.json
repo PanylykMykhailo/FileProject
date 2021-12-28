@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileSortService\\FileSortService.csproj": {}
+    "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileSortService\\FileSortService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileSortService\\FileSortService.csproj": {
+    "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileSortService\\FileSortService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileSortService\\FileSortService.csproj",
+        "projectUniqueName": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileSortService\\FileSortService.csproj",
         "projectName": "FileSortService",
-        "projectPath": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileSortService\\FileSortService.csproj",
+        "projectPath": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileSortService\\FileSortService.csproj",
         "packagesPath": "C:\\Users\\mpanylyk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileSortService\\obj\\",
+        "outputPath": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileSortService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mpanylyk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,9 +44,51 @@
               "target": "Package",
               "version": "[8.1.1, )"
             },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Json.Net": {
+              "target": "Package",
+              "version": "[1.0.33, )"
+            },
+            "LumenWorksCsvReader": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Scripting": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.5.5, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Threading.Tasks": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [

@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\FileSortService\\SyncDataServices\\Http"
   ],
+  "SelectedNode": "\\FileSortService",
   "PreviewInSolutionExplorer": false
 }

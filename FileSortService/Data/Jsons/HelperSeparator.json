@@ -1,0 +1,16 @@
+[
+  {
+    "action": "Up",
+    "startSymbolLine": "(",
+    "finishSymbolLine": "),",
+    "positionRemovedSymbol": 2,
+    "lengthRemovedSymbol": 1
+  },
+  {
+    "action": "Down",
+    "startSymbolLine": "Id = ",
+    "finishSymbolLine": " OR",
+    "positionRemovedSymbol": 3,
+    "lengthRemovedSymbol": 2
+  }
+]

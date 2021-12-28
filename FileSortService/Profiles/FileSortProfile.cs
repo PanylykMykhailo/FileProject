@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using AutoMapper;
 using FileSortService.Dtos;
-using FileSortService.Model;
+using FileSortService.Model.WorkModel;
 
 namespace FileSortService.Profiles
 {

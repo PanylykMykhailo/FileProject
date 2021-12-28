@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileService\\FileService.csproj": {}
+    "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileService\\FileService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileService\\FileService.csproj": {
+    "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileService\\FileService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileService\\FileService.csproj",
+        "projectUniqueName": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileService\\FileService.csproj",
         "projectName": "FileService",
-        "projectPath": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileService\\FileService.csproj",
+        "projectPath": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileService\\FileService.csproj",
         "packagesPath": "C:\\Users\\mpanylyk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileService\\obj\\",
+        "outputPath": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mpanylyk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[8.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

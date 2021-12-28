@@ -1,0 +1,2261 @@
+[
+  {
+    "Id": "59c1040a-eacc-4e08-b8b3-bea6d589ad48",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "pcap",
+    "hexSignature": "a1b2c3d4"
+  },
+  {
+    "Id": "47f629ec-55b7-4fff-a1c1-8ee2574d1d12",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "pcap",
+    "hexSignature": "d4c3b2a1"
+  },
+  {
+    "Id": "bc690319-a0c6-4743-bed9-3e5c75c4b7c8",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "pcapng",
+    "hexSignature": "0a0d0d0a"
+  },
+  {
+    "Id": "17517064-7ada-44ac-a7b9-6ccf0ee036ae",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "rpm",
+    "hexSignature": "edabeedb"
+  },
+  {
+    "Id": "ad577236-d167-4ec3-8c76-0ed066397c79",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "bin",
+    "hexSignature": "53503031"
+  },
+  {
+    "Id": "c5033e47-fa4a-4d5b-aaaa-1b39a68ab201",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "PIC",
+    "hexSignature": "0"
+  },
+  {
+    "Id": "b6349cbb-e55a-4ac2-bd8c-7dd5361add47",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "PIF",
+    "hexSignature": "0"
+  },
+  {
+    "Id": "3d1ab482-658d-41ec-b8d9-618e6ae3ab97",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "SEA",
+    "hexSignature": "0"
+  },
+  {
+    "Id": "dea6752b-f552-4df3-8e60-f90dac3bf761",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "YTR",
+    "hexSignature": "0"
+  },
+  {
+    "Id": "cecb5994-2b3e-4d4f-9a4f-7bdc44ef4291",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "PDB",
+    "hexSignature": "000000000000000000000000000000000000000000000000"
+  },
+  {
+    "Id": "9e585317-cc92-4dd0-bf05-d66650c35281",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "DBA",
+    "hexSignature": "BEBAFECA"
+  },
+  {
+    "Id": "fd093ea6-a8f9-4c49-90fe-565dd6d07cef",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "DBA",
+    "hexSignature": "00014244"
+  },
+  {
+    "Id": "bd370b24-43ae-4bcf-9f5d-ab7f56a7fd27",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "TDA",
+    "hexSignature": "00014454"
+  },
+  {
+    "Id": "cacd88df-6ceb-46ff-887e-88682a746069",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "00010000"
+  },
+  {
+    "Id": "7ba49daf-fc51-4e3d-9280-798ff83c6eb6",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "ico",
+    "hexSignature": "00000100"
+  },
+  {
+    "Id": "c193f0d7-d365-4163-97bd-4b99f9d14ee4",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "3gp",
+    "hexSignature": "667479703367"
+  },
+  {
+    "Id": "e0a7c618-0086-4e9d-85fa-97b04b66c22c",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "3g2",
+    "hexSignature": "667479703367"
+  },
+  {
+    "Id": "17c1baa6-a14a-4793-94eb-0de61d84971c",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "z",
+    "hexSignature": "1F9D"
+  },
+  {
+    "Id": "2d84ca78-180d-47fb-9514-3f06b947fe50",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "tar.z",
+    "hexSignature": "1F9D"
+  },
+  {
+    "Id": "eada056b-beb7-4d24-8643-a33815f98903",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "z",
+    "hexSignature": "1FA0"
+  },
+  {
+    "Id": "140c4ba8-432b-4f3a-9a48-c41a7cb4926a",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "tar.z",
+    "hexSignature": "1FA0"
+  },
+  {
+    "Id": "c7eb9702-68cf-411e-9e61-ca46b091b3cc",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "bac",
+    "hexSignature": "4241434B4D494B454449534B"
+  },
+  {
+    "Id": "4c58b954-d99a-45c4-b94b-beb9400d3939",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "bz2",
+    "hexSignature": "425A68"
+  },
+  {
+    "Id": "9b081e20-ab64-44b5-8a08-4ed1213b9753",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "gif",
+    "hexSignature": "474946383761"
+  },
+  {
+    "Id": "028b4c2f-115b-4459-8fa5-e23920a222e6",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "gif",
+    "hexSignature": "474946383961"
+  },
+  {
+    "Id": "fc17314a-bbb4-4e48-a450-3c6b0d439de3",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "tif",
+    "hexSignature": "49492A00"
+  },
+  {
+    "Id": "6f2d66d5-bb48-4932-879c-6f72905c9d22",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "tiff",
+    "hexSignature": "49492A00"
+  },
+  {
+    "Id": "84b559dc-8b96-4d3c-a7b8-29960035ec28",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "tif",
+    "hexSignature": "4D4D002A"
+  },
+  {
+    "Id": "99b36dfb-54fa-4fc1-9a79-752d7970d443",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "tiff",
+    "hexSignature": "4D4D002A"
+  },
+  {
+    "Id": "862953b6-1a21-4cdc-84bc-c0af65b8d521",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "cr2",
+    "hexSignature": "49492A00100000004352"
+  },
+  {
+    "Id": "762f4bbc-3927-48a6-8a96-69d452880ad4",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "cin",
+    "hexSignature": "802A5FD7"
+  },
+  {
+    "Id": "4562b09e-d680-4292-96ba-4375790bf638",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "524E4301"
+  },
+  {
+    "Id": "ed22e284-52b5-4486-b447-fd277bb223ae",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "524E4302"
+  },
+  {
+    "Id": "3a322c9b-21aa-429e-a483-d47f03e19500",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "dpx",
+    "hexSignature": "53445058"
+  },
+  {
+    "Id": "35e93334-b1f8-4a04-8828-f9c5f97b8f8c",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "dpx",
+    "hexSignature": "58504453"
+  },
+  {
+    "Id": "7adbfd4a-f3d3-4b98-9fc7-3c4c9d1d71d6",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "exr",
+    "hexSignature": "762F3101"
+  },
+  {
+    "Id": "e6b8c732-55a8-43c3-971b-5ba9e96e1bce",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "bpg",
+    "hexSignature": "425047FB"
+  },
+  {
+    "Id": "fcfdf8b2-da9c-4d75-a0ef-e8a9f56bec0e",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "jpg",
+    "hexSignature": "FFD8FFDB"
+  },
+  {
+    "Id": "6374a3e9-2778-454a-9cd7-f9f31407239f",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "jpeg",
+    "hexSignature": "FFD8FFDB"
+  },
+  {
+    "Id": "5081d9be-a17a-4050-9308-470e8122d769",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "jpg",
+    "hexSignature": "FFD8FFE000104A4649460001"
+  },
+  {
+    "Id": "abeb4004-bd0b-400f-9510-a11ff5122fea",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "jpeg",
+    "hexSignature": "FFD8FFE000104A4649460001"
+  },
+  {
+    "Id": "18d1d6bd-af49-407c-8452-fa545a0c4728",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "jpg",
+    "hexSignature": "FFD8FFE1????457869660000"
+  },
+  {
+    "Id": "b155d58e-ecc2-44f6-96bf-c5ea0fd38e22",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "jpeg",
+    "hexSignature": "FFD8FFE1????457869660000"
+  },
+  {
+    "Id": "a7b8dbc6-b746-4e95-98c8-54c26cf8fede",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "ilbm",
+    "hexSignature": "464F524D????????494C424D"
+  },
+  {
+    "Id": "2d057aab-d676-457c-8e8a-c131925666e8",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "lbm",
+    "hexSignature": "464F524D????????494C424D"
+  },
+  {
+    "Id": "094c6e5b-525c-4177-9b7c-a3ab55666a81",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "ibm",
+    "hexSignature": "464F524D????????494C424D"
+  },
+  {
+    "Id": "a3573183-c067-45a9-91b5-2d169c3a6e2d",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iff",
+    "hexSignature": "464F524D????????494C424D"
+  },
+  {
+    "Id": "c520aebc-c5dd-4ac1-942f-1a10b51da48f",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "8svx",
+    "hexSignature": "464F524D????????38535658"
+  },
+  {
+    "Id": "6e22ca57-53ac-4a9d-93b8-dc9ddfd2daa5",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "8sv",
+    "hexSignature": "464F524D????????38535658"
+  },
+  {
+    "Id": "519ed935-7c17-4e2a-993a-c37b5533f91a",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "svx",
+    "hexSignature": "464F524D????????38535658"
+  },
+  {
+    "Id": "b0213332-f8a5-49a3-85fb-d380743cf75f",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "snd",
+    "hexSignature": "464F524D????????38535658"
+  },
+  {
+    "Id": "4624f6ad-197a-48da-9334-3d43e91de0f1",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iff",
+    "hexSignature": "464F524D????????38535658"
+  },
+  {
+    "Id": "5d84bf2c-b1a6-4a17-9b1d-cd459478a27d",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "acbm",
+    "hexSignature": "464F524D????????4143424D"
+  },
+  {
+    "Id": "e0020a86-259d-47bf-925f-e7064885b570",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iff",
+    "hexSignature": "464F524D????????4143424D"
+  },
+  {
+    "Id": "a4cb397e-71d1-4ef3-8354-9ad3773f2252",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "anbm",
+    "hexSignature": "464F524D????????414E424D"
+  },
+  {
+    "Id": "842ad5d4-ccbb-4849-ba36-8c7477caa9c6",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iff",
+    "hexSignature": "464F524D????????414E424D"
+  },
+  {
+    "Id": "f9bfafbd-bef5-4f76-b0a0-b6eb9526e494",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "anim",
+    "hexSignature": "464F524D????????414E494D"
+  },
+  {
+    "Id": "f92ee01f-7aac-429b-b1b9-3dd0152a9241",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iff",
+    "hexSignature": "464F524D????????414E494D"
+  },
+  {
+    "Id": "18ce622e-9d6f-49b4-a28d-0fa483115146",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "faxx",
+    "hexSignature": "464F524D????????46415858"
+  },
+  {
+    "Id": "71ccf00b-8dc5-4491-815f-c36f057b3980",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "fax",
+    "hexSignature": "464F524D????????46415858"
+  },
+  {
+    "Id": "7f0004ed-6619-4a34-822e-b1d9e098e51f",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iff",
+    "hexSignature": "464F524D????????46415858"
+  },
+  {
+    "Id": "db4ad385-bb8a-44bf-bf3a-247685bae580",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "ftxt",
+    "hexSignature": "464F524D????????46545854"
+  },
+  {
+    "Id": "c588b3e9-36ce-4590-addd-e2c99bc19090",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iff",
+    "hexSignature": "464F524D????????46545854"
+  },
+  {
+    "Id": "0a182a30-81a4-4afb-87d0-5ab5f1f83c79",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "smus",
+    "hexSignature": "464F524D????????534D5553"
+  },
+  {
+    "Id": "ad3f030b-3fcd-44ed-9490-09df264ab59a",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "smu",
+    "hexSignature": "464F524D????????534D5553"
+  },
+  {
+    "Id": "7b60362f-8ef6-4fbc-95e7-f29e8cf0802a",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mus",
+    "hexSignature": "464F524D????????534D5553"
+  },
+  {
+    "Id": "761525e2-40aa-433f-a657-6d02d2f94668",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iff",
+    "hexSignature": "464F524D????????534D5553"
+  },
+  {
+    "Id": "b8c57bd7-e8ac-4d37-bb8a-9e8bc84c8a3a",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "cmus",
+    "hexSignature": "464F524D????????434D5553"
+  },
+  {
+    "Id": "bc3f9bfc-f24c-47a1-80d9-536923e4f0cc",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mus",
+    "hexSignature": "464F524D????????434D5553"
+  },
+  {
+    "Id": "8aeb7852-b496-41de-94c6-8a083e29a7bb",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iff",
+    "hexSignature": "464F524D????????434D5553"
+  },
+  {
+    "Id": "dc16185c-bef9-45a5-a978-f63f5057cfc0",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "yuvn",
+    "hexSignature": "464F524D????????5955564E"
+  },
+  {
+    "Id": "d14e4288-5dd8-477e-ba79-9bbed782b38a",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "yuv",
+    "hexSignature": "464F524D????????5955564E"
+  },
+  {
+    "Id": "002aefe7-0e41-481f-9fb1-79db3ae9c652",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iff",
+    "hexSignature": "464F524D????????5955564E"
+  },
+  {
+    "Id": "15b8571e-f611-4d42-9c52-755bdfded4fc",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iff",
+    "hexSignature": "464F524D????????46414E54"
+  },
+  {
+    "Id": "cec5a1d9-fd75-47e6-8228-11013d35459f",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "aiff",
+    "hexSignature": "464F524D????????41494646"
+  },
+  {
+    "Id": "799b5a83-2497-46ec-a167-0074a124811b",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "aif",
+    "hexSignature": "464F524D????????41494646"
+  },
+  {
+    "Id": "be173873-e94c-40f8-a1c6-208498790d36",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "aifc",
+    "hexSignature": "464F524D????????41494646"
+  },
+  {
+    "Id": "995c7b23-726e-45a3-aec4-ba2890c67214",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "snd",
+    "hexSignature": "464F524D????????41494646"
+  },
+  {
+    "Id": "f5733906-49ff-407a-9a85-bb541778d35a",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iff",
+    "hexSignature": "464F524D????????41494646"
+  },
+  {
+    "Id": "aa72c9dd-bbba-43ee-a00a-6984d94ed788",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "idx",
+    "hexSignature": "494E4458"
+  },
+  {
+    "Id": "50d9d7d2-9804-417d-b7ba-e59bd38b1b7f",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "lz",
+    "hexSignature": "4C5A4950"
+  },
+  {
+    "Id": "70e5ee11-81f4-4f19-a186-4e1a7d505a62",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "exe",
+    "hexSignature": "4D5A"
+  },
+  {
+    "Id": "0483bfaa-ab79-4299-923e-3aad02cffe5e",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "zip",
+    "hexSignature": "504B0304"
+  },
+  {
+    "Id": "a0d7a88f-6ae6-496d-af20-c416ff444eb4",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "jar",
+    "hexSignature": "504B0304"
+  },
+  {
+    "Id": "b22cefaa-8715-4572-83bc-b622e4e509b0",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "odt",
+    "hexSignature": "504B0304"
+  },
+  {
+    "Id": "4f90dcf3-b93c-45e3-8de5-9322c29ec190",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "ods",
+    "hexSignature": "504B0304"
+  },
+  {
+    "Id": "81fcb759-7ca0-422f-8740-4c72561e6530",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "odp",
+    "hexSignature": "504B0304"
+  },
+  {
+    "Id": "16fd1ee6-ce7a-4ad0-a92e-354332c2fc27",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "docx",
+    "hexSignature": "504B0304"
+  },
+  {
+    "Id": "1eedec4c-a198-4581-a11c-ea6b34d12adb",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "xlsx",
+    "hexSignature": "504B0304"
+  },
+  {
+    "Id": "4cb5fc6d-d9a4-45de-bcd2-55ebd02087a8",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "pptx",
+    "hexSignature": "504B0304"
+  },
+  {
+    "Id": "e0c94eb8-8982-420c-922a-342a2f4e3b57",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "vsdx",
+    "hexSignature": "504B0304"
+  },
+  {
+    "Id": "04766f5c-b392-4345-8419-b51ac0ba72fe",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "apk",
+    "hexSignature": "504B0304"
+  },
+  {
+    "Id": "7e057183-54ac-40a7-8a51-273057df2542",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "aar",
+    "hexSignature": "504B0304"
+  },
+  {
+    "Id": "0b66540f-a3ca-4881-a950-046fa17ad4c0",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "zip",
+    "hexSignature": "504B0506"
+  },
+  {
+    "Id": "22a167b7-a9ee-4478-8c3c-e1dd0c6fbf19",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "jar",
+    "hexSignature": "504B0506"
+  },
+  {
+    "Id": "1d847511-26e2-4e28-b069-8abdad05ca3b",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "odt",
+    "hexSignature": "504B0506"
+  },
+  {
+    "Id": "ddc1319c-0a7f-4ee0-b7a4-b3c71aeb3b1a",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "ods",
+    "hexSignature": "504B0506"
+  },
+  {
+    "Id": "5810e668-feed-433d-8a57-7cb4d8b193dd",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "odp",
+    "hexSignature": "504B0506"
+  },
+  {
+    "Id": "ad8c51af-df5e-4418-81ef-918e1194782e",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "docx",
+    "hexSignature": "504B0506"
+  },
+  {
+    "Id": "f92abb9f-b3ed-49e5-8ed4-41d38602a2e6",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "xlsx",
+    "hexSignature": "504B0506"
+  },
+  {
+    "Id": "8344da70-762e-41be-b0c3-72a4549f5fc2",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "pptx",
+    "hexSignature": "504B0506"
+  },
+  {
+    "Id": "f419125f-10d3-4159-8bb8-2d1371137502",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "vsdx",
+    "hexSignature": "504B0506"
+  },
+  {
+    "Id": "e21cdd6f-c1b9-4a47-a1b0-0f3fc30cfacc",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "apk",
+    "hexSignature": "504B0506"
+  },
+  {
+    "Id": "bb447a41-8f82-449b-818f-289e503d06fc",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "aar",
+    "hexSignature": "504B0506"
+  },
+  {
+    "Id": "747fa687-ceae-4b52-aa38-fb7d8d4a898d",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "zip",
+    "hexSignature": "504B0708"
+  },
+  {
+    "Id": "d8025f0d-9d97-4d14-83e1-c6224db20380",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "jar",
+    "hexSignature": "504B0708"
+  },
+  {
+    "Id": "3a7d0b63-0b11-4016-bd60-4c83c7227d5b",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "odt",
+    "hexSignature": "504B0708"
+  },
+  {
+    "Id": "30daf531-b59d-4177-9250-dbcb480314f0",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "ods",
+    "hexSignature": "504B0708"
+  },
+  {
+    "Id": "1f83deb0-9ee0-48e8-85b6-87abd5a8c9d0",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "odp",
+    "hexSignature": "504B0708"
+  },
+  {
+    "Id": "a75a74e7-3d19-4c89-b263-d3d7d3eba61e",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "docx",
+    "hexSignature": "504B0708"
+  },
+  {
+    "Id": "4af3b49c-3477-404f-8968-972673756227",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "xlsx",
+    "hexSignature": "504B0708"
+  },
+  {
+    "Id": "fd9cd5be-93ec-4327-a873-0cd7de9242a8",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "pptx",
+    "hexSignature": "504B0708"
+  },
+  {
+    "Id": "0f11b343-4480-4b74-af27-5911877466ec",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "vsdx",
+    "hexSignature": "504B0708"
+  },
+  {
+    "Id": "710d000f-eeaf-43d1-b28b-54e170735dd3",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "apk",
+    "hexSignature": "504B0708"
+  },
+  {
+    "Id": "047b33b0-5be4-4aa6-9af5-0706c0903e91",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "aar",
+    "hexSignature": "504B0708"
+  },
+  {
+    "Id": "c29c734f-4966-4e1e-a334-41b39224b469",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "rar",
+    "hexSignature": "526172211A0700"
+  },
+  {
+    "Id": "e6be8d69-7250-48ae-b3b0-98f28d602ed7",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "rar",
+    "hexSignature": "526172211A070100"
+  },
+  {
+    "Id": "d202a917-873d-45d2-a585-9f31898efd17",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "7F454C46"
+  },
+  {
+    "Id": "1adb9949-a362-4fb8-93d3-5b07c3e49876",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "png",
+    "hexSignature": "89504E470D0A1A0A"
+  },
+  {
+    "Id": "7e79a2ef-4920-4b40-a699-c2d7af2eb0fb",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "class",
+    "hexSignature": "CAFEBABE"
+  },
+  {
+    "Id": "154be1d3-c4d1-4f89-9d82-7b80c3ef993e",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "EFBBBF"
+  },
+  {
+    "Id": "166b26c5-cf61-47f7-a325-5b061233dbe0",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "FEEDFACE"
+  },
+  {
+    "Id": "ac83616a-a886-49a4-b25a-c8b1328bda81",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "FEEDFACF"
+  },
+  {
+    "Id": "c14ba00d-7a70-47c5-9a60-8b619096cae4",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "CEFAEDFE"
+  },
+  {
+    "Id": "489a91c1-f17f-432d-b4ae-254f9d9d1ec1",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "CFFAEDFE"
+  },
+  {
+    "Id": "73b0d8d7-9bd3-4b86-8b83-4269798aaaac",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "FFFE"
+  },
+  {
+    "Id": "7672114e-349d-45c4-b574-5f3252b8e12d",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "FFFE0000"
+  },
+  {
+    "Id": "ea3bda18-4894-4b0e-b48a-4b8da633fa00",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "ps",
+    "hexSignature": "25215053"
+  },
+  {
+    "Id": "1f6a0f41-e536-4435-b68a-2c6709d94234",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "pdf",
+    "hexSignature": "25504446"
+  },
+  {
+    "Id": "bf76e30d-9a48-4637-a685-85fbdb7b143d",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "asf",
+    "hexSignature": "3026B2758E66CF11"
+  },
+  {
+    "Id": "361d9653-759a-4413-ab7a-84ede0053cbb",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "wma",
+    "hexSignature": "3026B2758E66CF11"
+  },
+  {
+    "Id": "6fd3a1ad-555d-400e-b31a-67e2fd413fb1",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "wmv",
+    "hexSignature": "3026B2758E66CF11"
+  },
+  {
+    "Id": "6d04f729-fc7a-4f9d-8a68-43052911d463",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "asf",
+    "hexSignature": "A6D900AA0062CE6C"
+  },
+  {
+    "Id": "7c8f9110-eb86-4678-91e8-cdc1224cfaf0",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "wma",
+    "hexSignature": "A6D900AA0062CE6C"
+  },
+  {
+    "Id": "df24c977-d681-4a2c-a903-74e46fa06c7a",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "wmv",
+    "hexSignature": "A6D900AA0062CE6C"
+  },
+  {
+    "Id": "690e3df9-4f77-4b7c-864a-55e34a325a00",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "2453444930303031"
+  },
+  {
+    "Id": "1d280412-0ecd-4ac5-b11e-8dcf84224fb7",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "ogg",
+    "hexSignature": "4F676753"
+  },
+  {
+    "Id": "e28d0b7c-b22d-4850-8c3b-47e2ffe18b56",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "oga",
+    "hexSignature": "4F676753"
+  },
+  {
+    "Id": "75ab4231-023a-4d67-a023-81ac9badf03b",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "ogv",
+    "hexSignature": "4F676753"
+  },
+  {
+    "Id": "6361e949-fff4-4b82-8f23-04d2ba9c392b",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "psd",
+    "hexSignature": "38425053"
+  },
+  {
+    "Id": "f9a4acc7-e91b-4826-b355-8eede241dfee",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "wav",
+    "hexSignature": "52494646????????57415645"
+  },
+  {
+    "Id": "803f318d-beea-4917-a5bf-890e760d6dfe",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "avi",
+    "hexSignature": "52494646????????41564920"
+  },
+  {
+    "Id": "44dc1b58-f468-4242-9656-124a9303d071",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mp3",
+    "hexSignature": "FFFB"
+  },
+  {
+    "Id": "cb449562-ef91-4df2-b116-24ad69c9161c",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mp3",
+    "hexSignature": "494433"
+  },
+  {
+    "Id": "373387ae-b9c5-4cad-ac12-71e98f6ddf83",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "bmp",
+    "hexSignature": "424D"
+  },
+  {
+    "Id": "95c06ad0-e6d5-42e2-95a1-88c7b8ebb67e",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "dib",
+    "hexSignature": "424D"
+  },
+  {
+    "Id": "3025f22d-73bc-4f2a-9bcc-5b7d39aeafb0",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iso",
+    "hexSignature": "4344303031"
+  },
+  {
+    "Id": "ff054306-4ffe-41fa-af80-e6dffe95fe62",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "fits",
+    "hexSignature": "53494D504C452020"
+  },
+  {
+    "Id": "4138ba90-34a4-4978-ba96-118532307a3d",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "fits",
+    "hexSignature": "3D202020202020202020202020202020202020202054"
+  },
+  {
+    "Id": "2a01567f-bc8d-4304-8623-95958eb52bdb",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "flac",
+    "hexSignature": "664C6143"
+  },
+  {
+    "Id": "17adf882-9f64-4b3f-9e18-088030edf814",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mid",
+    "hexSignature": "4D546864"
+  },
+  {
+    "Id": "2cb4acdc-aba3-45da-838d-a6a78df7a1ca",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "midi",
+    "hexSignature": "4D546864"
+  },
+  {
+    "Id": "6d1b1174-b41a-4f37-b7f1-2dba96110877",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "doc",
+    "hexSignature": "D0CF11E0A1B11AE1"
+  },
+  {
+    "Id": "ad670d2c-73b2-48fa-bb4c-5a1a0aed027b",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "xls",
+    "hexSignature": "D0CF11E0A1B11AE1"
+  },
+  {
+    "Id": "da9235a8-3fe5-4f07-ab08-2d867a01f13c",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "ppt",
+    "hexSignature": "D0CF11E0A1B11AE1"
+  },
+  {
+    "Id": "21cb44b4-1cef-4fa3-a9a6-15275cb288fd",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "msg",
+    "hexSignature": "D0CF11E0A1B11AE1"
+  },
+  {
+    "Id": "5b7168b5-7c9b-4988-8ac7-89f97c35686f",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "dex",
+    "hexSignature": "6465780A30333500"
+  },
+  {
+    "Id": "d2dac7d6-f302-4db6-9ed5-1706cd897f95",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "vmdk",
+    "hexSignature": "4B444D"
+  },
+  {
+    "Id": "76de65c8-df37-472f-b42e-36bb32d66ebf",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "crx",
+    "hexSignature": "43723234"
+  },
+  {
+    "Id": "4ab2b54e-d6ff-40fe-b709-fdc1edf595f6",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "fh8",
+    "hexSignature": "41474433"
+  },
+  {
+    "Id": "6216ad61-1bf9-4bba-a5e5-caff0eb54be4",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "cwk",
+    "hexSignature": "05070000424F424F"
+  },
+  {
+    "Id": "ffb41bb3-01bd-4412-b60c-79e8fb9bea36",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "cwk",
+    "hexSignature": "0507000000000000"
+  },
+  {
+    "Id": "30908a64-528f-4357-8a96-3f0321663f88",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "cwk",
+    "hexSignature": "000000000001"
+  },
+  {
+    "Id": "3ac5fcf1-cc6c-42d1-a30a-be6224c439ad",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "cwk",
+    "hexSignature": "0607E100424F424F"
+  },
+  {
+    "Id": "ead3a280-c21d-4c69-adbc-cc51b018f620",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "cwk",
+    "hexSignature": "0607E10000000000"
+  },
+  {
+    "Id": "0745ed0e-19a6-49f1-a894-ba423d26ac00",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "cwk",
+    "hexSignature": "000000000001"
+  },
+  {
+    "Id": "b2d4f46d-da71-4123-bf76-f29520f95837",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "toast",
+    "hexSignature": "455202000000"
+  },
+  {
+    "Id": "612cc570-e33e-4e5c-b080-362d5dcbc109",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "toast",
+    "hexSignature": "8B455202000000"
+  },
+  {
+    "Id": "bc3e6226-6f6b-4377-9caa-50a9198fa63a",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "dmg",
+    "hexSignature": "7801730D626260"
+  },
+  {
+    "Id": "04344782-9097-4535-a85d-6c06cb17accf",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "xar",
+    "hexSignature": "78617221"
+  },
+  {
+    "Id": "84cc777e-859e-49c6-85c7-007bab2c6fbe",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "dat",
+    "hexSignature": "504D4F43434D4F43"
+  },
+  {
+    "Id": "45d49718-896d-416a-9617-4dd505a27198",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "nes",
+    "hexSignature": "4E45531A"
+  },
+  {
+    "Id": "455e23d5-0c04-4abb-811a-9292656016e2",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "tar",
+    "hexSignature": "7573746172003030"
+  },
+  {
+    "Id": "4d57e723-ac28-48fe-b1eb-7d33eb59c94f",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "tar",
+    "hexSignature": "7573746172202000"
+  },
+  {
+    "Id": "70921bde-6624-4afc-aa20-64f3270ed571",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "tox",
+    "hexSignature": "746F7833"
+  },
+  {
+    "Id": "fd3d80da-7467-442a-9dc8-268187957fa3",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "MLV",
+    "hexSignature": "4D4C5649"
+  },
+  {
+    "Id": "6a474f56-5df0-409d-83f0-348d3e3cc951",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "44434D0150413330"
+  },
+  {
+    "Id": "6c11c148-e452-49f1-b48f-2c0f8e7f485f",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "7z",
+    "hexSignature": "377ABCAF271C"
+  },
+  {
+    "Id": "c3a82607-fba2-45c0-aa09-6c0dccd78bca",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "gz",
+    "hexSignature": "1F8B"
+  },
+  {
+    "Id": "2cb9ff00-bc33-483a-8612-f3d9c0bb57fc",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "tar.gz",
+    "hexSignature": "1F8B"
+  },
+  {
+    "Id": "7dd16eae-e2a3-42c2-9d0a-8b1192bf814e",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "xz",
+    "hexSignature": "FD377A585A0000"
+  },
+  {
+    "Id": "392c6fad-4c37-4bae-833d-32812e59cbad",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "tar.xz",
+    "hexSignature": "FD377A585A0000"
+  },
+  {
+    "Id": "dab11af6-b732-4115-8b14-6d5f91154919",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "lz4",
+    "hexSignature": "04224D18"
+  },
+  {
+    "Id": "99f76b49-f481-4cea-bfef-c5b3c238c492",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "cab",
+    "hexSignature": "4D534346"
+  },
+  {
+    "Id": "db93e7a9-7bc2-4e0d-95a4-8a0406bb77b2",
+    "extensionCategory": null,
+    "typeFile": "Various. (Replacing the last character of the original file extension with ",
+    "hexSignature": "535A444488F02733"
+  },
+  {
+    "Id": "0c843680-91b7-46d8-bd01-b17b33141174",
+    "extensionCategory": null,
+    "typeFile": "an underscore, e.g. setup.exe becomes setup.ex_)",
+    "hexSignature": "535A444488F02733"
+  },
+  {
+    "Id": "8d36955f-ada5-4b9a-bed4-6a7695d16937",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "flif",
+    "hexSignature": "464C4946"
+  },
+  {
+    "Id": "f67f2964-3275-4b60-bd9f-3cae1cdb5ab2",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mkv",
+    "hexSignature": "1A45DFA3"
+  },
+  {
+    "Id": "807698f5-93c8-4f79-b367-dbc7a779effe",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mka",
+    "hexSignature": "1A45DFA3"
+  },
+  {
+    "Id": "5ed7d574-6f60-4628-b82c-00438f030f90",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mks",
+    "hexSignature": "1A45DFA3"
+  },
+  {
+    "Id": "8fe87a9a-3553-42d4-a104-ce7288014880",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mk3d",
+    "hexSignature": "1A45DFA3"
+  },
+  {
+    "Id": "5ec150df-2534-4a28-82ba-c0f987a927ad",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "webm",
+    "hexSignature": "1A45DFA3"
+  },
+  {
+    "Id": "52939ab2-f768-4cda-bf22-11e2dc476d32",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "stg",
+    "hexSignature": "4D494C20"
+  },
+  {
+    "Id": "fcaf19d9-0eed-4b99-a52a-1fc689ee72d5",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "djvu",
+    "hexSignature": "41542654464F524D????????444A56"
+  },
+  {
+    "Id": "f600dd6a-5a1b-4338-8620-cece79a88873",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "djv",
+    "hexSignature": "41542654464F524D????????444A56"
+  },
+  {
+    "Id": "545213e9-3d2d-45fa-8a45-e120286ce273",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "der",
+    "hexSignature": "3082"
+  },
+  {
+    "Id": "55e6fd74-ea34-49c3-badd-52dc1c6276c3",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "dcm",
+    "hexSignature": "4449434D"
+  },
+  {
+    "Id": "af94021d-dd4a-4144-8125-3f5e3d273e29",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "woff",
+    "hexSignature": "774F4646"
+  },
+  {
+    "Id": "9028337f-b2b5-4c44-9f74-665b3c77ce90",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "woff2",
+    "hexSignature": "774F4632"
+  },
+  {
+    "Id": "d434de6c-efc8-4a91-a346-b6e248a236cb",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "XML",
+    "hexSignature": "3c3f786d6c20"
+  },
+  {
+    "Id": "c16240ba-3364-4afe-ba8a-1ee7dbe15d6b",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "wasm",
+    "hexSignature": "0061736d"
+  },
+  {
+    "Id": "22eebbce-e96f-44e6-b1d4-26518a86b549",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "lep",
+    "hexSignature": "cf8401"
+  },
+  {
+    "Id": "2075fa69-aae8-4c30-8d5c-f30f290315de",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "swf",
+    "hexSignature": "435753"
+  },
+  {
+    "Id": "27a93500-313c-4ed5-ac2f-6bf12eabf8c3",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "swf",
+    "hexSignature": "465753"
+  },
+  {
+    "Id": "e9ab610e-4bb5-44fd-b51c-e2410b00a507",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "deb",
+    "hexSignature": "213C617263683E"
+  },
+  {
+    "Id": "0c56bfcb-f8cc-4a44-b4b5-2f1ec23ba836",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "webp",
+    "hexSignature": "52494646????????57454250"
+  },
+  {
+    "Id": "1ed5c85e-519f-4a52-96db-80d7933e40f4",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "27051956"
+  },
+  {
+    "Id": "baf4f1ac-739b-4808-85d2-469a3a12114d",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "rtf",
+    "hexSignature": "7B5C72746631"
+  },
+  {
+    "Id": "a3186fd3-42ea-4767-af44-ddebfb85e700",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "54415045"
+  },
+  {
+    "Id": "cd2efa58-b970-44a5-b0b5-a3af4e885ca0",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "ts ",
+    "hexSignature": "47"
+  },
+  {
+    "Id": "2fa47930-e9d8-400d-bff3-ba32dc422368",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "47"
+  },
+  {
+    "Id": "65f99641-aa2d-4556-81d0-945f4f612cdf",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "tsv ",
+    "hexSignature": "47"
+  },
+  {
+    "Id": "a9b8a5d4-705a-4f26-8322-22d4c75f8bfd",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "47"
+  },
+  {
+    "Id": "38ed1b2a-001d-4148-9bc4-819061d313b1",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "tsa",
+    "hexSignature": "47"
+  },
+  {
+    "Id": "c0cf1dd8-b833-432c-a37d-98fdcf65adac",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "m2p ",
+    "hexSignature": "000001BA"
+  },
+  {
+    "Id": "e11528dd-1d54-4746-afe0-69e9ebcdd681",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "000001BA"
+  },
+  {
+    "Id": "08b114ee-708b-4c84-a36d-e307f8a2af9f",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "vob",
+    "hexSignature": "000001BA"
+  },
+  {
+    "Id": "48413372-8543-4998-9bbc-1eb3e6d6e310",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mpg ",
+    "hexSignature": "000001BA"
+  },
+  {
+    "Id": "60e45bbc-d92c-47cc-9ea6-e9e23243d025",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "000001BA"
+  },
+  {
+    "Id": "af370fe6-20b6-4672-9274-ab6e0236763b",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mpeg",
+    "hexSignature": "000001BA"
+  },
+  {
+    "Id": "bd4eed7d-da05-4e4e-aceb-68172ff482fc",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mpg ",
+    "hexSignature": "47"
+  },
+  {
+    "Id": "fb1504e8-c1d5-480f-b599-378adee9d983",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "47"
+  },
+  {
+    "Id": "7dc96f2a-f9c8-48bd-b784-ec3e2e1be078",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mpeg",
+    "hexSignature": "47"
+  },
+  {
+    "Id": "a4bfbb9c-bb69-4c46-b84f-711cf0cc9b51",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mpg ",
+    "hexSignature": "000001B3"
+  },
+  {
+    "Id": "0663c944-2ea9-426c-8ad8-c8d958875ba2",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "000001B3"
+  },
+  {
+    "Id": "9397cef1-4937-45a2-be62-507dfaf26a93",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "mpeg",
+    "hexSignature": "000001B3"
+  },
+  {
+    "Id": "bee91b14-9c7e-432d-ac01-5c2a0ee18143",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "zlib",
+    "hexSignature": "7801"
+  },
+  {
+    "Id": "4765d779-8dad-47a5-9ecf-d51f7dfe16dd",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "zlib",
+    "hexSignature": "789C"
+  },
+  {
+    "Id": "b21a4324-8258-48b7-9e9d-a81206bfe721",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "zlib",
+    "hexSignature": "78DA"
+  },
+  {
+    "Id": "63858109-f3c0-4acb-9ab5-18569422d37a",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "dat",
+    "hexSignature": "1F8B0800"
+  },
+  {
+    "Id": "9b79a828-1ca3-419e-9329-3528447e8013",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "lzfse",
+    "hexSignature": "62767832"
+  },
+  {
+    "Id": "78ea27c3-b781-4bea-b541-0f55aa457774",
+    "extensionCategory": {
+      "Id": "271b5621-1d0b-4d49-9433-ff3bc24b8688",
+      "nameCategory": "Video"
+    },
+    "typeFile": "orc",
+    "hexSignature": "4F5243"
+  },
+  {
+    "Id": "710f2ca3-5688-4149-bf07-53c81d018726",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "avro",
+    "hexSignature": "4F626A01"
+  },
+  {
+    "Id": "74225803-75cc-41aa-8f00-5afae6b8475c",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "rc",
+    "hexSignature": "53455136"
+  },
+  {
+    "Id": "eca0d02c-587d-4cb0-a9b4-b4bc35314771",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "p25 ",
+    "hexSignature": "65877856"
+  },
+  {
+    "Id": "f41e7329-47c2-4ab7-8e0b-7c34cb303ee6",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "65877856"
+  },
+  {
+    "Id": "7073d7bc-83d5-4882-9221-12b70fe57348",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "obt",
+    "hexSignature": "65877856"
+  },
+  {
+    "Id": "8c224e2e-2084-436b-a7d1-41728ae83062",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "pcv",
+    "hexSignature": "5555aaaa"
+  },
+  {
+    "Id": "a73a975d-5151-4f5e-ae63-991df3baa5ba",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "pbt ",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "f7ed7ad2-34bc-46fa-9ecc-9f366a1f12b0",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "898ffcdb-16b5-4a7b-9831-966f3a193d52",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "pdt ",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "dfe3f7c2-1247-4bac-ac77-87f634345a4a",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "3b2a59bd-3dc2-45e2-b79a-7edf8eebb758",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "pea ",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "c1832435-e60a-494d-8d91-fdb78d2a27c3",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "a263beb4-89b9-40c1-b0b8-4efbaa431c28",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "peb ",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "afc01c68-e663-4bc0-b7e2-6e77a67c290b",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "02da444c-e586-483f-b599-c60c71b2f1e9",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "pet ",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "404004d9-253d-4e76-8cc9-a3db81d6241f",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "652fc2f9-ecc0-4d1b-9306-5cd5c81fa243",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "pgt ",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "59e2b060-5409-4f98-aa0c-f6789450bd67",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "19882351-a6ae-4d0d-b562-4bb1c5c59237",
+    "extensionCategory": null,
+    "typeFile": "pict ",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "5f82661f-ee44-4475-b58d-aed994c4faf7",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "7b779374-4245-4b15-9908-845b8cb94e86",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "pjt ",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "4b448bd0-c3b8-4089-b87c-38574fcf2cd9",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "660c38fa-6c22-4809-83aa-041b9afdc2df",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "pkt ",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "f86fb033-189e-4176-a242-d753113eccbb",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "0a1ff691-8e26-48e6-b5e8-d578c444bb5e",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "pmt",
+    "hexSignature": "785634"
+  },
+  {
+    "Id": "96c6e1e0-6c40-4622-a0b8-1d6bfee124ce",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "50415231"
+  },
+  {
+    "Id": "438ae719-2efa-4c4b-ada1-fe1cd5851937",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "ez2",
+    "hexSignature": "454D5832"
+  },
+  {
+    "Id": "ae775cca-74c0-4696-8cc9-39c1d9eabdb0",
+    "extensionCategory": {
+      "Id": "85ad3100-51d4-4a9e-8e21-5a8265ba09b2",
+      "nameCategory": "Photo"
+    },
+    "typeFile": "ez3 ",
+    "hexSignature": "454D5533"
+  },
+  {
+    "Id": "5f59b28d-a2ff-4cf9-ad21-9a0acd07ed2f",
+    "extensionCategory": null,
+    "typeFile": "",
+    "hexSignature": "454D5533"
+  },
+  {
+    "Id": "83fdef41-e73e-43b4-a498-0f6ead804ab8",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "iso",
+    "hexSignature": "454D5533"
+  },
+  {
+    "Id": "4a212cb2-d2cc-497c-bb3b-6cb4463dcbab",
+    "extensionCategory": {
+      "Id": "5c10a819-ce1b-49eb-9b19-41737dfebe39",
+      "nameCategory": "File"
+    },
+    "typeFile": "luac",
+    "hexSignature": "1B4C7561"
+  }
+]

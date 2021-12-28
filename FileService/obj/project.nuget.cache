@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9PO56nY8nZsDnq4ify8VDQNkyWyeSkKxAnvmQvnpREnS9ImABrI6z/lFzn+b69n8NoUwyueGCvtw20JFSAtv/Q==",
+  "dgSpecHash": "YwlAabr1MMOjVoYOAT6/BfvM0ZGGo+nOby0GKiAxShs3fP9NlZ6XCmxzEWduKGIsNK+A9OWGF07GeglS6fXhfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mpanylyk\\source\\repos\\FileProject\\FileService\\FileService.csproj",
+  "projectFilePath": "C:\\Users\\mpanylyk\\source\\repos\\File\\FileProject\\FileService\\FileService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mpanylyk\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\mpanylyk\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
@@ -12,6 +12,7 @@
     "C:\\Users\\mpanylyk\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
     "C:\\Users\\mpanylyk\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
     "C:\\Users\\mpanylyk\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\mpanylyk\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\mpanylyk\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\mpanylyk\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\mpanylyk\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",

@@ -1,15 +1,23 @@
 using System.Collections.Generic;
-using FileSortService.Model;
+using System.Net;
+using FileSortService.Model.WorkModel;
+using System.Threading.Tasks;
+using FileSortService.Model.DatabaseModel;
 
 namespace FileSortService.Repository
 {
     public interface IFileSortRepository
     {
-        List<InfoAboutFile> GetAllFile();
+        InfoAboutFiles GetAllFile(string pathFolder,string typeFile);
+        InfoAboutFiles GetAllFileV2(string pathFolder, string typeFile);
         InfoAboutFile InfoAboutFile(string nameFile,string typeName);
-        bool DeleteFile(string nameFile,string typeName);
-        bool RenameFile(string nameFile,string typeName,string newNameFile);
-        bool OpenAndEdit(string nameFile,string typeName,string infoAdd);
-        bool CreateFile(InfoAboutFile infoAboutFile);
+        HttpStatusCode DeleteFile(ParameterRequest parameter);
+        string RenameFile(string nameFile,string typeName,string newNameFile,string currentDirectory);
+        string EditFile(WorkWithFile parameter);
+        HttpStatusCode CreateFile(InfoAboutFile infoAboutFile);
+        Task<List<string>> SaveFile2(List<ParameterRequest> parameter);
+        IEnumerable<ArchitectureFolder> GetArchitecture();
+        IEnumerable<TypeFileFromUpload> GetDate();//
+        void InsertExt();
     }
 }
