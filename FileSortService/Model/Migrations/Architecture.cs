@@ -9,7 +9,7 @@ namespace FileSortService.Model.Migrations
         public Guid Id{get;set;}
         public string nameFile{get;set;}
         public string typeFile{get;set;}
-        public ExtensionCategory typeCategory{get;set;}
+        public ExtenCategory typeCategory{get;set;}
         public string linkToOpen {get;set;}
         public string sizeFile{get;set;}
         public string dateCreatedFile{get;set;} 

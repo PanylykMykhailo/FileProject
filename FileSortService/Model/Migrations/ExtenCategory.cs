@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace FileSortService.Model.Migrations
 {
-    public class ExtensionCategory
+    public class ExtenCategory
     {
         [Key]
         public Guid Id { get; set; }

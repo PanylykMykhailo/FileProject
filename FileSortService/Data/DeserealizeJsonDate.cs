@@ -316,7 +316,7 @@ namespace FileSortService.Data
         public async Task<Func<T, string>> CreatePredicate<T>(string command)
         {
             var options = ScriptOptions.Default.AddReferences(typeof(T).Assembly);
-            var predicate = await CSharpScript.EvaluateAsync<Func<T, string>>(command, options).ConfigureAwait(true);
+            var predicate = await CSharpScript.EvaluateAsync<Func<T, string>>(command, options);
             return predicate;
         }
         public HelperSeparator DeserealizeFileHS(string filename,string action) 

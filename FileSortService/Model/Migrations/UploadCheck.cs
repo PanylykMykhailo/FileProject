@@ -8,7 +8,7 @@ namespace FileSortService.Model.Migrations
     {
         [Key]
         public Guid Id {get;set;}
-        public ExtensionCategory typeCategory { get;set;}
+        public ExtenCategory typeCategory { get;set;}
         public string typeFile {get;set;}
         public string hexSignature {get;set;}
     }

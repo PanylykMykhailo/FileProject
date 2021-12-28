@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FileSortService.Model.Migrations
 {
-    public class ExtensionValue
+    public class ExtenValue
     {
         [Key]
         public Guid Id{get;set;}
-        public ExtensionCategory typeCategory { get;set;}
+        public ExtenCategory extensionCategory { get;set;}
         public string extensionValue{get;set;}
     }
 }
